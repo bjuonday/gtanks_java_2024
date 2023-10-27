@@ -9,7 +9,7 @@ public abstract class Network {
     protected SocketChannel channel;
     protected boolean connected = true;
     protected final String DELIMETER = "end~";
-    protected final int KEY = 2;
+    protected final int KEY = 1;
     protected int nBytes;
 
     public Network(Client client) {
@@ -17,7 +17,7 @@ public abstract class Network {
         this.channel = this.client.getSocket().getChannel();
         try {
             this.channel.configureBlocking(true);
-        } catch (IOException e) {
+        } catch (IOException | NullPointerException e) {
             e.printStackTrace();
         }
     }
@@ -49,10 +49,12 @@ public abstract class Network {
     }
 
     protected String decrypt(String data) {
-        char[] a = data.toCharArray();
-        for (int i = 0; i < a.length; i++)
-            a[i] -= KEY;
-        return new String(a);
+        int key = Character.getNumericValue(data.charAt(0));
+        char[] _array = new char[data.length() - 1];
+        for (int i = 1; i < data.length(); i++) {
+            _array[i - 1] = (char) (data.codePointAt(i) - (key + KEY));
+        }
+        return new String(_array);
     }
 
     protected String read() throws IOException {

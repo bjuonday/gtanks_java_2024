@@ -9,34 +9,22 @@ public class NetworkEx extends Network implements Runnable {
     }
 
     public void readEvent(Command cmd) {
-        Handler handler = null;
+        Handler handler;
+        System.out.println("Receive: " + cmd.src);
 
         switch (cmd.type) {
-            case SYSTEM:
-                handler = new SystemHandler(this);
-                break;
-            case AUTH:
-                handler = new AuthHandler(this);
-                break;
-            case LOBBY:
-                handler = new LobbyHandler(this);
-                break;
-            case LOBBY_CHAT:
-                handler = new LobbyChatHandler(this);
-                break;
-            case BATTLE:
-                handler = new BattleHandler(this);
-                break;
-            case PROFILE:
-                handler = new ProfileHandler(this);
-                break;
-            case UNKNOWN:
-            default:
+            case SYSTEM -> handler = new SystemHandler(this);
+            case AUTH -> handler = new AuthHandler(this);
+            case LOBBY -> handler = new LobbyHandler(this);
+            case LOBBY_CHAT -> handler = new LobbyChatHandler(this);
+            case BATTLE -> handler = new BattleHandler(this);
+            case PROFILE -> handler = new ProfileHandler(this);
+            default -> {
                 System.out.println("Unknown type: " + cmd.args[0]);
                 return;
+            }
         }
 
-        assert handler != null;
         handler.handle(cmd);
     }
 
