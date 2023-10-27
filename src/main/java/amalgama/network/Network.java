@@ -22,8 +22,7 @@ public abstract class Network {
         }
     }
 
-    @Override
-    public String toString() {
+    public String stringifySocket() {
         return client.getSocket().getInetAddress().toString().substring(1) + ":" + this.client.getSocket().getPort();
     }
 

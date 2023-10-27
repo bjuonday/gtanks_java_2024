@@ -8,9 +8,11 @@ public class Server {
     public void start() throws IOException {
         socket = new ServerSocket(5000);
 
+        System.out.println("Server started.");
         while (!socket.isClosed()) {
             new Thread(new NetworkEx(new Client(socket.accept())))
                     .start();
         }
+        System.out.println("Server stopped.");
     }
 }

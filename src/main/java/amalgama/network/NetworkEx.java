@@ -42,6 +42,7 @@ public class NetworkEx extends Network implements Runnable {
 
     @Override
     public void run() {
+        System.out.println("Client '" + stringifySocket() + "' init.");
         try {
             while (ok && nBytes != -1) {
                 in = new StringBuffer(read().trim());
