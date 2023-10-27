@@ -10,12 +10,13 @@ public class NetworkEx extends Network implements Runnable {
 
     public void readEvent(Command cmd) {
         Handler handler;
-        System.out.println("Receive: " + cmd.src);
+        //System.out.println("Receive: " + cmd.src);
 
         switch (cmd.type) {
             case SYSTEM -> handler = new SystemHandler(this);
             case AUTH -> handler = new AuthHandler(this);
             case LOBBY -> handler = new LobbyHandler(this);
+            case GARAGE -> handler = new ProfileHandler(this);
             case LOBBY_CHAT -> handler = new LobbyChatHandler(this);
             case BATTLE -> handler = new BattleHandler(this);
             case PROFILE -> handler = new ProfileHandler(this);

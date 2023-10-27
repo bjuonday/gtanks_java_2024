@@ -9,7 +9,7 @@ public abstract class Network {
     protected SocketChannel channel;
     protected boolean connected = true;
     protected final String DELIMETER = "end~";
-    protected final int KEY = 1;
+    protected int KEY = 1;
     protected int nBytes;
 
     public Network(Client client) {
@@ -27,7 +27,8 @@ public abstract class Network {
     }
 
     public void send(String data) throws IOException {
-        channel.write(ByteBuffer.wrap(data.getBytes()));
+        String req = data + DELIMETER;
+        channel.write(ByteBuffer.wrap(req.getBytes()));
     }
 
     public void send(Type type, String... args) throws IOException {
@@ -36,9 +37,7 @@ public abstract class Network {
         sb.append(";");
         sb.append(String.join(";", args));
         sb.append(DELIMETER);
-
-        String req = sb.toString();
-        channel.write(ByteBuffer.wrap(req.getBytes()));
+        send(sb.toString());
     }
 
     public void disconnect() throws IOException {
