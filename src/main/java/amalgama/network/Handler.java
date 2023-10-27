@@ -1,7 +1,7 @@
 package amalgama.network;
 
 public abstract class Handler {
-    Network net = null;
+    protected Network net = null;
     public Handler(Network network) {
         net = network;
     }
