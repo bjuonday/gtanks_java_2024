@@ -10,7 +10,7 @@ public class NetworkEx extends Network implements Runnable {
 
     public void readEvent(Command cmd) {
         Handler handler;
-        //System.out.println("Receive: " + cmd.src);
+        System.out.println("Receive: " + cmd.args.length + ", " + cmd.src);
 
         switch (cmd.type) {
             case SYSTEM -> handler = new SystemHandler(this);
@@ -40,7 +40,7 @@ public class NetworkEx extends Network implements Runnable {
 
                 int pos = in.toString().indexOf(DELIMETER);
                 if (pos == -1)
-                    continue;;
+                    continue;
 
                 in.setLength(pos);
                 readEvent(new Command(decrypt(in.toString())));
