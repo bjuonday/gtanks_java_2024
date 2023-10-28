@@ -14,7 +14,7 @@ public class NetworkEx extends Network implements Runnable {
 
         switch (cmd.type) {
             case SYSTEM -> handler = new SystemHandler(this);
-            case AUTH -> handler = new AuthHandler(this);
+            case AUTH, REGISTRATION -> handler = new AuthHandler(this);
             case LOBBY -> handler = new LobbyHandler(this);
             case GARAGE -> handler = new GarageHandler(this);
             case LOBBY_CHAT -> handler = new LobbyChatHandler(this);
