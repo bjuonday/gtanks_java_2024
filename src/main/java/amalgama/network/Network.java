@@ -8,6 +8,7 @@ public abstract class Network {
     protected Client client;
     protected SocketChannel channel;
     protected boolean connected = true;
+    protected boolean loaded = false;
     protected final String DELIMETER = "end~";
     protected int KEY = 1;
     protected int nBytes;
@@ -47,13 +48,11 @@ public abstract class Network {
         }
     }
 
-    protected String decrypt(String data) {
-        int key = Character.getNumericValue(data.charAt(0));
-        char[] _array = new char[data.length() - 1];
-        for (int i = 1; i < data.length(); i++) {
-            _array[i - 1] = (char) (data.codePointAt(i) - (key + KEY));
-        }
-        return new String(_array);
+    protected String decrypt(String data, int offset) {
+        char[] array = data.toCharArray();
+        for (int i = 0; i < array.length; i++)
+            array[i] -= offset + KEY;
+        return new String(array);
     }
 
     protected String read() throws IOException {

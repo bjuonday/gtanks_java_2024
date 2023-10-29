@@ -31,7 +31,7 @@ public class NetworkEx extends Network implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("Client '" + stringifySocket() + "' init.");
+        System.out.println("Client [" + stringifySocket() + "] init.");
         try {
             while (ok && nBytes != -1) {
                 in = new StringBuffer(read().trim());
@@ -43,7 +43,10 @@ public class NetworkEx extends Network implements Runnable {
                     continue;
 
                 in.setLength(pos);
-                readEvent(new Command(decrypt(in.toString())));
+                if (!loaded)
+                    readEvent(new Command(decrypt(in.substring(1), Character.getNumericValue(in.charAt(0)))));
+                else
+                    readEvent(new Command(in.toString()));
             }
         } catch (Exception e) {
             ok = false;

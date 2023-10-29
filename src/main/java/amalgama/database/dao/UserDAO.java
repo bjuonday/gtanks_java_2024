@@ -18,6 +18,19 @@ public class UserDAO {
         return user;
     }
 
+    public static User getUser(String login) {
+        User user = null;
+        try (Session session = HibernateUtil.getFactory().openSession()) {
+            Query q = session.createQuery("from User where login = ?1")
+                    .setParameter(1, login);
+            List<User> rows = q.list();
+            user = (rows.size() > 0 ? rows.get(0) : null);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return user;
+    }
+
     public static User getUser(String login, String password) {
         User user = null;
         try (Session session = HibernateUtil.getFactory().openSession()) {
