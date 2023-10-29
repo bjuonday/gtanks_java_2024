@@ -35,4 +35,16 @@ public class LobbyManager {
 
         net.send(Type.LOBBY, "init_panel", json.toJSONString());
     }
+
+    public static void updateRankProgress(Network net) throws IOException {
+        if (net.client.userData == null)
+            return;
+
+        int score = net.client.userData.getScore();
+        int rank = RankUtils.getRankFromScore(score);
+        int prevNextScore = RankUtils.getScoreFromRank(rank - 1);
+        int nextScore = RankUtils.getScoreFromRank(rank);
+
+        net.send(Type.LOBBY, "update_rang_progress", String.valueOf(RankUtils.getRankProgress(score, nextScore, prevNextScore)));
+    }
 }

@@ -59,6 +59,7 @@ public class AuthHandler extends Handler {
             }
 
             LobbyManager.initPanel(net);
+            LobbyManager.updateRankProgress(net);
         } catch (Exception e) {
             e.printStackTrace();
         }

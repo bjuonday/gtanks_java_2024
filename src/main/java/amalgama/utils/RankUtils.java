@@ -19,4 +19,10 @@ public class RankUtils {
 
         return Global.ranks.get(rank).score;
     }
+
+    public static int getRankProgress(int currentScore, int currentNext, int prevNext) {
+        int x = currentScore - prevNext;
+        int max = currentNext - prevNext;
+        return x * 10000 / max;
+    }
 }
