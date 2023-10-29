@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ranks first="1" last="27">
+    <rank number="1" score="0" />
+    <rank number="2" score="100" />
+    <rank number="3" score="500" />
+    <rank number="4" score="1500" />
+    <rank number="5" score="3700" />
+    <rank number="6" score="7100" />
+    <rank number="7" score="12300" />
+    <rank number="8" score="20000" />
+    <rank number="9" score="29000" />
+    <rank number="10" score="41000" />
+    <rank number="11" score="57000" />
+    <rank number="12" score="76000" />
+    <rank number="13" score="98000" />
+    <rank number="14" score="125000" />
+    <rank number="15" score="156000" />
+    <rank number="16" score="192000" />
+    <rank number="17" score="233000" />
+    <rank number="18" score="280000" />
+    <rank number="19" score="332000" />
+    <rank number="20" score="390000" />
+    <rank number="21" score="455000" />
+    <rank number="22" score="527000" />
+    <rank number="23" score="606000" />
+    <rank number="24" score="692000" />
+    <rank number="25" score="787000" />
+    <rank number="26" score="889000" />
+    <rank number="27" score="1000000" />
+</ranks>

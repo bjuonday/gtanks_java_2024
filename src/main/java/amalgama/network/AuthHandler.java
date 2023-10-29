@@ -32,6 +32,7 @@ public class AuthHandler extends Handler {
                 net.send(Type.AUTH, "accept");
                 Global.clients.put(user.getLogin(), net.client);
                 net.client.authorized = true;
+                net.client.userData = user;
             }
             else if (command.type == Type.REGISTRATION) {
                 if (command.args[1].equals("check_name")) {
@@ -53,6 +54,7 @@ public class AuthHandler extends Handler {
                     Global.clients.put(user.getLogin(), net.client);
                     net.client.authorized = true;
                     net.send(Type.REGISTRATION, "info_done");
+                    net.client.userData = user;
                 }
             }
 

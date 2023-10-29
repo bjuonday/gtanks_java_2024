@@ -1,9 +1,12 @@
 package amalgama.network;
 
+import amalgama.database.User;
+
 import java.net.Socket;
 
 public class Client {
     private final Socket socket;
+    public User userData = null;
     public boolean authorized = false;
 
     public Client(Socket socket) {

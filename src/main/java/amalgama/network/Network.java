@@ -5,7 +5,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
 public abstract class Network {
-    protected Client client;
+    public Client client;
     protected SocketChannel channel;
     protected boolean connected = true;
     protected boolean loaded = false;
@@ -27,9 +27,13 @@ public abstract class Network {
         return client.getSocket().getInetAddress().toString().substring(1) + ":" + this.client.getSocket().getPort();
     }
 
-    public void send(String data) throws IOException {
+    private void write(String data) throws IOException {
         String req = data + DELIMETER;
         channel.write(ByteBuffer.wrap(req.getBytes()));
+    }
+
+    public void send(String data) throws IOException {
+        write(data);
     }
 
     public void send(Type type, String... args) throws IOException {
@@ -37,8 +41,7 @@ public abstract class Network {
         sb.append(type.toString().toLowerCase());
         sb.append(";");
         sb.append(String.join(";", args));
-        sb.append(DELIMETER);
-        send(sb.toString());
+        write(sb.toString());
     }
 
     public void disconnect() throws IOException {
