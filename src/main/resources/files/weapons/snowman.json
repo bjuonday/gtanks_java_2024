@@ -1,0 +1,114 @@
+[
+		{
+			"modification" : "m0",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 8.0,
+			"max_damage" : 10.0,
+			
+			
+			"autoAimingAngleDown" : 0.244346,
+			"autoAimingAngleUp" : 0.191986,
+			"numRaysDown": 112,
+			"numRaysUp" : 88,
+			"reloadMsec" : 680,
+			
+			"max_damage_radius": 100.0,
+			"min_damage_radius": 55.0,
+			"min_damage_percent": 20.0,
+			
+			"impactCoeff": 0.60,
+			"kickback": 0.24,
+			"turretRotationAccel": 1.3 ,
+			"turretRotationSpeed": 1.3 ,
+			"shot_range": 55.0,
+			"shot_radius" : 1.03,
+			"shot_speed" : 35.0,
+			
+			"frezee_speed" : 1.5
+		},
+		{
+			"modification" : "m1",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 12.0,
+			"max_damage" : 18.0,
+			
+			
+			"autoAimingAngleDown" : 0.244346,
+			"autoAimingAngleUp" : 0.191986,
+			"numRaysDown": 112,
+			"numRaysUp" : 88,
+			"reloadMsec" : 640,
+			
+			"max_damage_radius": 100.0,
+			"min_damage_radius": 60.0,
+			"min_damage_percent": 20.0,
+			
+			"impactCoeff": 0.60,
+			"kickback": 0.24,
+			"turretRotationAccel": 1.3 ,
+			"turretRotationSpeed": 1.3 ,
+			"shot_range": 60.0,
+			"shot_radius" : 1.03,
+			"shot_speed" : 38.0,
+			
+			"frezee_speed" : 2.0
+		},
+		{
+			"modification" : "m2",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 13.0,
+			"max_damage" : 20.0,
+			
+			
+			"autoAimingAngleDown" : 0.244346,
+			"autoAimingAngleUp" : 0.191986,
+			"numRaysDown": 112,
+			"numRaysUp" : 88,
+			"reloadMsec" : 600,
+			
+			"max_damage_radius": 100.0,
+			"min_damage_radius": 65.0,
+			"min_damage_percent": 20.0,
+			
+			"impactCoeff": 0.60,
+			"kickback": 0.24,
+			"turretRotationAccel": 1.3 ,
+			"turretRotationSpeed": 1.3 ,
+			"shot_range": 65.0,
+			"shot_radius" : 1.03,
+			"shot_speed" : 39.0,
+			
+			"frezee_speed" : 2.5
+		},
+		{
+			"modification" : "m3",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 12.0,
+			"max_damage" : 18.0,
+			
+			
+			"autoAimingAngleDown" : 0.244346,
+			"autoAimingAngleUp" : 0.191986,
+			"numRaysDown": 112,
+			"numRaysUp" : 88,
+			"reloadMsec" : 560,
+			
+			"max_damage_radius": 100.0,
+			"min_damage_radius": 70.0,
+			"min_damage_percent": 20.0,
+			
+			"impactCoeff": 0.85,
+			"kickback": 0.99,
+			"turretRotationAccel": 1.3 ,
+			"turretRotationSpeed": 1.3 ,
+			"shot_range": 70.0,
+			"shot_radius" : 1.06,
+			"shot_speed" : 44.0,
+			
+			"frezee_speed" : 3.0
+		}
+]

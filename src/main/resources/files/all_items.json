@@ -1,0 +1,2734 @@
+[
+  {
+    "modification": [
+      {
+        "previewId": "double_crystalls_m0",
+        "price": 1000,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "double_crystalls",
+    "description": "Название этой карты говорит само за себя. С ней вы получаете в двое больше кристаллов, чем обычно, при покупке их за реальные деньги. Сколько бы кристаллов вы ни купили, получите в подарок ещё столько же. Карта действует только 24 часа с момента получения. Успевайте делать выгодные покупки.",
+    "isInventory": true,
+    "index": 0,
+    "type": 5,
+    "name": "Двойной кристалл",
+    "next_price": 0,
+    "next_rank": 1,
+    "price": 1000,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "1000_scores_m0",
+        "price": 1000,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "1000_scores",
+    "description": "Моментально добавляет 1000 очков к вашему опыту.",
+    "isInventory": true,
+    "index": 0,
+    "type": 5,
+    "name": "1000 опыта",
+    "next_price": 0,
+    "next_rank": 1,
+    "price": 1000,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "up_score_small_m0",
+        "price": 300,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "up_score_small",
+    "description": "+30% к опыту (Действительно 24 часа).",
+    "isInventory": true,
+    "index": 0,
+    "type": 5,
+    "name": "Повышенный опыт",
+    "next_price": 0,
+    "next_rank": 1,
+    "price": 300,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "no_supplies_m0",
+        "price": 100,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "no_supplies",
+    "description": "Абонимент на участие в битве без припасов.",
+    "isInventory": true,
+    "index": 0,
+    "type": 5,
+    "name": "Без припасов",
+    "next_price": 0,
+    "next_rank": 1,
+    "price": 100,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "up_score_start_m0",
+        "price": 300,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "up_score_start",
+    "description": "Без описания.",
+    "isInventory": true,
+    "index": 0,
+    "type": 5,
+    "name": "Двойной опыт",
+    "next_price": 0,
+    "next_rank": 1,
+    "price": 300,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "up_score_m0",
+        "price": 500,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "up_score",
+    "description": "Без описания.",
+    "isInventory": true,
+    "index": 0,
+    "type": 5,
+    "name": "Двойной опыт",
+    "next_price": 0,
+    "next_rank": 1,
+    "price": 500,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "n2o_m0",
+        "price": 15,
+        "rank": 4,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "n2o",
+    "description": "Повышает скорость на минуту.\\n\\nБаллон с закисью азота должен быть в каждом танке. Во-первых, это отличное горючее для временного ускорения боевой машины. Во-вторых, оксид азота, также известный как веселящий газ, можно использовать для наркоза и просто для поднятия настроения. Если вы повстречаете глупо хихикающего танкиста, знайте, он просто нюхнул N2O.",
+    "isInventory": true,
+    "index": 1,
+    "type": 4,
+    "name": "Ускорение",
+    "next_price": 0,
+    "next_rank": 1,
+    "price": 15,
+    "rank": 4,
+    "count": 0,
+    "discount": 0,
+    "multicounted": true
+  },
+  {
+    "modification": [
+      {
+        "previewId": "armor_m0",
+        "price": 15,
+        "rank": 4,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "armor",
+    "description": "Удваивает защиту на минуту.\\n\\nНабор усовершенствованных керамо-кавлоровых бронепластин, монтируемых в стандартные слоты 600x800 мм. При весе всего в 10 кг, такая пластина способна вдвое увеличить защитные свойства штатной брони, при правильной установке принимая на себя 50% кинетической и термической энергии взрыва. В комплект также входят ножницы с победитовыми лезвиями, три катушки двухстороннего скотча и белоснежная кружевная тряпочка из никотинового материала, без которой, судя по инструкции, никак не обойтись.",
+    "isInventory": true,
+    "index": 2,
+    "type": 4,
+    "name": "Двойная защита",
+    "next_price": 0,
+    "next_rank": 1,
+    "price": 15,
+    "rank": 4,
+    "count": 0,
+    "discount": 0,
+    "multicounted": true
+  },
+  {
+    "modification": [
+      {
+        "previewId": "double_damage_m0",
+        "price": 15,
+        "rank": 4,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "double_damage",
+    "description": "Удваивает характеристики пушки на минуту.\\n\\nУникальная военная разработка — небольшая металлическая муфта, монтируемая на среднюю часть дула посредством двух болтов на 20 и одного граверного шурупа. Позволяет в разы увеличить выходную скорость снаряда любой природы, тем самым вдвое увеличив его поражающую способность. К сожалению, автономный источник энергии, от которого питается электромагнитный модулятор, разгоняющий материю внутри ствола, быстро разряжается и устройство приходит в негодность.",
+    "isInventory": true,
+    "index": 3,
+    "type": 4,
+    "name": "Двойной урон",
+    "next_price": 0,
+    "next_rank": 1,
+    "price": 15,
+    "rank": 4,
+    "count": 0,
+    "discount": 0,
+    "multicounted": true
+  },
+  {
+    "modification": [
+      {
+        "previewId": "health_m0",
+        "price": 25,
+        "rank": 6,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "health",
+    "description": "Постепенно восстанавливает «здоровье» со скоростью 30 HP/сек. Лечит либо до полного исцеления, либо пока не выработает свой ресурс, равный полному запасу «здоровья» танка.\\nНезаменимая вещь в бою. Набор грамотно подобранных медикаментов, аккуратно упакованных в пластиковую коробку, позволит вылечить легкие раны и неглубокие порезы. Входящие в комплект нитка, иголка и бактерицидный гель помогут приладить на место отрезанные в бою пальцы, уши и другие мелкие части тела. Сама же коробка нужна не только для хранения всего этого хозяйства, по задумке военных инженеров она также должна выполнять роль биотуалета.",
+    "isInventory": true,
+    "index": 4,
+    "type": 4,
+    "name": "Аптечка",
+    "next_price": 0,
+    "next_rank": 1,
+    "price": 25,
+    "rank": 3,
+    "count": 0,
+    "discount": 0,
+    "multicounted": true
+  },
+  {
+    "modification": [
+      {
+        "previewId": "mine_m0",
+        "price": 20,
+        "rank": 10,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "120 - 240"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "mine",
+    "description": "Подрывает противников.\\n\\nМина деактивируется, если владелец погиб, вышел из битвы или закончилась битва. В командной битве мины не реагируют на союзников. \\n \\n Мина — друг, товарищ и брат опытного танкиста. Незаметно прокрасться в тыл врага и заминировать его штаб, прикрыть товарищей при отступлении, заблокировать подходы к базе — всё это стало возможным благодаря применению незаметного смертоносного устройства. Танк, подорвавшийся на мине, теряет от 120 до 240 единиц здоровья (hp). Время активации мины — 2 секунды, повторное использование мины возможно только через 30 секунд.",
+    "isInventory": true,
+    "index": 5,
+    "type": 4,
+    "name": "Мина",
+    "next_price": 0,
+    "next_rank": 1,
+    "price": 20,
+    "rank": 10,
+    "count": 0,
+    "discount": 0,
+    "multicounted": true
+  },
+  {
+    "modification": [
+      {
+        "previewId": "set_100_m0",
+        "price": 5000,
+        "rank": 8,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "set_100",
+    "description": "Без описания.",
+    "isInventory": true,
+    "index": 0,
+    "type": 5,
+    "name": "100 припасов",
+    "next_price": 0,
+    "next_rank": 1,
+    "price": 5000,
+    "rank": 8,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "triangle_m0",
+        "price": 100000,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "triangle",
+    "description": "Без описания.",
+    "isInventory": true,
+    "index": 0,
+    "type": 5,
+    "name": "Треугольник",
+    "next_price": 0,
+    "next_rank": 1,
+    "price": 100000,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "smoky_m0",
+        "price": 0,
+        "rank": 1,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "4 - 16"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "30.0"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "57.3"
+          }
+        ]
+      },
+      {
+        "previewId": "smoky_m1",
+        "price": 30,
+        "rank": 3,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "5 - 17"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "31.6"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "63.0"
+          }
+        ]
+      },
+      {
+        "previewId": "smoky_m2",
+        "price": 90,
+        "rank": 5,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "6 - 20"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "34.3"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "74.5"
+          }
+        ]
+      },
+      {
+        "previewId": "smoky_m3",
+        "price": 300,
+        "rank": 7,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "8 - 24"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "37.5"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "103.1"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "smoky",
+    "description": "Среднекалиберная танковая пушка. В основном, устанавливается на лёгкие истребительные и учебные танки. Получила распространение из-за дешевизны и простоты обслуживания. Установите её на быстрый корпус и, шныряя между ошарашенными врагами, берите тяжёлые неповоротливые танки на измор. Разработанные апгрейды способны существенно увеличить убойную силу этой малышки. Стоит помнить, что урон этой пушки падает на расстоянии.",
+    "isInventory": false,
+    "index": 10,
+    "type": 1,
+    "name": "Смоки",
+    "next_price": 30,
+    "next_rank": 3,
+    "price": 0,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "flamethrower_m0",
+        "price": 5,
+        "rank": 4,
+        "properts": [
+          {
+            "property": "damage_per_second",
+            "value": "12"
+          },
+          {
+            "property": "cone_angle",
+            "value": "20"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "91.7"
+          },
+          {
+            "property": "shot_range",
+            "value": "20"
+          }
+        ]
+      },
+      {
+        "previewId": "flamethrower_m1",
+        "price": 40,
+        "rank": 5,
+        "properts": [
+          {
+            "property": "damage_per_second",
+            "value": "14"
+          },
+          {
+            "property": "cone_angle",
+            "value": "20"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "103.1"
+          },
+          {
+            "property": "shot_range",
+            "value": "20"
+          }
+        ]
+      },
+      {
+        "previewId": "flamethrower_m2",
+        "price": 120,
+        "rank": 7,
+        "properts": [
+          {
+            "property": "damage_per_second",
+            "value": "18"
+          },
+          {
+            "property": "cone_angle",
+            "value": "20"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "126.1"
+          },
+          {
+            "property": "shot_range",
+            "value": "20"
+          }
+        ]
+      },
+      {
+        "previewId": "flamethrower_m3",
+        "price": 400,
+        "rank": 9,
+        "properts": [
+          {
+            "property": "damage_per_second",
+            "value": "24"
+          },
+          {
+            "property": "cone_angle",
+            "value": "20"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "171.9"
+          },
+          {
+            "property": "shot_range",
+            "value": "20"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "flamethrower",
+    "description": "В тесных городских кварталах, когда картина боя напоминает скорее муравейник, нет лучшего оружия, чем Огнемёт. Огнемёт является этаким оружием массового поражения для ближнего боя. Высокая температура горения смеси позволит быстро поджечь экипаж танка зазевавшегося противника, после чего скрыться за углом, пока враг догорает. Идеальное оружие против медленных танков в условиях ограниченного пространства. Из недостатков можно отметить сравнительно долгое время перезарядки, однако стрелять можно и из частично перезаряженного оружия.",
+    "isInventory": false,
+    "index": 11,
+    "type": 1,
+    "name": "Огнемёт",
+    "next_price": 40,
+    "next_rank": 5,
+    "price": 5,
+    "rank": 4,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "twins_m0",
+        "price": 10,
+        "rank": 5,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "3 - 5"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "160.0"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "74.5"
+          },
+          {
+            "property": "shot_range",
+            "value": "60"
+          }
+        ]
+      },
+      {
+        "previewId": "twins_m1",
+        "price": 50,
+        "rank": 6,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "4 - 6"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "150.0"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "83.1"
+          },
+          {
+            "property": "shot_range",
+            "value": "60"
+          }
+        ]
+      },
+      {
+        "previewId": "twins_m2",
+        "price": 150,
+        "rank": 8,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "5 - 7"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "160.0"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "97.4"
+          },
+          {
+            "property": "shot_range",
+            "value": "60"
+          }
+        ]
+      },
+      {
+        "previewId": "twins_m3",
+        "price": 500,
+        "rank": 11,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "6 - 8"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "181.8"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "120.3"
+          },
+          {
+            "property": "shot_range",
+            "value": "60"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "twins",
+    "description": "Скорострельный двуствольный плазмомёт вмиг превратит врага в кучу расплавленного железа. Учитывая то, что попадание во вражеский танк сбивает ему прицел, это оружие идеально подходит для динамичного боя на средней дистанции.",
+    "isInventory": false,
+    "index": 12,
+    "type": 1,
+    "name": "Твинс",
+    "next_price": 50,
+    "next_rank": 6,
+    "price": 10,
+    "rank": 5,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "railgun_m0",
+        "price": 100,
+        "rank": 7,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "30 - 45"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "8.0"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "34.4"
+          }
+        ]
+      },
+      {
+        "previewId": "railgun_m1",
+        "price": 350,
+        "rank": 8,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "34 - 51"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "8.2"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "40.1"
+          }
+        ]
+      },
+      {
+        "previewId": "railgun_m2",
+        "price": 1100,
+        "rank": 9,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "42 - 67"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "8.5"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "57.3"
+          }
+        ]
+      },
+      {
+        "previewId": "railgun_m3",
+        "price": 3700,
+        "rank": 10,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "55 - 85"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "8.7"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "80.2"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "railgun",
+    "description": "Если среднекалиберные пушки уже не утоляют вашу жажду самовыражения, то эта игрушка специально для вас. Крупнокалиберная пушка, обладающая огромной дульной скоростью и снарядами с сердечниками из обеднённого урана. Сверхмощный и сверхточный кинетический снаряд способен пробить танк насквозь, поразив несколько целей, стоящих на одной прямой. Идеальное оружие для позиционного боя на дальней дистанции. Следует помнить, что это оружие довольно долго перезаряжается, чем обязательно воспользуется опытный противник.",
+    "isInventory": false,
+    "index": 13,
+    "type": 1,
+    "name": "Рельса",
+    "next_price": 350,
+    "next_rank": 8,
+    "price": 100,
+    "rank": 7,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "isida_m0",
+        "price": 300,
+        "rank": 9,
+        "properts": [
+          {
+            "property": "heal_rate",
+            "value": "12"
+          },
+          {
+            "property": "vampire_rate",
+            "value": "12"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "74.5"
+          },
+          {
+            "property": "healing_radius",
+            "value": "15"
+          }
+        ]
+      },
+      {
+        "previewId": "isida_m1",
+        "price": 700,
+        "rank": 10,
+        "properts": [
+          {
+            "property": "heal_rate",
+            "value": "14"
+          },
+          {
+            "property": "vampire_rate",
+            "value": "14"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "83.1"
+          },
+          {
+            "property": "healing_radius",
+            "value": "15"
+          }
+        ]
+      },
+      {
+        "previewId": "isida_m2",
+        "price": 1800,
+        "rank": 11,
+        "properts": [
+          {
+            "property": "heal_rate",
+            "value": "18"
+          },
+          {
+            "property": "vampire_rate",
+            "value": "18"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "97.4"
+          },
+          {
+            "property": "healing_radius",
+            "value": "15"
+          }
+        ]
+      },
+      {
+        "previewId": "isida_m3",
+        "price": 4500,
+        "rank": 12,
+        "properts": [
+          {
+            "property": "heal_rate",
+            "value": "24"
+          },
+          {
+            "property": "vampire_rate",
+            "value": "24"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "120.3"
+          },
+          {
+            "property": "healing_radius",
+            "value": "15"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "isida",
+    "description": "Уникальная идея этого оружия зародилась ещё во времена холодной войны, но смогла воплотиться только с развитием квантовой физики и нанотехнологий. Сердце этой чудо-машины — генератор нанороботов, способных воспроизвести или разрушить структуру любого материала небиологического происхождения. Импульсный излучатель, которым оборудована пушка, позволяет транспортировать наномассу в магнитном канале на расстояние в пару десятков метров. Молекулярный материал, получаемый при работе нанороботов в режиме разрушения цели, используется для починки собственного шасси. Таким образом, это оружие наносит урон врагам и восстанавливает союзников, что особенно необходимо при командной игре.",
+    "isInventory": false,
+    "index": 14,
+    "type": 1,
+    "name": "Изида",
+    "next_price": 700,
+    "next_rank": 10,
+    "price": 300,
+    "rank": 9,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "thunder_m0",
+        "price": 500,
+        "rank": 11,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "21 - 35"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "17.1"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "45.8"
+          }
+        ]
+      },
+      {
+        "previewId": "thunder_m1",
+        "price": 1500,
+        "rank": 12,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "22 - 37"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "19.0"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "51.6"
+          }
+        ]
+      },
+      {
+        "previewId": "thunder_m2",
+        "price": 4500,
+        "rank": 13,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "24 - 41"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "22.2"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "65.9"
+          }
+        ]
+      },
+      {
+        "previewId": "thunder_m3",
+        "price": 14000,
+        "rank": 14,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "26-46"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "26.7"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "91.7"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "thunder",
+    "description": "Среднекалиберная пушка — это лучший выбор для любителей динамичного боя. Разрывной снаряд Грома (осторожно, можно нанести урон самому себе) позволяет атаковать группу соперников, а быстрая перезарядка поможет получить неоспоримое преимущество перед тяжёлыми танками противника. В сочетании с быстрым корпусом Гром становится грозным оружием в руках умелого танкиста.",
+    "isInventory": false,
+    "index": 15,
+    "type": 1,
+    "name": "Гром",
+    "next_price": 1500,
+    "next_rank": 12,
+    "price": 500,
+    "rank": 11,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "frezee_m0",
+        "price": 550,
+        "rank": 12,
+        "properts": [
+          {
+            "property": "damage_per_second",
+            "value": "20"
+          },
+          {
+            "property": "cone_angle",
+            "value": "20"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "83.1"
+          },
+          {
+            "property": "shot_range",
+            "value": "20"
+          }
+        ]
+      },
+      {
+        "previewId": "frezee_m1",
+        "price": 1700,
+        "rank": 13,
+        "properts": [
+          {
+            "property": "damage_per_second",
+            "value": "22"
+          },
+          {
+            "property": "cone_angle",
+            "value": "20"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "93.4"
+          },
+          {
+            "property": "shot_range",
+            "value": "20"
+          }
+        ]
+      },
+      {
+        "previewId": "frezee_m2",
+        "price": 5000,
+        "rank": 14,
+        "properts": [
+          {
+            "property": "damage_per_second",
+            "value": "26"
+          },
+          {
+            "property": "cone_angle",
+            "value": "20"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "111.7"
+          },
+          {
+            "property": "shot_range",
+            "value": "20"
+          }
+        ]
+      },
+      {
+        "previewId": "frezee_m3",
+        "price": 15000,
+        "rank": 15,
+        "properts": [
+          {
+            "property": "damage_per_second",
+            "value": "32"
+          },
+          {
+            "property": "cone_angle",
+            "value": "20"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "146.1"
+          },
+          {
+            "property": "shot_range",
+            "value": "20"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "frezee",
+    "description": "Концепция грозной установки «Фриз» родилась в глухой русской деревне. Из неисправного холодильника «Север» и пылесоса «Буран» местный кулибин собрал «хладомёт». Новинку заметил рыбачивший в тех краях инженер. После доработки в закрытом НИИ им. Жукова «хладомёт» превратился в танковое орудие «Фриз». Заливая противника химическим составом на основе фреона, пушка наносит урон и замораживает объект, замедляя все его движения и процессы. Правда, струя пламени может разморозить жертву.",
+    "isInventory": false,
+    "index": 16,
+    "type": 1,
+    "name": "Фриз",
+    "next_price": 1700,
+    "next_rank": 13,
+    "price": 550,
+    "rank": 12,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "ricochet_m0",
+        "price": 650,
+        "rank": 13,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "10 - 12"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "100.0"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "74.5"
+          },
+          {
+            "property": "shot_range",
+            "value": "80"
+          }
+        ]
+      },
+      {
+        "previewId": "ricochet_m1",
+        "price": 2000,
+        "rank": 14,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "10 - 13"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "104.3"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "83.1"
+          },
+          {
+            "property": "shot_range",
+            "value": "80"
+          }
+        ]
+      },
+      {
+        "previewId": "ricochet_m2",
+        "price": 6000,
+        "rank": 15,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "11 - 15"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "107.1"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "97.4"
+          },
+          {
+            "property": "shot_range",
+            "value": "80"
+          }
+        ]
+      },
+      {
+        "previewId": "ricochet_m3",
+        "price": 18000,
+        "rank": 16,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "12 - 16"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "120.0"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "120.3"
+          },
+          {
+            "property": "shot_range",
+            "value": "80"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "ricochet",
+    "description": "Плазмомёт «Рикошет» — это новая секретная разработка сибирских ученых. Чтобы поставить её на вооружение, команда из 22 специалистов три года работала в подземном бункере без права выхода на поверхность. В итоге они создали уникальное оружие. Оно выпускает плазменные заряды, окутанные «умным» минус-полем. При попадании в танк заряд взрывается, но от других поверхностей отскакивает и продолжает полёт. Таким образом, из Рикошета можно поразить цель, даже не видя её.",
+    "isInventory": false,
+    "index": 17,
+    "type": 1,
+    "name": "Рикошет",
+    "next_price": 2000,
+    "next_rank": 14,
+    "price": 650,
+    "rank": 13,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "shaft_m0",
+        "price": 800,
+        "rank": 14,
+        "properts": [
+          {
+            "property": "shaft_damage",
+            "value": "60 - 90"
+          },
+          {
+            "property": "shaft_shot_frequency",
+            "value": "24.0"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "34.4"
+          }
+        ]
+      },
+      {
+        "previewId": "shaft_m1",
+        "price": 2500,
+        "rank": 15,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "70 - 100"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "27.3"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "39.5"
+          }
+        ]
+      },
+      {
+        "previewId": "shaft_m2",
+        "price": 8000,
+        "rank": 16,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "84 - 131"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "30.1"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "42.1"
+          }
+        ]
+      },
+      {
+        "previewId": "shaft_m3",
+        "price": 24000,
+        "rank": 17,
+        "properts": [
+          {
+            "property": "damage",
+            "value": "100 - 160"
+          },
+          {
+            "property": "shot_frequency",
+            "value": "34.8"
+          },
+          {
+            "property": "turret_turn_speed",
+            "value": "46.9"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "shaft",
+    "description": "Ну и что тут писать..?",
+    "isInventory": false,
+    "index": 18,
+    "type": 1,
+    "name": "Шафт",
+    "next_price": 2500,
+    "next_rank": 15,
+    "price": 800,
+    "rank": 14,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "wasp_m0",
+        "price": 0,
+        "rank": 1,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "30"
+          },
+          {
+            "property": "speed",
+            "value": "4.0"
+          },
+          {
+            "property": "turn_speed",
+            "value": "80"
+          }
+        ]
+      },
+      {
+        "previewId": "wasp_m1",
+        "price": 50,
+        "rank": 3,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "35"
+          },
+          {
+            "property": "speed",
+            "value": "4.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "90"
+          }
+        ]
+      },
+      {
+        "previewId": "wasp_m2",
+        "price": 150,
+        "rank": 5,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "45"
+          },
+          {
+            "property": "speed",
+            "value": "5.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "110"
+          }
+        ]
+      },
+      {
+        "previewId": "wasp_m3",
+        "price": 500,
+        "rank": 7,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "60"
+          },
+          {
+            "property": "speed",
+            "value": "7.0"
+          },
+          {
+            "property": "turn_speed",
+            "value": "140"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "wasp",
+    "description": "Легкий, экономичный, простой в эксплуатации - идеальный корпус начального уровня. После прокачки позволяет развивать довольно большую скорость, что в сочетании с небольшими габаритами даёт свободу действий на поле боя. Из-за небольшой массы подвержен переворотам от ударов мощного вражеского оружия.",
+    "isInventory": false,
+    "index": 30,
+    "type": 2,
+    "name": "Васп",
+    "next_price": 50,
+    "next_rank": 3,
+    "price": 0,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "hunter_m0",
+        "price": 10,
+        "rank": 3,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "45"
+          },
+          {
+            "property": "speed",
+            "value": "3.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "70"
+          }
+        ]
+      },
+      {
+        "previewId": "hunter_m1",
+        "price": 70,
+        "rank": 4,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "53"
+          },
+          {
+            "property": "speed",
+            "value": "3.84"
+          },
+          {
+            "property": "turn_speed",
+            "value": "77"
+          }
+        ]
+      },
+      {
+        "previewId": "hunter_m2",
+        "price": 210,
+        "rank": 6,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "68"
+          },
+          {
+            "property": "speed",
+            "value": "4.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "90"
+          }
+        ]
+      },
+      {
+        "previewId": "hunter_m3",
+        "price": 700,
+        "rank": 8,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "90"
+          },
+          {
+            "property": "speed",
+            "value": "5.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "110"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "hunter",
+    "description": "Этот корпус, обшитый бронёй из армированной стали является наиболее универсальным. Он хорошо подойдет как поклонникам активного, динамичного боя, так и игрокам, предпочитающим позиционный стиль игры. Вы никогда не останетесь без работы, будь то удержание высоты или жестокая битва за квартал разрушенного города.",
+    "isInventory": false,
+    "index": 31,
+    "type": 2,
+    "name": "Хантер",
+    "next_price": 70,
+    "next_rank": 4,
+    "price": 10,
+    "rank": 3,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "titan_m0",
+        "price": 20,
+        "rank": 4,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "60"
+          },
+          {
+            "property": "speed",
+            "value": "3.0"
+          },
+          {
+            "property": "turn_speed",
+            "value": "60"
+          }
+        ]
+      },
+      {
+        "previewId": "titan_m1",
+        "price": 100,
+        "rank": 5,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "70"
+          },
+          {
+            "property": "speed",
+            "value": "3.17"
+          },
+          {
+            "property": "turn_speed",
+            "value": "63"
+          }
+        ]
+      },
+      {
+        "previewId": "titan_m2",
+        "price": 300,
+        "rank": 7,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "90"
+          },
+          {
+            "property": "speed",
+            "value": "3.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "70"
+          }
+        ]
+      },
+      {
+        "previewId": "titan_m3",
+        "price": 900,
+        "rank": 9,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "120"
+          },
+          {
+            "property": "speed",
+            "value": "4.0"
+          },
+          {
+            "property": "turn_speed",
+            "value": "80"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "titan",
+    "description": "Броня из сверхпрочного титанового сплава вкупе с грамотно спроектированной геометрией позволяет данному корпусу отлично противостоять даже крупнокалиберным пушкам. Танк, оборудованный данным корпусом, может без раздумий отправляться в самое пекло. Следует отметить, что из-за низкой скорости этот корпус непригоден для быстрых атак в тыл врага.",
+    "isInventory": false,
+    "index": 32,
+    "type": 2,
+    "name": "Титан",
+    "next_price": 100,
+    "next_rank": 5,
+    "price": 20,
+    "rank": 4,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "dictator_m0",
+        "price": 150,
+        "rank": 8,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "60"
+          },
+          {
+            "property": "speed",
+            "value": "5.0"
+          },
+          {
+            "property": "turn_speed",
+            "value": "100"
+          }
+        ]
+      },
+      {
+        "previewId": "dictator_m1",
+        "price": 500,
+        "rank": 9,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "70"
+          },
+          {
+            "property": "speed",
+            "value": "5.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "110"
+          }
+        ]
+      },
+      {
+        "previewId": "dictator_m2",
+        "price": 1500,
+        "rank": 10,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "90"
+          },
+          {
+            "property": "speed",
+            "value": "6.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "130"
+          }
+        ]
+      },
+      {
+        "previewId": "dictator_m3",
+        "price": 5000,
+        "rank": 11,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "120"
+          },
+          {
+            "property": "speed",
+            "value": "8.0"
+          },
+          {
+            "property": "turn_speed",
+            "value": "160"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "dictator",
+    "description": "Благодаря усовершенствованной системе активной защиты и применению новейших композитных материалов данный корпус эффективно поглощает энергию взрыва снаряда любого калибра. Обладатель такого корпуса может смело вести товарищей в атаку, принимая основной удар на себя. Будучи одним из самых быстрых и защищённых, этот корпус имеет большие габариты, что делает его лёгкой мишенью для врага.",
+    "isInventory": false,
+    "index": 33,
+    "type": 2,
+    "name": "Диктатор",
+    "next_price": 500,
+    "next_rank": 9,
+    "price": 150,
+    "rank": 8,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "hornet_m0",
+        "price": 450,
+        "rank": 10,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "65"
+          },
+          {
+            "property": "speed",
+            "value": "7.0"
+          },
+          {
+            "property": "turn_speed",
+            "value": "140"
+          }
+        ]
+      },
+      {
+        "previewId": "hornet_m1",
+        "price": 1350,
+        "rank": 11,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "71"
+          },
+          {
+            "property": "speed",
+            "value": "7.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "150"
+          }
+        ]
+      },
+      {
+        "previewId": "hornet_m2",
+        "price": 4000,
+        "rank": 12,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "83"
+          },
+          {
+            "property": "speed",
+            "value": "8.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "170"
+          }
+        ]
+      },
+      {
+        "previewId": "hornet_m3",
+        "price": 12000,
+        "rank": 13,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "100"
+          },
+          {
+            "property": "speed",
+            "value": "10.0"
+          },
+          {
+            "property": "turn_speed",
+            "value": "200"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "hornet",
+    "description": "Корпус для тех, кто хотел бы получить скорость выше средней, при этом не забыв про броню. Немного тугой в поворотах, но очень устойчивый малыш. Хорошо смотрится почти с любой пушкой. Корпус используется при совершении молниеносных нападений, также им комплектуются танки десанта.В народе этот корпус зовётся «Хорьком».",
+    "isInventory": false,
+    "index": 34,
+    "type": 2,
+    "name": "Хорнет",
+    "next_price": 1350,
+    "next_rank": 11,
+    "price": 450,
+    "rank": 10,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "viking_m0",
+        "price": 600,
+        "rank": 11,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "100"
+          },
+          {
+            "property": "speed",
+            "value": "5.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "110"
+          }
+        ]
+      },
+      {
+        "previewId": "viking_m1",
+        "price": 1800,
+        "rank": 12,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "109"
+          },
+          {
+            "property": "speed",
+            "value": "5.84"
+          },
+          {
+            "property": "turn_speed",
+            "value": "117"
+          }
+        ]
+      },
+      {
+        "previewId": "viking_m2",
+        "price": 5400,
+        "rank": 13,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "125"
+          },
+          {
+            "property": "speed",
+            "value": "6.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "130"
+          }
+        ]
+      },
+      {
+        "previewId": "viking_m3",
+        "price": 16200,
+        "rank": 14,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "150"
+          },
+          {
+            "property": "speed",
+            "value": "7.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "150"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "viking",
+    "description": "Этот корпус воплощает в себе все самые современные наработки военной инженерии. Усиленная броня и гусеничная система второго поколения делают его великолепным универсалом. Корпус прекрасно подходит для решения любых боевых задач — от удержания высоты до лобовой атаки.",
+    "isInventory": false,
+    "index": 35,
+    "type": 2,
+    "name": "Викинг",
+    "next_price": 1800,
+    "next_rank": 12,
+    "price": 600,
+    "rank": 11,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "mamont_m0",
+        "price": 750,
+        "rank": 12,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "130"
+          },
+          {
+            "property": "speed",
+            "value": "4.0"
+          },
+          {
+            "property": "turn_speed",
+            "value": "80"
+          }
+        ]
+      },
+      {
+        "previewId": "mamont_m1",
+        "price": 2250,
+        "rank": 13,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "142"
+          },
+          {
+            "property": "speed",
+            "value": "4.17"
+          },
+          {
+            "property": "turn_speed",
+            "value": "83"
+          }
+        ]
+      },
+      {
+        "previewId": "mamont_m2",
+        "price": 6800,
+        "rank": 14,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "165"
+          },
+          {
+            "property": "speed",
+            "value": "4.5"
+          },
+          {
+            "property": "turn_speed",
+            "value": "90"
+          }
+        ]
+      },
+      {
+        "previewId": "mamont_m3",
+        "price": 20400,
+        "rank": 15,
+        "properts": [
+          {
+            "property": "armor",
+            "value": "200"
+          },
+          {
+            "property": "speed",
+            "value": "5.0"
+          },
+          {
+            "property": "turn_speed",
+            "value": "100"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "mamont",
+    "description": "Самоходная крепость на гусеничном ходу. Флагман среди танковых корпусов. Цельнолитой, тяжёлый, упрочнённый супербетоном, имеет низкую скорость, что не мешает ему с успехом противостоять одновременно нескольким вражеским орудиям.",
+    "isInventory": false,
+    "index": 36,
+    "type": 2,
+    "name": "Мамонт",
+    "next_price": 2250,
+    "next_rank": 13,
+    "price": 750,
+    "rank": 12,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "green_m0",
+        "price": 0,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "green",
+    "description": "Являясь скорее данью традициям классического танкостроения, этот незамысловатый цвет, так полюбившийся конструкторам всего мира, стал своеобразным стандартом для заводских моделей. К этому легендарному цвету часто возвращаются истинные ценители, перепробовав всё на свете.",
+    "isInventory": false,
+    "index": 50,
+    "type": 3,
+    "name": "Зелёный",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 0,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "holiday_m0",
+        "price": 0,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "holiday",
+    "description": "Это уникальное «умное» покрытие умеет изменять свой вид в зависимости от конкретного повода. В обычный день это чёрно-белая клетка, но с наступлением праздника разительно преображается.",
+    "isInventory": false,
+    "index": 51,
+    "type": 3,
+    "name": "Праздник",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 0,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "red_m0",
+        "price": 5,
+        "rank": 2,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "red",
+    "description": "Красный цвет — воплощение ярости и отваги, обладает также природной практичностью, позволяя деликатно скрывать пятна вражеской крови, неизбежно появляющиеся на корпусе, как бы вы ни аккуратничали.",
+    "isInventory": false,
+    "index": 52,
+    "type": 3,
+    "name": "Красный",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 5,
+    "rank": 2,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "blue_m0",
+        "price": 5,
+        "rank": 2,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "blue",
+    "description": "Эту расцветку оставили в официальном перечне, как память о провалившемся проекте разработки танка-амфибии «Сом». По задумке конструкторов, он должен был передвигаться по руслам неглубоких рек, и, благодаря синей расцветке, беспрепятственно проникать в глубокий вражеский тыл, оставаясь незамеченным.",
+    "isInventory": false,
+    "index": 53,
+    "type": 3,
+    "name": "Синий",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 5,
+    "rank": 2,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "black_m0",
+        "price": 10,
+        "rank": 3,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "black",
+    "description": "Данная расцветка стала негласным стандартом для диверсионных танковых дивизий, основной задачей которых является скрытное проникновение на территорию врага в темное время суток. В армейских кругах танки из таких элитных дивизий за глаза с завистью называют «чёрные пятна смерти».",
+    "isInventory": false,
+    "index": 54,
+    "type": 3,
+    "name": "Черный",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 10,
+    "rank": 3,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "white_m0",
+        "price": 10,
+        "rank": 3,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "white",
+    "description": "Специальная разработка для проведения наземных операций в странах с холодным климатом. В заснеженной местности такая расцветка способна значительно снизить вероятность обнаружения. Ради увеличения объёмов продаж производитель включил в комплект поставки теплый тулуп и валенки.",
+    "isInventory": false,
+    "index": 55,
+    "type": 3,
+    "name": "Белый",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 10,
+    "rank": 3,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "orange_m0",
+        "price": 50,
+        "rank": 4,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "orange",
+    "description": "Данную расцветку не планировалось включать в официальный перечень, так как она не представляла особой практической ценности, кроме, быть может, посредственной маскировки в пустынной местности. Но армейские мозгоправы доказали, что оранжевый цвет положительно влияет на психологическое здоровье «пушечного мяса».",
+    "isInventory": false,
+    "index": 56,
+    "type": 3,
+    "name": "Оранж",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 50,
+    "rank": 4,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "flora_m0",
+        "price": 50,
+        "rank": 4,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "flora",
+    "description": "Одна из двух расцветок, специально разработанных для наземных операций в средних климатических широтах. Судя по отчетам независимой организации «Верный камуфляж», такая комбинация жёлтых, зелёных и коричневых пятен снижает вероятность обнаружения танка в «родной стихии».",
+    "isInventory": false,
+    "index": 57,
+    "type": 3,
+    "name": "Флора",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 50,
+    "rank": 4,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "with_love_m0",
+        "price": 50,
+        "rank": 4,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "with_love",
+    "description": "Разработанная для натур утончённых и романтичных, эта расцветка способна не только утолить жажду к прекрасному «искушённого» армейской атрибутикой эстета, но также поможет выиграть пару секунд у ошарашенного врага, зачарованно смотрящего на феерию из красных сердечек в центре поля боя.",
+    "isInventory": false,
+    "index": 58,
+    "type": 3,
+    "name": "С Любовью",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 50,
+    "rank": 4,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "metallic_m0",
+        "price": 100,
+        "rank": 4,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "metallic",
+    "description": "Существует ошибочное мнение, что данной расцветкой пользуются в условиях дефицита лакокрасочных материалов. На самом деле — это специальное покрытие, особым образом отражающее свет. Бликовый шум, создаваемый таким покрытием, вносит помехи в работу некоторых систем наведения.",
+    "isInventory": false,
+    "index": 59,
+    "type": 3,
+    "name": "Металлик",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 100,
+    "rank": 4,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "forester_m0",
+        "price": 100,
+        "rank": 4,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "forester",
+    "description": "Одна из двух расцветок, специально разработанных для наземных операций в средних климатических широтах. По результатам исследования независимой организации «Верный камуфляж», такая комбинация светло- и тёмно-зелёных пятен снижает вероятность обнаружения танка в кустах.",
+    "isInventory": false,
+    "index": 60,
+    "type": 3,
+    "name": "Лесник",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 100,
+    "rank": 4,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "lava_m0",
+        "price": 100,
+        "rank": 4,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "lava",
+    "description": "Экспериментальный цвет, впервые опробованный во время локальных конфликтов в восточной Африке. По мнению армейских психологов, такая расцветка способна повергнуть в шок представителей некоторых радикальных религиозных организаций, вызвав у них панический страх перед инферно.",
+    "isInventory": false,
+    "index": 61,
+    "type": 3,
+    "name": "Лава",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 100,
+    "rank": 4,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "marine_m0",
+        "price": 200,
+        "rank": 5,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "marine",
+    "description": "Это покрытие прекрасно держится на танке даже после продолжительного контакта с солёной водой. Хитрые танкисты покрывают танк этой краской изнутри, после чего используют его как большую бочку для засаливания огурцов на зиму.",
+    "isInventory": false,
+    "index": 62,
+    "type": 3,
+    "name": "Морпех",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 200,
+    "rank": 5,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "savanna_m0",
+        "price": 200,
+        "rank": 5,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "savanna",
+    "description": "Этот камуфляж скроет вас среди пальм. Пляж тоже подойдёт, но, пожалуйста, не оставляйте гильзы от танковых снарядов на песке, это доставляет неудобства отдыхающим.",
+    "isInventory": false,
+    "index": 63,
+    "type": 3,
+    "name": "Саванна",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 200,
+    "rank": 5,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "urban_m0",
+        "price": 200,
+        "rank": 5,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "urban",
+    "description": "Лучшая краска для сражений в городе. Особенно хорошо работает в придорожных кустах, за что любима инспекцией танкового движения.",
+    "isInventory": false,
+    "index": 64,
+    "type": 3,
+    "name": "Урбан",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 200,
+    "rank": 5,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "barkhan_m0",
+        "price": 200,
+        "rank": 5,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "barkhan",
+    "description": "Это специальное покрытие с названием бархан поможет Вам прекрасно замаскироваться в песчаной и пустынной местности.",
+    "isInventory": false,
+    "index": 65,
+    "type": 3,
+    "name": "Бархан",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 200,
+    "rank": 5,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "dirt_m0",
+        "price": 500,
+        "rank": 6,
+        "properts": [
+          {
+            "property": "fire_resistance",
+            "value": "15"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "dirt",
+    "description": "Защита от пушек:\nОгнемёт - 15%\n\nЭта краска должна была быть третьей краской, специально разработанной для наземных операций в средних климатических широтах. По решению военных покрытие не было включено в стандартный военный пакет из-за нескольких несчастных случаев на испытаниях, связанных с попыткой отчистить это покрытие от нарисованной грязи.",
+    "isInventory": false,
+    "index": 66,
+    "type": 3,
+    "name": "Грязь",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 500,
+    "rank": 6,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "marsh_m0",
+        "price": 500,
+        "rank": 6,
+        "properts": [
+          {
+            "property": "plasma_resistance",
+            "value": "15"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "marsh",
+    "description": "Защита от пушек:\nТвинс - 15%\n\nСлучайно заснувший ведущий танкового батальона завёл своих товарищей в болото, где проводилась тайная операция по подготовке жаб-диверсантов, и около десяти тысяч экземпляров превратились в прототип этой окраски.",
+    "isInventory": false,
+    "index": 67,
+    "type": 3,
+    "name": "Грязь",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 500,
+    "rank": 6,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "carbon_m0",
+        "price": 500,
+        "rank": 6,
+        "properts": [
+          {
+            "property": "mech_resistance",
+            "value": "10"
+          }
+        ]
+      }
+    ],
+    "modificationID": 0,
+    "id": "carbon",
+    "description": "Защита от пушек:\nСмоки - 10%\n\nСочетание высоких технологий, углеродного волокна и особой краски повышенной стойкости. В комплект поставки входит тонировка на прицельные комплексы, но по закону она запрещена требованиями инспекции танкового движения",
+    "isInventory": false,
+    "index": 68,
+    "type": 3,
+    "name": "Грязь",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": 500,
+    "rank": 6,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "besthelper_m0",
+        "price": 1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "besthelper",
+    "description": "Эта краска была создана специально для самых активных, усердных и трудолюбивых помощников, для тех, кто посвятил весь год помощи танкистам и поддерживал порядок в сообществе Танков Онлайн. Обладатели этой краски — яркий пример самоотдачи и преданности, и они по-настоящему достойны титула «Лучший помощник года».",
+    "isInventory": false,
+    "index": 300,
+    "type": 3,
+    "name": "Лучший помощник",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "flow_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "flow",
+    "description": "Легендарное анимированное танковое покрытие — первое в своём роде.\nУльтракомпактные генераторы Тесла производят энергию, которая растекается по корпусу танка и покрывает его ритмично движущимся полем из нестабильных частиц. Завихрения этого поля создают гипнотизирующий узор.",
+    "isInventory": false,
+    "index": 301,
+    "type": 3,
+    "name": "Флоу",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "spectr_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "spectr",
+    "description": "Это покрытие разработано с учётом редчайших квантовых технологий, позволяющих переносить вероятностные эффекты в макромир. Первой мыслью создателей технологии было наконец провести реальный эксперимент с суперпозицией кота Шрёдингера, но сделать это им не позволили защитники животных. Поэтому результатом их работы стала эта краска. Несмотря на всю сложную математику и научные изыскания, она представляет собой всего лишь монотонное покрытие зелёного... нет, синего цве... нет, постойте, красного... да чтоб тебя, жёлтого! ААА! ФИОЛЕТОВОГО! Так, всё, хватит с меня, сами пишите это описание!",
+    "isInventory": false,
+    "index": 302,
+    "type": 3,
+    "name": "Спектр",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "drug_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "drug",
+    "description": "Наркотища",
+    "isInventory": false,
+    "index": 303,
+    "type": 3,
+    "name": "Наркотик",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "galaxy_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "galaxy",
+    "description": "Крутая краска",
+    "isInventory": false,
+    "index": 304,
+    "type": 3,
+    "name": "Галактика",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "garland_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "garland",
+    "description": "Крутая краска",
+    "isInventory": false,
+    "index": 305,
+    "type": 3,
+    "name": "Гирлянда",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "ginga_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "ginga",
+    "description": "Крутая краска",
+    "isInventory": false,
+    "index": 306,
+    "type": 3,
+    "name": "Джинга",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "heartbeat_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "heartbeat",
+    "description": "Крутая краска",
+    "isInventory": false,
+    "index": 307,
+    "type": 3,
+    "name": "Биение сердец",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "krio_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "krio",
+    "description": "Крутая краска",
+    "isInventory": false,
+    "index": 308,
+    "type": 3,
+    "name": "Крио",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "matrix_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "matrix",
+    "description": "Крутая краска",
+    "isInventory": false,
+    "index": 309,
+    "type": 3,
+    "name": "Матрица",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "newyear2020_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "newyear2020",
+    "description": "Крутая краска",
+    "isInventory": false,
+    "index": 310,
+    "type": 3,
+    "name": "Новый Год 2020",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "newyear2021_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "newyear2021",
+    "description": "Крутая краска",
+    "isInventory": false,
+    "index": 311,
+    "type": 3,
+    "name": "Новый Год 2021",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "nightcity_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "nightcity",
+    "description": "Крутая краска",
+    "isInventory": false,
+    "index": 312,
+    "type": 3,
+    "name": "Ночной город",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "rosequartz_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "rosequartz",
+    "description": "Крутая краска",
+    "isInventory": false,
+    "index": 313,
+    "type": 3,
+    "name": "Розовый кварц",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  },
+  {
+    "modification": [
+      {
+        "previewId": "thunderstorm_m0",
+        "price": -1,
+        "rank": 1,
+        "properts": []
+      }
+    ],
+    "modificationID": 0,
+    "id": "thunderstorm",
+    "description": "Крутая краска",
+    "isInventory": false,
+    "index": 314,
+    "type": 3,
+    "name": "Грозовой шторм",
+    "next_price": 0,
+    "next_rank": 0,
+    "price": -1,
+    "rank": 1,
+    "count": 0,
+    "discount": 0,
+    "multicounted": false
+  }
+]

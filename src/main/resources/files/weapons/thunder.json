@@ -1,0 +1,96 @@
+[
+		{
+			"modification" : "m0",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 21.0,
+			"max_damage" : 35.0,
+			
+			
+			"autoAimingAngleDown" : 0.209440,
+			"autoAimingAngleUp" : 0.157080,
+			"numRaysDown": 97,
+			"numRaysUp" : 73,
+
+			"reloadMsec" : 2200,
+			
+			"impactCoeff": 1.7,
+			"kickback": 1.3,
+			"turretRotationAccel": 0.8 ,
+			"turretRotationSpeed": 0.8,
+			
+			"maxSplashDamageRadius" : 40.0,
+			"minSplashDamageRadius" : 10.0,
+			"minSplashDamagePercent" : 25.0,
+			"impactForce" : 2.0
+		},
+		{
+			"modification" : "m1",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 22.0,
+			"max_damage" : 37.0,
+			
+			"autoAimingAngleDown" : 0.209440,
+			"autoAimingAngleUp" : 0.157080,
+			"numRaysDown": 97,
+			"numRaysUp" : 73,
+			"reloadMsec" : 2200,
+			
+			"impactCoeff": 1.7,
+			"kickback": 1.3,
+			"turretRotationAccel": 0.9 ,
+			"turretRotationSpeed": 0.9,
+			
+			"maxSplashDamageRadius" : 40.0,
+			"minSplashDamageRadius" : 10.0,
+			"minSplashDamagePercent" : 25.0,
+			"impactForce" : 2.0
+		},
+		{
+			"modification" : "m2",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 24.0,
+			"max_damage" : 41.0,
+			
+			"autoAimingAngleDown" : 0.209440,
+			"autoAimingAngleUp" : 0.157080,
+			"numRaysDown": 97,
+			"numRaysUp" : 73,
+			"reloadMsec" : 2200,
+			
+			"impactCoeff": 1.7,
+			"kickback": 1.3,
+			"turretRotationAccel": 1.15 ,
+			"turretRotationSpeed": 1.15,
+			
+			"maxSplashDamageRadius" : 40.0,
+			"minSplashDamageRadius" : 10.0,
+			"minSplashDamagePercent" : 25.0,
+			"impactForce" : 2.0
+		},
+		{
+			"modification" : "m3",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 26.0,
+			"max_damage" : 46.0,
+			
+			"autoAimingAngleDown" : 0.209440,
+			"autoAimingAngleUp" : 0.157080,
+			"numRaysDown": 97,
+			"numRaysUp" : 73,
+			"reloadMsec" : 2200,
+			
+			"impactCoeff": 1.7,
+			"kickback": 1.3,
+			"turretRotationAccel": 1.6 ,
+			"turretRotationSpeed": 1.6,
+			
+			"maxSplashDamageRadius" : 40.0,
+			"minSplashDamageRadius" : 10.0,
+			"minSplashDamagePercent" : 25.0,
+			"impactForce" : 2.0
+		}
+]

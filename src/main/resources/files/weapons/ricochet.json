@@ -1,0 +1,118 @@
+[
+		{
+			"modification" : "m0",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 12.0,
+			"max_damage" : 16.0,
+			
+			
+			"autoAimingAngleDown" : 0.444346,
+			"autoAimingAngleUp" : 0.291986,
+			"numRaysDown": 204,
+			"numRaysUp" : 134,
+			"reloadMsec" : 600,
+			
+			"max_damage_radius": 100.0,
+			"min_damage_radius": 60.0,
+			"min_damage_percent": 20.0,
+			
+			"impactCoeff": 1.0,
+			"kickback": 1.18,
+			"turretRotationAccel": 1.2416,
+			"turretRotationSpeed": 1.2416,
+			"shotRadius": 1.0,
+			"shotSpeed": 60.0,
+			"energyCapacity" : 1000,
+			"energyPerShot" : 126,
+			"energyRechargeSpeed" : 110.0,
+			"shotDistance" : 72.0
+		},
+		{
+			"modification" : "m1",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 14.0,
+			"max_damage" : 19.0,
+			
+			
+			"autoAimingAngleDown" : 0.444346,
+			"autoAimingAngleUp" : 0.291986,
+			"numRaysDown": 204,
+			"numRaysUp" : 134,
+			"reloadMsec" : 579,
+			
+			"max_damage_radius": 100.0,
+			"min_damage_radius": 60.0,
+			"min_damage_percent": 20.0,
+			
+			"impactCoeff": 1.0,
+			"kickback": 1.18,
+			"turretRotationAccel": 1.403,
+			"turretRotationSpeed": 1.403,
+			"shotRadius": 1.0,
+			"shotSpeed": 60.0,
+			"energyCapacity" : 1000,
+			"energyPerShot" : 126,
+			"energyRechargeSpeed" : 110.0,
+			"shotDistance" : 73.0
+		},
+		{
+			"modification" : "m2",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 17.0,
+			"max_damage" : 23.0,
+			
+				
+			"autoAimingAngleDown" : 0.444346,
+			"autoAimingAngleUp" : 0.291986,
+			"numRaysDown": 204,
+			"numRaysUp" : 134,
+			"reloadMsec" : 549,
+			
+			"max_damage_radius": 100.0,
+			"min_damage_radius": 60.0,
+			"min_damage_percent": 20.0,
+			
+			"impactCoeff": 3.0,
+			"kickback": 1.18,
+			"turretRotationAccel": 1.6416,
+			"turretRotationSpeed": 1.6416,
+			"shotRadius": 1.0,
+			"shotSpeed": 60.0,
+			"energyCapacity" : 1000,
+			"energyPerShot" : 126,
+			"energyRechargeSpeed" : 110.0,
+			"shotDistance" : 76.0
+		},
+		{
+			"modification" : "m3",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 21.0,
+			"max_damage" : 28.0,
+			
+			
+			"autoAimingAngleDown" : 0.444346,
+			"autoAimingAngleUp" : 0.291986,
+			"numRaysDown": 204,
+			"numRaysUp" : 134,
+			"reloadMsec" : 504,
+			
+			"max_damage_radius": 100.0,
+			"min_damage_radius": 60.0,
+			"min_damage_percent": 20.0,
+			
+			"impactCoeff": 1.6,
+			"kickback": 1.19,
+			"turretRotationAccel": 2.005,
+			"turretRotationSpeed": 2.005,
+			"shotRadius": 1.0,
+			"shotSpeed": 60.0,
+			"energyCapacity" : 2000,
+			"energyPerShot" : 228,
+			"energyRechargeSpeed" : 240.0,
+			"shotDistance" : 80.0
+		}
+]

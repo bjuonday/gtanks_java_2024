@@ -1,0 +1,108 @@
+[
+		{
+			"modification" : "m0",
+			"charingTime" : 10,
+			"weakeningCoeff" : 0.0,
+			"min_damage" : 12.0,
+			"max_damage" : 12.0,
+			
+			
+			"autoAimingAngleDown" : 0,
+			"autoAimingAngleUp" : 0,
+			"numRaysDown": 0,
+			"numRaysUp" : 0,
+			"reloadMsec" : 2000,
+			
+			"impactCoeff": 2.5,
+			"kickback": 0.0,
+			"turretRotationAccel": 1.26,
+			"turretRotationSpeed": 1.26,
+			
+			"target_detection_interval" : 1000,
+			"range" : 16.0,
+			"cone_angle" : 0.27564,
+			"heating_speed" : 200,
+			"cooling_speed" : 50,
+			"heat_limit" : 1000
+		},
+		{
+			"modification" : "m1",
+			"charingTime" : 0,
+			"weakeningCoeff" : 0.0,
+			"min_damage" : 14.0,
+			"max_damage" : 14.0,
+			
+			
+			"autoAimingAngleDown" : 0,
+			"autoAimingAngleUp" : 0,
+			"numRaysDown": 0,
+			"numRaysUp" : 0,
+			"reloadMsec" : 1786,
+			
+			"impactCoeff": 2.5,
+			"kickback": 0.0,
+			"turretRotationAccel": 1.546,
+			"turretRotationSpeed": 1.546,
+			
+			"target_detection_interval" : 1000,
+			"range" : 16.0,
+			"cone_angle" : 0.27564,
+			"heating_speed" : 200,
+			"cooling_speed" : 60,
+			"heat_limit" : 1000
+		},
+		{
+			"modification" : "m2",
+			"charingTime" : 0,
+			"weakeningCoeff" : 0.0,
+			"min_damage" : 18.0,
+			"max_damage" : 18.0,
+			
+			
+			"autoAimingAngleDown" : 0,
+			"autoAimingAngleUp" : 0,
+			"numRaysDown": 0,
+			"numRaysUp" : 0,
+			"reloadMsec" : 1250,
+			
+			"impactCoeff": 2.5,
+			"kickback": 0.0,
+			"turretRotationAccel": 2.03,
+			"turretRotationSpeed": 2.03,
+			
+			"target_detection_interval" : 1000,
+			"range" : 17.0,
+			"cone_angle" : 0.29237,
+			"heating_speed" : 200,
+			"cooling_speed" : 80,
+			"heat_limit" : 1000
+			
+		},
+		{
+			"modification" : "m3",
+			"charingTime" : 0,
+			"weakeningCoeff" : 0.0,
+			"min_damage" : 24.0,
+			"max_damage" : 24.0,
+			
+			
+			"autoAimingAngleDown" : 0,
+			"autoAimingAngleUp" : 0,
+			"numRaysDown": 0,
+			"numRaysUp" : 0,
+			"reloadMsec" : 1000,
+			
+			"impactCoeff": 2.5,
+			"kickback": 0.0,
+			"turretRotationAccel": 2.4,
+			"turretRotationSpeed": 2.4,
+			
+			"target_detection_interval" : 1000,
+			"range" : 18.0,
+			"cone_angle" : 0.30901,
+			"heating_speed" : 200,
+			"cooling_speed" : 100,
+			"heat_limit" : 1000
+
+		}
+]

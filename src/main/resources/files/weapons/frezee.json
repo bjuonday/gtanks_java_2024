@@ -1,0 +1,114 @@
+[
+		{
+			"modification" : "m0",
+			"charingTime" : 100,
+			"weakeningCoeff" : 0.0,
+			"min_damage" : 30.0,
+			"max_damage" : 30.0,
+			
+			
+			"autoAimingAngleDown" : 0,
+			"autoAimingAngleUp" : 0,
+			"numRaysDown": 0,
+			"numRaysUp" : 0,
+			"reloadMsec" : 1000,
+			
+			"impactCoeff": 2.5,
+			"kickback": 0.0,
+			"turretRotationAccel": 1.63,
+			"turretRotationSpeed": 1.63,
+			
+			"damageAreaConeAngle" : 0.27563,
+			"damageAreaRange" : 16.0,
+			"energyCapacity" : 700,
+			"energyDischargeSpeed" : 80,
+			"energyRechargeSpeed" : 32,
+			"weaponTickMsec" : 500,
+			"coolingSpeed" : 3.5
+		
+		
+		},
+		{
+			"modification" : "m1",
+			"charingTime" : 0,
+			"weakeningCoeff" : 0.0,
+			"min_damage" : 40.0,
+			"max_damage" : 40.0,
+			
+			
+			"autoAimingAngleDown" : 0,
+			"autoAimingAngleUp" : 0,
+			"numRaysDown": 0,
+			"numRaysUp" : 0,
+			"reloadMsec" : 1000,
+			
+			"impactCoeff": 2.5,
+			"kickback": 0.0,
+			"turretRotationAccel": 1.976,
+			"turretRotationSpeed": 1.976,
+			
+			"damageAreaConeAngle" : 0.29237,
+			"damageAreaRange" : 17.0,
+			"energyCapacity" : 700,
+			"energyDischargeSpeed" : 80,
+			"energyRechargeSpeed" : 38,
+			"weaponTickMsec" : 500,
+			"coolingSpeed" : 3.5
+		},
+		{
+			"modification" : "m2",
+			"charingTime" : 0,
+			"weakeningCoeff" : 0.0,
+			"min_damage" : 44.0,
+			"max_damage" : 44.0,
+			
+			
+			"autoAimingAngleDown" : 0,
+			"autoAimingAngleUp" : 0,
+			"numRaysDown": 0,
+			"numRaysUp" : 0,
+			"reloadMsec" : 1000,
+			
+			"impactCoeff": 2.5,
+			"kickback": 0.0,
+			"turretRotationAccel": 2.1683,
+			"turretRotationSpeed": 2.1683,
+			
+			"damageAreaConeAngle" : 0.30901,
+			"damageAreaRange" : 18.0,
+			"energyCapacity" : 700,
+			"energyDischargeSpeed" : 80,
+			"energyRechargeSpeed" : 58
+			,
+			"weaponTickMsec" : 500,
+			"coolingSpeed" : 3.5
+		
+		},
+		{
+			"modification" : "m3",
+			"charingTime" : 0,
+			"weakeningCoeff" : 0.0,
+			"min_damage" : 56.0,
+			"max_damage" : 56.0,
+			
+			
+			"autoAimingAngleDown" : 0,
+			"autoAimingAngleUp" : 0,
+			"numRaysDown": 0,
+			"numRaysUp" : 0,
+			"reloadMsec" : 1000,
+			
+			"impactCoeff": 2.5,
+			"kickback": 0.0,
+			"turretRotationAccel": 2.616,
+			"turretRotationSpeed": 2.616,
+			
+			"damageAreaConeAngle" : 0.32556,
+			"damageAreaRange" : 19.0,
+			"energyCapacity" : 700,
+			"energyDischargeSpeed" : 80,
+			"energyRechargeSpeed" : 65,
+			"weaponTickMsec" : 500,
+			"coolingSpeed" : 3.5
+		}
+]

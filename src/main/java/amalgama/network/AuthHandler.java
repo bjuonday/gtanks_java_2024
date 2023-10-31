@@ -58,8 +58,11 @@ public class AuthHandler extends Handler {
                 }
             }
 
-            LobbyManager.initPanel(net);
-            LobbyManager.updateRankProgress(net);
+            lobbyManager.initPanel();
+            lobbyManager.updateRankProgress();
+            lobbyManager.initEffectModel();
+            lobbyManager.initBattles();
+            lobbyManager.initChat();
         } catch (Exception e) {
             e.printStackTrace();
         }

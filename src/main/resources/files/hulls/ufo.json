@@ -1,0 +1,34 @@
+[
+		{
+			"modification" : "m0",
+			"mass" : 1000.0 ,
+			"power" : 70000.0 ,
+			"speed" : 7.0 ,
+			"turn_speed": 0.8,
+			"hp" : 150
+		},
+		{
+			"modification" : "m1",
+			"mass" : 1000.0 ,
+			"power" : 85000.0 ,
+			"speed" : 8.5 ,
+			"turn_speed": 0.9,
+			"hp" : 200
+		},
+		{
+			"modification" : "m2",
+			"mass" : 1000.0 ,
+			"power" : 95000.0 ,
+			"speed" : 9.5 ,
+			"turn_speed": 1.1,
+			"hp" : 400
+		},
+		{
+			"modification" : "m3",
+			"mass" : 1000.0 ,
+			"power" : 110000.0 ,
+			"speed" : 11.0 ,
+			"turn_speed": 1.4,
+			"hp" : 600
+		}
+]

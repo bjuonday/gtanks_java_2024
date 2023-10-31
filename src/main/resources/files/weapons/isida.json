@@ -1,0 +1,110 @@
+[
+		{
+			"modification" : "m0",
+			"min_damage" : 12.0,
+			"max_damage" : 14.0,
+			
+			
+			"autoAimingAngleDown" : 0,
+			"autoAimingAngleUp" : 0,
+			"numRaysDown": 0,
+			"numRaysUp" : 0,
+			"reloadMsec" : 2000,
+			
+			"impactCoeff": 2.5,
+			"kickback": 0.0,
+			"turretRotationAccel": 1.375,
+			"turretRotationSpeed": 1.375,
+			"capacity" : 100,
+			"chargeRate" : 5,
+			"dischargeRate" : 20,
+			"tickPeriod" : 500,
+			"lockAngle": 450.0,
+			"lockAngleCos" : 0.0,
+			"maxAngle" : 45.0,
+			"maxAngleCos" : 0.0,
+			"maxRadius" : 14.0
+			
+		},
+		{
+			"modification" : "m1",
+			"min_damage" : 14.0,
+			"max_damage" : 16.0,
+			
+			
+			"autoAimingAngleDown" : 0,
+			"autoAimingAngleUp" : 0,
+			"numRaysDown": 0,
+			"numRaysUp" : 0,
+			"reloadMsec" : 2000,
+			
+			"impactCoeff": 2.5,
+			"kickback": 0.0,
+			"turretRotationAccel": 1.48,
+			"turretRotationSpeed": 1.48,
+			"capacity" : 100,
+			"chargeRate" : 6,
+			"dischargeRate" : 20,
+			"tickPeriod" : 500,
+			"lockAngle": 450.0,
+			"lockAngleCos" : 0.0,
+			"maxAngle" : 45.0,
+			"maxAngleCos" : 0.0,
+			"maxRadius" : 15.0
+			
+		},
+		{
+			"modification" : "m2",
+			"min_damage" : 18.0,
+			"max_damage" : 20.0,
+			
+			
+			"autoAimingAngleDown" : 0,
+			"autoAimingAngleUp" : 0,
+			"numRaysDown": 0,
+			"numRaysUp" : 0,
+			"reloadMsec" : 1250,
+			
+			"impactCoeff": 2.5,
+			"kickback": 0.0,
+			"turretRotationAccel": 1.63,
+			"turretRotationSpeed": 1.63,
+			"capacity" : 100,
+			"chargeRate" : 8,
+			"dischargeRate" : 20,
+			"tickPeriod" : 500,
+			"lockAngle": 450.0,
+			"lockAngleCos" : 0.0,
+			"maxAngle" : 45.0,
+			"maxAngleCos" : 0.0,
+			"maxRadius" : 15.0
+			
+		},
+		{
+			"modification" : "m3",
+			"min_damage" : 24.0,
+			"max_damage" : 28.0,
+			
+			
+			"autoAimingAngleDown" : 0,
+			"autoAimingAngleUp" : 0,
+			"numRaysDown": 0,
+			"numRaysUp" : 0,
+			"reloadMsec" : 1000,
+			
+			"impactCoeff": 2.5,
+			"kickback": 0.0,
+			"turretRotationAccel": 1.823,
+			"turretRotationSpeed": 1.823,
+			"capacity" : 100,
+			"chargeRate" : 10,
+			"dischargeRate" : 20,
+			"tickPeriod" : 500,
+			"lockAngle": 450.0,
+			"lockAngleCos" : 0.0,
+			"maxAngle" : 45.0,
+			"maxAngleCos" : 0.0,
+			"maxRadius" : 15.0
+			
+		}
+]

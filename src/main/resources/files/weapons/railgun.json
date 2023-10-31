@@ -1,0 +1,75 @@
+[
+		{
+			"modification" : "m0",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 30.0,
+			"max_damage" : 42.0,
+			
+			
+			"autoAimingAngleDown" : 0.174533,
+			"autoAimingAngleUp" : 0.122173,
+			"numRaysDown": 81,
+			"numRaysUp" : 56,
+			"reloadMsec" : 7594,
+			
+			"impactCoeff": 2.5,
+			"kickback": 1.4,
+			"turretRotationAccel": 0.573,
+			"turretRotationSpeed": 0.573
+		},
+		{
+			"modification" : "m1",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 34.0,
+			"max_damage" : 51.0,
+			
+			"autoAimingAngleDown" : 0.174533,
+			"autoAimingAngleUp" : 0.122173,
+			"numRaysDown": 81,
+			"numRaysUp" : 56,
+			"reloadMsec" : 7228,
+			
+			"impactCoeff": 2.5,
+			"kickback": 1.7,
+			"turretRotationAccel": 0.926,
+			"turretRotationSpeed": 0.926
+		},
+		{
+			"modification" : "m2",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 42.0,
+			"max_damage" : 67.0,
+			
+			"autoAimingAngleDown" : 0.174533,
+			"autoAimingAngleUp" : 0.122173,
+			"numRaysDown": 81,
+			"numRaysUp" : 56,
+			"reloadMsec" : 7142,
+			
+			"impactCoeff": 2.5,
+			"kickback": 2.2,
+			"turretRotationAccel": 1.0783,
+			"turretRotationSpeed": 1.0783
+		},
+		{
+			"modification" : "m3",
+			"charingTime" : 1200,
+			"weakeningCoeff" : 0,
+			"min_damage" : 55.0,
+			"max_damage" : 82.0,
+			
+			"autoAimingAngleDown" : 0.174533,
+			"autoAimingAngleUp" : 0.122173,
+			"numRaysDown": 81,
+			"numRaysUp" : 56,
+			"reloadMsec" : 6896,
+			
+			"impactCoeff": 2.5,
+			"kickback": 2.4,
+			"turretRotationAccel": 1.336,
+			"turretRotationSpeed": 1.336
+		}
+]
