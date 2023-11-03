@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<battles>
+    <battle name="Название" map="map_sandbox" type="DM" max="8" min-rank="1" max-rank="6" max-score="20" time="0" auto-balance="false" ff="false" paid="false" no-bonus="false" />
+</battles>

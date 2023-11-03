@@ -16,7 +16,7 @@ public class SystemHandler extends Handler {
 
         try {
             if (command.args[1].equalsIgnoreCase("get_aes_data")) {
-                byte[] swf = FileUtils.GetFileBytes("src/main/resources/files/fixed.swf");
+                byte[] swf = FileUtils.GetFileBytes("files/fixed.swf");
                 String[] bytes = new String[swf.length];
                 for (int i = 0; i < bytes.length; i++)
                     bytes[i] = String.valueOf(swf[i]);

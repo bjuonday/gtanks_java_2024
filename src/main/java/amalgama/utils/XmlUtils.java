@@ -6,10 +6,16 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.io.StringReader;
+import java.nio.charset.Charset;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +25,7 @@ public class XmlUtils {
 
         try {
             DocumentBuilder builder = DocumentBuilderFactory.newDefaultInstance().newDocumentBuilder();
-            Document document = builder.parse(new File("src/main/resources/files/config/ranks.xml"));
+            Document document = builder.parse(Paths.get("files/config/ranks.xml").toFile());
 
             NodeList list_ranks = document.getElementsByTagName("rank");
 
@@ -43,8 +49,8 @@ public class XmlUtils {
         List<Battle> list = new ArrayList<>();
 
         try {
-            DocumentBuilder builder = DocumentBuilderFactory.newDefaultInstance().newDocumentBuilder();
-            Document document = builder.parse(new File("src/main/resources/files/config/startup_battles.xml"));
+            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            Document document = builder.parse(new InputSource(new StringReader(FileUtils.readFile("files/config/startup.xml"))));
 
             NodeList list_battles = document.getElementsByTagName("battle");
 

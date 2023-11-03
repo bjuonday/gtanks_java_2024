@@ -9,6 +9,7 @@ import amalgama.lobby.Battle;
 import amalgama.lobby.LobbyMessage;
 import amalgama.network.Network;
 import amalgama.network.Type;
+import amalgama.utils.FileUtils;
 import amalgama.utils.RandomUtils;
 import amalgama.utils.RankUtils;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -17,6 +18,8 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 
@@ -77,7 +80,7 @@ public class LobbyManager {
         InitBattlesModel battlesModel = new InitBattlesModel();
         battlesModel.haveSubscribe = false;
 
-        battlesModel.items = mapper.readValue(Paths.get("src/main/resources/files/battle_types.json").toFile(), BattleTypeModel[].class);
+        battlesModel.items = mapper.readValue(FileUtils.readFile("files/battles.json"), BattleTypeModel[].class);
 
         battlesModel.battles = new ArrayList<>();
 
@@ -104,7 +107,7 @@ public class LobbyManager {
 
         String str = mapper.writeValueAsString(battlesModel);
 
-        System.out.println(str.substring(100, 150));
+        System.out.println(str.substring(50, 150));
 
         net.send(Type.LOBBY, "init_battle_select", str);
     }
