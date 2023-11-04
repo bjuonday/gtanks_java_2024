@@ -1,5 +1,6 @@
 package amalgama;
 
+import amalgama.json.lobby.LobbyMessageModel;
 import amalgama.json.lobby.ShowBattleInfoModel;
 import amalgama.json.lobby.UserInBattleModel;
 import amalgama.lobby.Battle;
@@ -105,5 +106,55 @@ public class Global {
         ret.spectator = false;
 
         return ret;
+    }
+
+    public static LobbyMessageModel putLobbyMessage(String author, String text, int rank, boolean addressed, String targetName, int targetRank) {
+        LobbyMessage message = new LobbyMessage();
+        LobbyMessageModel model = new LobbyMessageModel();
+        message.name = author;
+        message.text = text;
+        message.rank = rank;
+        message.isSystem = false;
+        message.isYellow = false;
+        message.haveTarget = addressed;
+        if (message.haveTarget) {
+            message.targetName = targetName;
+            message.targetRank = targetRank;
+        }
+
+        model.addressed = message.haveTarget;
+        model.name = message.name;
+        model.message = message.text;
+        model.rang = message.rank;
+        model.yellow = message.isYellow;
+        model.system = message.isSystem;
+        model.nameTo = message.targetName;
+        model.rangTo = message.targetRank;
+        lobbyMessages.add(message);
+        return model;
+    }
+
+    public static LobbyMessageModel putLobbySystemMessage(String text, boolean yellow) {
+        LobbyMessage message = new LobbyMessage();
+        LobbyMessageModel model = new LobbyMessageModel();
+        message.name = "system";
+        message.text = text;
+        message.rank = 0;
+        message.isSystem = true;
+        message.isYellow = yellow;
+        message.haveTarget = false;
+        message.targetName = null;
+        message.targetRank = 0;
+
+        model.addressed = message.haveTarget;
+        model.name = message.name;
+        model.message = message.text;
+        model.rang = message.rank;
+        model.yellow = message.isYellow;
+        model.system = message.isSystem;
+        model.nameTo = message.targetName;
+        model.rangTo = message.targetRank;
+        lobbyMessages.add(message);
+        return model;
     }
 }

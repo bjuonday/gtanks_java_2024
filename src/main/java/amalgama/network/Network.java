@@ -3,8 +3,11 @@ package amalgama.network;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Network {
+    private static List<Network> instances = new ArrayList<>();
     public Client client;
     protected SocketChannel channel;
     protected boolean connected = true;
@@ -18,6 +21,7 @@ public abstract class Network {
         this.channel = this.client.getSocket().getChannel();
         try {
             this.channel.configureBlocking(true);
+            instances.add(this);
         } catch (IOException | NullPointerException e) {
             e.printStackTrace();
         }
@@ -42,6 +46,38 @@ public abstract class Network {
         sb.append(";");
         sb.append(String.join(";", args));
         write(sb.toString());
+    }
+
+    public void broadcast(String data) throws IOException {
+        for (Network n : instances) {
+            n.send(data);
+        }
+    }
+
+    public void broadcast(Type type, String... args) throws IOException {
+        for (Network n : instances) {
+            n.send(type, args);
+        }
+    }
+
+    public void broadcast_Lobby(String data) throws IOException {
+        for (Network n : instances) {
+            if (n.client.currentBattleId == null) {
+                n.send(data);
+            }
+        }
+    }
+
+    public void broadcast_Lobby(Type type, String... args) throws IOException {
+        for (Network n : instances) {
+            if (n.client.currentBattleId == null) {
+                n.send(type, args);
+            }
+        }
+    }
+
+    public int countOfInstances() {
+        return instances.size();
     }
 
     public void disconnect() throws IOException {

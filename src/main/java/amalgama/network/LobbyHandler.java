@@ -16,6 +16,9 @@ public class LobbyHandler extends Handler {
         if (!net.client.authorized)
             return;
 
+        if (command.args.length == 1)
+            return;
+
         try {
             if (command.args[1].equals("get_show_battle_info")) {
                 if (command.args.length < 3 || command.args[2].isEmpty())

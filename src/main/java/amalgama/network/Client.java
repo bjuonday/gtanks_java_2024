@@ -8,6 +8,7 @@ public class Client {
     private final Socket socket;
     public User userData = null;
     public boolean authorized = false;
+    public String currentBattleId = null;
 
     public Client(Socket socket) {
         this.socket = socket;
