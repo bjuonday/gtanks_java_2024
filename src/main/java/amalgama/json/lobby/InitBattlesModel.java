@@ -1,4 +1,4 @@
-package amalgama.json;
+package amalgama.json.lobby;
 
 import java.util.List;
 

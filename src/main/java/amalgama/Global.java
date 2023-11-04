@@ -1,6 +1,9 @@
 package amalgama;
 
+import amalgama.json.lobby.ShowBattleInfoModel;
+import amalgama.json.lobby.UserInBattleModel;
 import amalgama.lobby.Battle;
+import amalgama.lobby.BattleUser;
 import amalgama.lobby.LobbyMessage;
 import amalgama.models.RankModel;
 import amalgama.network.Client;
@@ -59,5 +62,48 @@ public class Global {
                 return;
             }
         }
+    }
+
+    public static ShowBattleInfoModel getShowBattleInfo(String battleId) {
+        if (!battles.containsKey(battleId))
+            return null;
+
+        ShowBattleInfoModel ret = new ShowBattleInfoModel();
+
+        ret.users_in_battle = new ArrayList<>();
+        for (BattleUser u : battles.get(battleId).users.values()) {
+            UserInBattleModel user = new UserInBattleModel();
+            user.nickname = u.nickname;
+            user.kills = u.kills;
+            user.rank = u.rank;
+            user.team_type = u.team;
+            user.isBot = false;
+            ret.users_in_battle.add(user);
+        }
+
+        Battle b = battles.get(battleId);
+
+        int currTime = (int) (System.currentTimeMillis() / 1000);
+        ret.battleId = b.id;
+        ret.name = b.name;
+        ret.type = b.type;
+        ret.previewId = b.previewId;
+        ret.maxPeople = b.maxPeople;
+        ret.minRank = b.minRank;
+        ret.maxRank = b.maxRank;
+        ret.timeLimit = (int)b.timeLength;
+        ret.timeCurrent = (((int)b.startTime + ret.timeLimit) - currTime);
+        ret.killsLimit = b.maxScore;
+        ret.scoreRed = b.redScore;
+        ret.scoreBlue = b.blueScore;
+        ret.autobalance = b.autoBalance;
+        ret.frielndyFie = b.ff;
+        ret.paidBattle = b.isPaid;
+        ret.withoutBonuses = b.noBonus;
+        ret.userAlreadyPaid = false;
+        ret.fullCash = false;
+        ret.spectator = false;
+
+        return ret;
     }
 }

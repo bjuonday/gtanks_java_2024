@@ -1,10 +1,10 @@
 package amalgama.network.managers;
 
 import amalgama.Global;
-import amalgama.json.BattleModel;
-import amalgama.json.BattleTypeModel;
-import amalgama.json.InitBattlesModel;
-import amalgama.json.InitPanelModel;
+import amalgama.json.lobby.BattleModel;
+import amalgama.json.lobby.BattleTypeModel;
+import amalgama.json.lobby.InitBattlesModel;
+import amalgama.json.lobby.InitPanelModel;
 import amalgama.lobby.Battle;
 import amalgama.lobby.LobbyMessage;
 import amalgama.network.Network;
@@ -18,9 +18,6 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.*;
 
 public class LobbyManager {
@@ -71,7 +68,7 @@ public class LobbyManager {
         net.send(Type.LOBBY, "init_effect_model", "{\"effects\":[]}");
     }
 
-    public void initBattles() throws IOException, ParseException {
+    public void initBattles() throws IOException {
         if (net.client.userData == null)
             return;
 
@@ -106,8 +103,6 @@ public class LobbyManager {
             battlesModel.recommendedBattle = RandomUtils.randomFromList(battlesModel.battles).battleId;
 
         String str = mapper.writeValueAsString(battlesModel);
-
-        System.out.println(str.substring(50, 150));
 
         net.send(Type.LOBBY, "init_battle_select", str);
     }

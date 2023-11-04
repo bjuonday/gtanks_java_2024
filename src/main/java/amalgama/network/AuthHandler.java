@@ -4,7 +4,6 @@ import amalgama.Global;
 import amalgama.database.User;
 import amalgama.database.dao.GroupDAO;
 import amalgama.database.dao.UserDAO;
-import amalgama.network.managers.LobbyManager;
 import amalgama.utils.CryptoHashUtils;
 
 
