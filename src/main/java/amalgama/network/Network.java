@@ -60,7 +60,7 @@ public abstract class Network {
         }
     }
 
-    public void broadcast_Lobby(String data) throws IOException {
+    public static void broadcast_Lobby(String data) throws IOException {
         for (Network n : instances) {
             if (n.client.currentBattleId == null) {
                 n.send(data);
@@ -68,7 +68,7 @@ public abstract class Network {
         }
     }
 
-    public void broadcast_Lobby(Type type, String... args) throws IOException {
+    public static void broadcast_Lobby(Type type, String... args) throws IOException {
         for (Network n : instances) {
             if (n.client.currentBattleId == null) {
                 n.send(type, args);
@@ -91,6 +91,13 @@ public abstract class Network {
         char[] array = data.toCharArray();
         for (int i = 0; i < array.length; i++)
             array[i] -= offset + KEY;
+        return new String(array);
+    }
+
+    protected String decrypt2(String data) {
+        char[] array = data.toCharArray();
+//        for (int i = 0; i < array.length; i++)
+//            array[i]++;
         return new String(array);
     }
 

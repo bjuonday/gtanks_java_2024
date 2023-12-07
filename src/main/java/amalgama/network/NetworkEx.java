@@ -46,7 +46,7 @@ public class NetworkEx extends Network implements Runnable {
                 if (!loaded)
                     readEvent(new Command(decrypt(in.substring(1), Character.getNumericValue(in.charAt(0)))));
                 else
-                    readEvent(new Command(in.toString()));
+                    readEvent(new Command(decrypt2(in.toString())));
             }
         } catch (Exception e) {
             ok = false;

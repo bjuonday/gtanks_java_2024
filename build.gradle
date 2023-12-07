@@ -36,6 +36,7 @@ sourceSets {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'io.netty:netty-all:5.0.0.Alpha2'
     implementation 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
     implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.15.2'
     implementation 'org.hibernate:hibernate-core:6.2.7.Final'

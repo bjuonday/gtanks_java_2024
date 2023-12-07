@@ -34,12 +34,12 @@ public class LobbyChatHandler extends Handler {
                     if (user != null) {
                         int targetRank = RankUtils.getRankFromScore(user.userData.getScore());
                         LobbyMessageModel model = Global.putLobbyMessage(author, text, rank, true, target, targetRank);
-                        net.broadcast_Lobby(Type.LOBBY_CHAT, mapper.writeValueAsString(model));
+                        Network.broadcast_Lobby(Type.LOBBY_CHAT, mapper.writeValueAsString(model));
                         return;
                     }
                 }
                 LobbyMessageModel model = Global.putLobbyMessage(author, text, rank, false, null, 0);
-                net.broadcast_Lobby(Type.LOBBY_CHAT, mapper.writeValueAsString(model));
+                Network.broadcast_Lobby(Type.LOBBY_CHAT, mapper.writeValueAsString(model));
             }
         } catch (Exception e) {
             e.printStackTrace();
