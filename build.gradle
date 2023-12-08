@@ -25,6 +25,10 @@ tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
 
+tasks.withType(GroovyCompile).configureEach {
+    groovyOptions.encoding = 'UTF-8'
+}
+
 sourceSets {
     main {
         resources {

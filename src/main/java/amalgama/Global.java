@@ -20,7 +20,7 @@ public class Global {
     public static Map<String, Battle> battles = new HashMap<>();
     public static List<LobbyMessage> lobbyMessages = new ArrayList<>();
 
-    public static void createBattle(String name, String adminRank, String type, String map, int time, boolean isPaid, int maxPeople, int maxRank, int minRank, int maxScore, boolean autoBalance, boolean ff, boolean noBonus) {
+    public static String createBattle(String name, String adminRank, String type, String map, int time, boolean isPaid, int maxPeople, int maxRank, int minRank, int maxScore, boolean autoBalance, boolean ff, boolean noBonus) {
         for (int i = 10000; i < 100000; i++) {
             String battleId = i + "@" + name + "@#" + adminRank;
             if (!battles.containsKey(battleId)) {
@@ -41,16 +41,17 @@ public class Global {
                 battle.previewId = map + "_preview";
                 battle.autoBalance = autoBalance;
                 battle.ff = ff;
-                battle.isTeam = !type.equals("DM");
+                battle.isTeam = !type.equalsIgnoreCase("dm");
                 battle.noBonus = noBonus;
                 battle.redPeople = 0;
                 battle.bluePeople = 0;
                 battle.fund = 0;
                 battles.put(battle.id, battle);
                 //battle.start();
-                return;
+                return battle.id;
             }
         }
+        return null;
     }
 
     public static void createBattle(Battle battle, String adminRank) {
