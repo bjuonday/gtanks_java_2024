@@ -1,14 +1,12 @@
 package amalgama.network.managers;
 
 import amalgama.Global;
-import amalgama.json.lobby.BattleModel;
-import amalgama.json.lobby.BattleTypeModel;
-import amalgama.json.lobby.InitBattlesModel;
-import amalgama.json.lobby.InitPanelModel;
+import amalgama.json.lobby.*;
 import amalgama.lobby.Battle;
 import amalgama.lobby.LobbyMessage;
 import amalgama.network.Network;
 import amalgama.network.Type;
+import amalgama.network.netty.TransferProtocol;
 import amalgama.utils.FileUtils;
 import amalgama.utils.RandomUtils;
 import amalgama.utils.RankUtils;
@@ -21,9 +19,9 @@ import java.io.IOException;
 import java.util.*;
 
 public class LobbyManager {
-    private Network net;
+    private TransferProtocol net;
 
-    public LobbyManager(Network net) {
+    public LobbyManager(TransferProtocol net) {
         this.net = net;
     }
 
@@ -111,23 +109,23 @@ public class LobbyManager {
         if (net.client.userData == null)
             return;
 
-        JSONObject json = new JSONObject();
-        JSONArray messages = new JSONArray();
+        InitChatModel initChatModel = new InitChatModel();
+        initChatModel.messages = new ArrayList<>();
         for (LobbyMessage message : Global.lobbyMessages) {
-            JSONObject msg = new JSONObject();
-            msg.put("name", message.name);
-            msg.put("message", message.text);
-            msg.put("rang", message.rank);
-            msg.put("system", message.isSystem);
-            msg.put("yellow", message.isYellow);
-            msg.put("addressed", message.haveTarget);
-            msg.put("nameTo", message.targetName);
-            msg.put("rangTo", message.targetRank);
-            messages.add(msg);
+            LobbyMessageModel msg = new LobbyMessageModel();
+            msg.name = message.name;
+            msg.message = message.text;
+            msg.rang = message.rank;
+            msg.system = message.isSystem;
+            msg.yellow = message.isYellow;
+            msg.addressed = message.haveTarget;
+            msg.nameTo = message.targetName;
+            msg.rangTo = message.targetRank;
+            initChatModel.messages.add(msg);
         }
-        json.put("messages", messages);
 
+        ObjectMapper mapper = new ObjectMapper();
         net.send(Type.LOBBY_CHAT, "init_chat");
-        net.send(Type.LOBBY_CHAT, "init_messages", json.toJSONString(), "[]");
+        net.send(Type.LOBBY_CHAT, "init_messages", mapper.writeValueAsString(initChatModel), "[]");
     }
 }

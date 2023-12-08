@@ -2,11 +2,12 @@ package amalgama.network;
 
 import amalgama.Global;
 import amalgama.json.lobby.ShowBattleInfoModel;
+import amalgama.network.netty.TransferProtocol;
 import org.codehaus.jackson.map.ObjectMapper;
 
 public class LobbyHandler extends Handler {
     private ObjectMapper mapper;
-    public LobbyHandler(Network network) {
+    public LobbyHandler(TransferProtocol network) {
         super(network);
         mapper = new ObjectMapper();
     }

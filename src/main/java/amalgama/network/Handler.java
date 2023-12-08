@@ -1,11 +1,12 @@
 package amalgama.network;
 
 import amalgama.network.managers.LobbyManager;
+import amalgama.network.netty.TransferProtocol;
 
 public abstract class Handler {
-    protected Network net = null;
+    protected TransferProtocol net;
     protected LobbyManager lobbyManager = null;
-    public Handler(Network network) {
+    public Handler(TransferProtocol network) {
         net = network;
         lobbyManager = new LobbyManager(net);
     }

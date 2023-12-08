@@ -3,7 +3,9 @@ package amalgama.network.netty;
 import org.jboss.netty.channel.*;
 
 public class ConnectionHandler extends SimpleChannelUpstreamHandler {
+    private static ConnectionHandler instance;
     private final ClientController controller = new ClientController();
+    private ConnectionHandler() { }
 
     @Override
     public void messageReceived(ChannelHandlerContext ctx, MessageEvent e) throws Exception {
@@ -32,5 +34,15 @@ public class ConnectionHandler extends SimpleChannelUpstreamHandler {
         Channel channel = ctx.getChannel();
         controller.disconnect(ctx);
         System.out.println("[Netty] Connection closed '" + channel.getRemoteAddress() + "' #" + channel.getId());
+    }
+
+    public static ConnectionHandler getInstance() {
+        if (instance == null)
+            instance = new ConnectionHandler();
+        return instance;
+    }
+
+    public ClientController getController() {
+        return controller;
     }
 }

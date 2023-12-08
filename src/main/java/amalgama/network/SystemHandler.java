@@ -1,11 +1,12 @@
 package amalgama.network;
 
+import amalgama.network.netty.TransferProtocol;
 import amalgama.utils.FileUtils;
 
 
 public class SystemHandler extends Handler {
 
-    public SystemHandler(Network network) {
+    public SystemHandler(TransferProtocol network) {
         super(network);
     }
 
@@ -22,7 +23,7 @@ public class SystemHandler extends Handler {
                     bytes[i] = String.valueOf(swf[i]);
                 String sendData = String.join(",", bytes);
                 net.send(Type.SYSTEM, "set_aes_data", sendData);
-                net.loaded = true;
+                net.client.encrypted = true;
             }
         } catch (Exception e) {
             e.printStackTrace();

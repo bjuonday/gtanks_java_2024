@@ -1,7 +1,9 @@
 package amalgama.network;
 
+import amalgama.network.netty.TransferProtocol;
+
 public class BattleHandler extends Handler {
-    public BattleHandler(Network network) {
+    public BattleHandler(TransferProtocol network) {
         super(network);
     }
 

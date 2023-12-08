@@ -1,7 +1,9 @@
 package amalgama.network;
 
+import amalgama.network.netty.TransferProtocol;
+
 public class ProfileHandler extends Handler {
-    public ProfileHandler(Network network) {
+    public ProfileHandler(TransferProtocol network) {
         super(network);
     }
 

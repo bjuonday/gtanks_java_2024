@@ -1,8 +1,7 @@
 package amalgama;
 
 import amalgama.database.Connector;
-import amalgama.network.Server;
-
+import amalgama.network.netty.NettyServer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -12,7 +11,7 @@ public class Main {
         ConfigLoader.loadRanks();
         ConfigLoader.loadStartup();
         Connector.checkConnection();
-        Server server = new Server();
+        NettyServer server = new NettyServer(5000);
         server.start();
     }
 }

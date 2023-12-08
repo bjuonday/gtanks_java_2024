@@ -1,5 +1,6 @@
 package amalgama.network;
 
+@Deprecated(forRemoval = true)
 public class NetworkEx extends Network implements Runnable {
     private boolean ok = true;
     private StringBuffer in;
@@ -9,24 +10,24 @@ public class NetworkEx extends Network implements Runnable {
     }
 
     public void readEvent(Command cmd) {
-        Handler handler;
-        System.out.println("Receive: " + cmd.args.length + ", " + cmd.src);
+        //Handler handler;
+        //System.out.println("Receive: " + cmd.args.length + ", " + cmd.src);
 
-        switch (cmd.type) {
-            case SYSTEM -> handler = new SystemHandler(this);
-            case AUTH, REGISTRATION -> handler = new AuthHandler(this);
-            case LOBBY -> handler = new LobbyHandler(this);
-            case GARAGE -> handler = new GarageHandler(this);
-            case LOBBY_CHAT -> handler = new LobbyChatHandler(this);
-            case BATTLE -> handler = new BattleHandler(this);
-            case PROFILE -> handler = new ProfileHandler(this);
-            default -> {
-                System.out.println("Unknown type: " + cmd.args[0]);
-                return;
-            }
-        }
+//        switch (cmd.type) {
+//            case SYSTEM -> handler = new SystemHandler(this);
+//            case AUTH, REGISTRATION -> handler = new AuthHandler(this);
+//            case LOBBY -> handler = new LobbyHandler(this);
+//            case GARAGE -> handler = new GarageHandler(this);
+//            case LOBBY_CHAT -> handler = new LobbyChatHandler(this);
+//            case BATTLE -> handler = new BattleHandler(this);
+//            case PROFILE -> handler = new ProfileHandler(this);
+//            default -> {
+//                System.out.println("Unknown type: " + cmd.args[0]);
+//                return;
+//            }
+//        }
 
-        handler.handle(cmd);
+        //handler.handle(cmd);
     }
 
     @Override

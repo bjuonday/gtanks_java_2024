@@ -3,11 +3,12 @@ package amalgama.network.netty;
 import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.channel.MessageEvent;
 
+import java.util.Collection;
 import java.util.HashMap;
 
 public class ClientController implements Runnable {
     private Thread t = new Thread(this);
-    private HashMap<ChannelHandlerContext, TransferProtocol> connections;
+    private final HashMap<ChannelHandlerContext, TransferProtocol> connections = new HashMap<>();
 
     public ClientController() {
         this.t.setName("thread_NettyController");
@@ -29,6 +30,10 @@ public class ClientController implements Runnable {
         if (connections.containsKey(ctx)) {
             connections.get(ctx).decrypt((String)e.getMessage());
         }
+    }
+
+    public Collection<TransferProtocol> getConnections() {
+        return connections.values();
     }
 
     @Override

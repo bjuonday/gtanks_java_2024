@@ -1,7 +1,9 @@
 package amalgama.network;
 
+import amalgama.network.netty.TransferProtocol;
+
 public class GarageHandler extends Handler {
-    public GarageHandler(Network network) {
+    public GarageHandler(TransferProtocol network) {
         super(network);
     }
 

@@ -2,12 +2,13 @@ package amalgama.network;
 
 import amalgama.Global;
 import amalgama.json.lobby.LobbyMessageModel;
+import amalgama.network.netty.TransferProtocol;
 import amalgama.utils.RankUtils;
 import org.codehaus.jackson.map.ObjectMapper;
 
 public class LobbyChatHandler extends Handler {
     ObjectMapper mapper;
-    public LobbyChatHandler(Network network) {
+    public LobbyChatHandler(TransferProtocol network) {
         super(network);
         mapper = new ObjectMapper();
     }
@@ -34,12 +35,12 @@ public class LobbyChatHandler extends Handler {
                     if (user != null) {
                         int targetRank = RankUtils.getRankFromScore(user.userData.getScore());
                         LobbyMessageModel model = Global.putLobbyMessage(author, text, rank, true, target, targetRank);
-                        Network.broadcast_Lobby(Type.LOBBY_CHAT, mapper.writeValueAsString(model));
+                        net.broadcast("lobby", Type.LOBBY_CHAT, mapper.writeValueAsString(model));
                         return;
                     }
                 }
                 LobbyMessageModel model = Global.putLobbyMessage(author, text, rank, false, null, 0);
-                Network.broadcast_Lobby(Type.LOBBY_CHAT, mapper.writeValueAsString(model));
+                net.broadcast("lobby", Type.LOBBY_CHAT, mapper.writeValueAsString(model));
             }
         } catch (Exception e) {
             e.printStackTrace();

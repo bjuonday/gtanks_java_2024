@@ -6,6 +6,7 @@ import java.nio.channels.SocketChannel;
 import java.util.ArrayList;
 import java.util.List;
 
+@Deprecated
 public abstract class Network {
     private static List<Network> instances = new ArrayList<>();
     public Client client;
@@ -17,8 +18,8 @@ public abstract class Network {
     protected int nBytes;
 
     public Network(Client client) {
-        this.client = client;
-        this.channel = this.client.getSocket().getChannel();
+        this.client = null;
+        this.channel = null;//this.client.getSocket().getChannel();
         try {
             this.channel.configureBlocking(true);
             instances.add(this);
@@ -28,7 +29,8 @@ public abstract class Network {
     }
 
     public String stringifySocket() {
-        return client.getSocket().getInetAddress().toString().substring(1) + ":" + this.client.getSocket().getPort();
+        //return client.getSocket().getInetAddress().toString().substring(1) + ":" + this.client.getSocket().getPort();
+        return "deprecated";
     }
 
     private void write(String data) throws IOException {

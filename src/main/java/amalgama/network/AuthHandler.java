@@ -4,12 +4,13 @@ import amalgama.Global;
 import amalgama.database.User;
 import amalgama.database.dao.GroupDAO;
 import amalgama.database.dao.UserDAO;
+import amalgama.network.netty.TransferProtocol;
 import amalgama.utils.CryptoHashUtils;
 
 
 public class AuthHandler extends Handler {
 
-    public AuthHandler(Network network) {
+    public AuthHandler(TransferProtocol network) {
         super(network);
     }
 

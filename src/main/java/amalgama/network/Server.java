@@ -5,6 +5,7 @@ import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.nio.channels.ServerSocketChannel;
 
+@Deprecated(forRemoval = true)
 public class Server extends Thread {
     private ServerSocketChannel channel;
     private static final int PORT = 5000;
@@ -36,9 +37,9 @@ public class Server extends Thread {
     }
 
     private void onClientConnected(Socket s) {
-        System.out.println("New connection.");
-        Thread t = new Thread(new NetworkEx(new Client(s)));
-        t.setName("Client_thread_" + s.getInetAddress());
-        t.start();
+//        System.out.println("New connection.");
+//        Thread t = new Thread(new NetworkEx(new Client(s)));
+//        t.setName("Client_thread_" + s.getInetAddress());
+//        t.start();
     }
 }
