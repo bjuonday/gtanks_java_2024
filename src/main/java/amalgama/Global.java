@@ -47,7 +47,7 @@ public class Global {
                 battle.bluePeople = 0;
                 battle.fund = 0;
                 battles.put(battle.id, battle);
-                //battle.start();
+                battle.start();
                 return battle.id;
             }
         }
@@ -88,7 +88,7 @@ public class Global {
         int currTime = (int) (System.currentTimeMillis() / 1000);
         ret.battleId = b.id;
         ret.name = b.name;
-        ret.type = b.type;
+        ret.type = b.type.toUpperCase();
         ret.previewId = b.previewId;
         ret.maxPeople = b.maxPeople;
         ret.minRank = b.minRank;

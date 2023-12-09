@@ -4,7 +4,11 @@ import amalgama.Global;
 import amalgama.json.lobby.CreateBattleModel;
 import amalgama.json.lobby.ShowBattleInfoModel;
 import amalgama.network.netty.TransferProtocol;
+import amalgama.network.secure.Grade;
+import amalgama.network.secure.Limits;
 import org.codehaus.jackson.map.ObjectMapper;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 import java.util.Arrays;
 
@@ -13,6 +17,14 @@ public class LobbyHandler extends Handler {
     public LobbyHandler(TransferProtocol network) {
         super(network);
         mapper = new ObjectMapper();
+    }
+
+    private boolean createBattleHook() {
+        if (!net.vrs.tryCreateBattle()) {
+            net.send(Type.LOBBY, "server_message", "Вы можете создавать не более " + Limits.MAX_BATTLES_IN_INTERVAL + " битв в течении " + Limits.BATTLES_INTERVAL / 60 + " минут.");
+            return false;
+        }
+        return true;
     }
 
     @Override
@@ -39,7 +51,8 @@ public class LobbyHandler extends Handler {
                 net.send(Type.LOBBY, "check_battle_name", nameForCheck);
             }
             else if (command.args[1].equals("try_create_battle_dm") && command.args.length == 12) {
-                System.out.println(Arrays.toString(command.args));
+                if (!createBattleHook())
+                    return;
                 CreateBattleModel createBattleModel = new CreateBattleModel();
                 createBattleModel.name = command.args[2];
                 createBattleModel.mapId = command.args[3];
@@ -55,6 +68,15 @@ public class LobbyHandler extends Handler {
                 createBattleModel.redPeople = 0;
                 createBattleModel.countPeople = 0;
                 createBattleModel.team = false;
+
+                if (createBattleModel.maxRank < createBattleModel.minRank ||
+                    createBattleModel.maxRank > 27 ||
+                    createBattleModel.minRank < 1 ||
+                    createBattleModel.maxPeople < 2 ||
+                    createBattleModel.name.trim().isEmpty()) {
+                    net.vrs.registerAct("custom_battle", Grade.DETRIMENTAL);
+                    return;
+                }
 
                 createBattleModel.battleId = Global.createBattle(
                         createBattleModel.name,
@@ -73,6 +95,84 @@ public class LobbyHandler extends Handler {
                 );
 
                 net.broadcast("lobby", Type.LOBBY, "create_battle", mapper.writeValueAsString(createBattleModel));
+            }
+            else if (command.args[1].equals("try_create_battle_tdm") && command.args.length == 3) {
+                if (!createBattleHook())
+                    return;
+                JSONParser parser = new JSONParser();
+                JSONObject rJson = (JSONObject) parser.parse(command.args[2]);
+                JSONObject sJson = new JSONObject();
+                sJson.put("mapId", (String) rJson.get("mapId"));
+                sJson.put("name", (String) rJson.get("gameName"));
+                sJson.put("team", true);
+                sJson.put("redPeople", 0);
+                sJson.put("bluePeople", 0);
+                sJson.put("countPeople", 0);
+                sJson.put("maxPeople", (Long) rJson.get("numPlayers"));
+                sJson.put("minRank", (Long) rJson.get("minRang"));
+                sJson.put("maxRank", (Long) rJson.get("maxRang"));
+                sJson.put("isPaid", (boolean) rJson.get("pay"));
+                boolean autoBalance = (boolean) rJson.get("autoBalance");
+                int kills = ((Long) rJson.get("numKills")).intValue();
+                boolean isPrivate = (boolean) rJson.get("privateBattle");
+                int time = ((Long) rJson.get("time")).intValue();
+                boolean inventory = (boolean) rJson.get("inventory");
+                boolean ff = (boolean) rJson.get("frielndyFire");
+                String id = Global.createBattle((String) sJson.get("name"), "user", "tdm", (String) sJson.get("mapId"), time, (boolean) sJson.get("isPaid"), ((Long) sJson.get("maxPeople")).intValue(), ((Long) sJson.get("maxRank")).intValue(), ((Long) sJson.get("minRank")).intValue(), kills, autoBalance, ff, !inventory);
+                sJson.put("battleId", id);
+                net.broadcast("lobby", Type.LOBBY, "create_battle", sJson.toJSONString());
+            }
+            else if (command.args[1].equals("try_create_battle_ctf") && command.args.length == 3) {
+                if (!createBattleHook())
+                    return;
+                JSONParser parser = new JSONParser();
+                JSONObject rJson = (JSONObject) parser.parse(command.args[2]);
+                JSONObject sJson = new JSONObject();
+                sJson.put("mapId", (String) rJson.get("mapId"));
+                sJson.put("name", (String) rJson.get("gameName"));
+                sJson.put("team", true);
+                sJson.put("redPeople", 0);
+                sJson.put("bluePeople", 0);
+                sJson.put("countPeople", 0);
+                sJson.put("maxPeople", (Long) rJson.get("numPlayers"));
+                sJson.put("minRank", (Long) rJson.get("minRang"));
+                sJson.put("maxRank", (Long) rJson.get("maxRang"));
+                sJson.put("isPaid", (boolean) rJson.get("pay"));
+                boolean autoBalance = (boolean) rJson.get("autoBalance");
+                int flags = ((Long) rJson.get("numFlags")).intValue();
+                boolean isPrivate = (boolean) rJson.get("privateBattle");
+                int time = ((Long) rJson.get("time")).intValue();
+                boolean inventory = (boolean) rJson.get("inventory");
+                boolean ff = (boolean) rJson.get("frielndyFire");
+                String id = Global.createBattle((String) sJson.get("name"), "user", "ctf", (String) sJson.get("mapId"), time, (boolean) sJson.get("isPaid"), ((Long) sJson.get("maxPeople")).intValue(), ((Long) sJson.get("maxRank")).intValue(), ((Long) sJson.get("minRank")).intValue(), flags, autoBalance, ff, !inventory);
+                sJson.put("battleId", id);
+                net.broadcast("lobby", Type.LOBBY, "create_battle", sJson.toJSONString());
+            }
+            else if (command.args[1].equals("try_create_battle_dom") && command.args.length == 3) {
+                if (!createBattleHook())
+                    return;
+                JSONParser parser = new JSONParser();
+                JSONObject rJson = (JSONObject) parser.parse(command.args[2]);
+                JSONObject sJson = new JSONObject();
+                sJson.put("mapId", (String) rJson.get("mapId"));
+                sJson.put("name", (String) rJson.get("gameName"));
+                sJson.put("team", true);
+                sJson.put("redPeople", 0);
+                sJson.put("bluePeople", 0);
+                sJson.put("countPeople", 0);
+                sJson.put("maxPeople", (Long) rJson.get("numPlayers"));
+                sJson.put("minRank", (Long) rJson.get("minRang"));
+                sJson.put("maxRank", (Long) rJson.get("maxRang"));
+                sJson.put("isPaid", (boolean) rJson.get("pay"));
+                boolean autoBalance = (boolean) rJson.get("autoBalance");
+                int score = ((Long) rJson.get("numPointsScore")).intValue();
+                boolean isPrivate = (boolean) rJson.get("privateBattle");
+                int time = ((Long) rJson.get("time")).intValue();
+                boolean inventory = (boolean) rJson.get("inventory");
+                boolean ff = (boolean) rJson.get("frielndyFire");
+                String id = Global.createBattle((String) sJson.get("name"), "user", "dom", (String) sJson.get("mapId"), time, (boolean) sJson.get("isPaid"), ((Long) sJson.get("maxPeople")).intValue(), ((Long) sJson.get("maxRank")).intValue(), ((Long) sJson.get("minRank")).intValue(), score, autoBalance, ff, !inventory);
+                sJson.put("battleId", id);
+                net.broadcast("lobby", Type.LOBBY, "create_battle", sJson.toJSONString());
             }
         } catch (Exception e) {
             e.printStackTrace();

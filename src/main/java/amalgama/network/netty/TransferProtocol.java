@@ -1,6 +1,7 @@
 package amalgama.network.netty;
 
 import amalgama.network.*;
+import amalgama.network.secure.ViolRegService;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelHandlerContext;
 
@@ -9,12 +10,14 @@ public class TransferProtocol {
     private final int KEY = 1;
     private ChannelHandlerContext context;
     private Channel channel;
+    public final ViolRegService vrs;
     public Client client;
 
     public TransferProtocol(ChannelHandlerContext ctx) {
         this.context = ctx;
         this.channel = ctx.getChannel();
         this.client = new Client();
+        this.vrs = new ViolRegService(this);
     }
 
     public void decrypt(String data) {
