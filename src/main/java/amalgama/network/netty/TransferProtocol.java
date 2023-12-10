@@ -1,5 +1,7 @@
 package amalgama.network.netty;
 
+import amalgama.Global;
+import amalgama.lobby.GarageManager;
 import amalgama.network.*;
 import amalgama.network.secure.ViolRegService;
 import org.jboss.netty.channel.Channel;
@@ -10,6 +12,13 @@ public class TransferProtocol {
     private final int KEY = 1;
     private ChannelHandlerContext context;
     private Channel channel;
+    private SystemHandler systemHandler;
+    private LobbyHandler lobbyHandler;
+    private GarageHandler garageHandler;
+    private AuthHandler authHandler;
+    private LobbyChatHandler lobbyChatHandler;
+    private BattleHandler battleHandler;
+    private ProfileHandler profileHandler;
     public final ViolRegService vrs;
     public Client client;
 
@@ -18,6 +27,13 @@ public class TransferProtocol {
         this.channel = ctx.getChannel();
         this.client = new Client();
         this.vrs = new ViolRegService(this);
+        this.systemHandler = new SystemHandler(this);
+        this.lobbyHandler = new LobbyHandler(this);
+        this.garageHandler = new GarageHandler(this);
+        this.authHandler = new AuthHandler(this);
+        this.lobbyChatHandler = new LobbyChatHandler(this);
+        this.battleHandler = new BattleHandler(this);
+        this.profileHandler = new ProfileHandler(this);
     }
 
     public void decrypt(String data) {
@@ -35,32 +51,31 @@ public class TransferProtocol {
     }
 
     private void submit(String data) {
-        Handler handler;
         Command cmd = new Command(data);
         System.out.println("[Netty] Receive: " + cmd.args.length + ", " + cmd.src);
+        if (cmd.args.length <= 1)
+            return;
 
         switch (cmd.type) {
-            case SYSTEM -> handler = new SystemHandler(this);
-            case AUTH, REGISTRATION -> handler = new AuthHandler(this);
-            case LOBBY -> handler = new LobbyHandler(this);
-            case GARAGE -> handler = new GarageHandler(this);
-            case LOBBY_CHAT -> handler = new LobbyChatHandler(this);
-            case BATTLE -> handler = new BattleHandler(this);
-            case PROFILE -> handler = new ProfileHandler(this);
+            case SYSTEM -> systemHandler.handle(cmd);
+            case AUTH, REGISTRATION -> authHandler.handle(cmd);
+            case LOBBY -> lobbyHandler.handle(cmd);
+            case GARAGE -> garageHandler.handle(cmd);
+            case LOBBY_CHAT -> lobbyChatHandler.handle(cmd);
+            case BATTLE -> battleHandler.handle(cmd);
+            case PROFILE -> profileHandler.handle(cmd);
             default -> {
                 System.out.println("[Netty] Unknown type: " + cmd.args[0]);
-                return;
             }
         }
-
-        handler.handle(cmd);
     }
 
     public void onDisconnect() {
-
+        Global.clients.remove(client.userData.getLogin());
     }
 
     public void close() {
+        onDisconnect();
         channel.close();
     }
 
@@ -72,7 +87,7 @@ public class TransferProtocol {
         write(sb.toString());
     }
 
-    public void broadcast(String id, Type type, String... args) {
+    public static void broadcast(String id, Type type, String... args) {
         var connections = ConnectionHandler.getInstance().getController().getConnections();
         if (id.equalsIgnoreCase("lobby")) {
             for (var connection : connections) {

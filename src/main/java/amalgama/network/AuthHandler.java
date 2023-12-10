@@ -2,8 +2,12 @@ package amalgama.network;
 
 import amalgama.Global;
 import amalgama.database.User;
+import amalgama.database.UserItem;
+import amalgama.database.UserMount;
 import amalgama.database.dao.GroupDAO;
 import amalgama.database.dao.UserDAO;
+import amalgama.database.dao.UserItemDAO;
+import amalgama.database.dao.UserMountDAO;
 import amalgama.network.netty.TransferProtocol;
 import amalgama.utils.CryptoHashUtils;
 
@@ -50,7 +54,32 @@ public class AuthHandler extends Handler {
                     user.setLogin(command.args[1]);
                     user.setPassword(CryptoHashUtils.hash(command.args[2], "MD5"));
                     user.setGroup(GroupDAO.getGroup(1L));
+
+                    UserItem startWeapon = new UserItem();
+                    UserItem startArmor = new UserItem();
+                    UserItem startColor = new UserItem();
+                    startWeapon.setCount(1);
+                    startArmor.setCount(1);
+                    startColor.setCount(1);
+                    startWeapon.setItemId("smoky_m0");
+                    startArmor.setItemId("wasp_m0");
+                    startColor.setItemId("green_m0");
+                    startWeapon.setUser(user);
+                    startArmor.setUser(user);
+                    startColor.setUser(user);
+
+                    UserMount mount = new UserMount();
+                    mount.setWeaponId(startWeapon.getItemId());
+                    mount.setArmorId(startArmor.getItemId());
+                    mount.setColorId(startColor.getItemId());
+                    mount.setUser(user);
+
                     UserDAO.addUser(user);
+                    UserItemDAO.addItem(startWeapon);
+                    UserItemDAO.addItem(startArmor);
+                    UserItemDAO.addItem(startColor);
+                    UserMountDAO.addMount(mount);
+
                     Global.clients.put(user.getLogin(), net.client);
                     net.client.authorized = true;
                     net.send(Type.REGISTRATION, "info_done");

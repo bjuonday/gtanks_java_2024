@@ -1,8 +1,11 @@
 package amalgama.network;
 
 import amalgama.Global;
+import amalgama.json.garage.GarageItemModel;
+import amalgama.json.garage.SendGarageModel;
 import amalgama.json.lobby.CreateBattleModel;
 import amalgama.json.lobby.ShowBattleInfoModel;
+import amalgama.lobby.GarageManager;
 import amalgama.network.netty.TransferProtocol;
 import amalgama.network.secure.Grade;
 import amalgama.network.secure.Limits;
@@ -30,9 +33,6 @@ public class LobbyHandler extends Handler {
     @Override
     public void handle(Command command) {
         if (!net.client.authorized)
-            return;
-
-        if (command.args.length == 1)
             return;
 
         try {
@@ -173,6 +173,13 @@ public class LobbyHandler extends Handler {
                 String id = Global.createBattle((String) sJson.get("name"), "user", "dom", (String) sJson.get("mapId"), time, (boolean) sJson.get("isPaid"), ((Long) sJson.get("maxPeople")).intValue(), ((Long) sJson.get("maxRank")).intValue(), ((Long) sJson.get("minRank")).intValue(), score, autoBalance, ff, !inventory);
                 sJson.put("battleId", id);
                 net.broadcast("lobby", Type.LOBBY, "create_battle", sJson.toJSONString());
+            }
+            else if (command.args[1].equals("get_garage_data")) {
+                SendGarageModel sendGarageModel = GarageManager.getGarage(net.client.userData);
+                String garage = mapper.writeValueAsString(sendGarageModel.garage);
+                String market = mapper.writeValueAsString(sendGarageModel.market);
+                net.send(Type.GARAGE, "init_garage_items", "{\"items\":" + garage + "}");
+                net.send(Type.GARAGE, "init_market", "{\"items\":" + market + "}");
             }
         } catch (Exception e) {
             e.printStackTrace();

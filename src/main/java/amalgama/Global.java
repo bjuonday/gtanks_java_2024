@@ -1,5 +1,6 @@
 package amalgama;
 
+import amalgama.json.garage.GarageItemModel;
 import amalgama.json.lobby.LobbyMessageModel;
 import amalgama.json.lobby.ShowBattleInfoModel;
 import amalgama.json.lobby.UserInBattleModel;
@@ -8,7 +9,10 @@ import amalgama.lobby.BattleUser;
 import amalgama.lobby.LobbyMessage;
 import amalgama.models.RankModel;
 import amalgama.network.Client;
+import org.codehaus.jackson.map.ObjectMapper;
 
+import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -19,6 +23,15 @@ public class Global {
     public static List<RankModel> ranks;
     public static Map<String, Battle> battles = new HashMap<>();
     public static List<LobbyMessage> lobbyMessages = new ArrayList<>();
+    public static GarageItemModel[] garageItems;
+
+    public static void init() {
+        try {
+            garageItems = new ObjectMapper().readValue(Paths.get("files\\all_items.json").toFile(), GarageItemModel[].class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public static String createBattle(String name, String adminRank, String type, String map, int time, boolean isPaid, int maxPeople, int maxRank, int minRank, int maxScore, boolean autoBalance, boolean ff, boolean noBonus) {
         for (int i = 10000; i < 100000; i++) {
