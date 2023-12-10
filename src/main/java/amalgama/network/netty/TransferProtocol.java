@@ -1,8 +1,8 @@
 package amalgama.network.netty;
 
 import amalgama.Global;
-import amalgama.lobby.GarageManager;
 import amalgama.network.*;
+import amalgama.network.secure.Grade;
 import amalgama.network.secure.ViolRegService;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelHandlerContext;
@@ -66,6 +66,7 @@ public class TransferProtocol {
             case PROFILE -> profileHandler.handle(cmd);
             default -> {
                 System.out.println("[Netty] Unknown type: " + cmd.args[0]);
+                vrs.registerAct("unknown_type", Grade.DETRIMENTAL);
             }
         }
     }

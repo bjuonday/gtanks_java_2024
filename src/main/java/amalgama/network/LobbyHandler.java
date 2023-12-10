@@ -1,19 +1,16 @@
 package amalgama.network;
 
 import amalgama.Global;
-import amalgama.json.garage.GarageItemModel;
 import amalgama.json.garage.SendGarageModel;
 import amalgama.json.lobby.CreateBattleModel;
 import amalgama.json.lobby.ShowBattleInfoModel;
-import amalgama.lobby.GarageManager;
+import amalgama.network.managers.GarageManager;
 import amalgama.network.netty.TransferProtocol;
 import amalgama.network.secure.Grade;
 import amalgama.network.secure.Limits;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-
-import java.util.Arrays;
 
 public class LobbyHandler extends Handler {
     private final ObjectMapper mapper;

@@ -1,19 +1,16 @@
 package amalgama.network.managers;
 
 import amalgama.Global;
+import amalgama.database.dao.UserDAO;
 import amalgama.json.lobby.*;
 import amalgama.lobby.Battle;
 import amalgama.lobby.LobbyMessage;
-import amalgama.network.Network;
 import amalgama.network.Type;
 import amalgama.network.netty.TransferProtocol;
 import amalgama.utils.FileUtils;
 import amalgama.utils.RandomUtils;
 import amalgama.utils.RankUtils;
 import org.codehaus.jackson.map.ObjectMapper;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
 import java.util.*;
@@ -127,5 +124,39 @@ public class LobbyManager {
         ObjectMapper mapper = new ObjectMapper();
         net.send(Type.LOBBY_CHAT, "init_chat");
         net.send(Type.LOBBY_CHAT, "init_messages", mapper.writeValueAsString(initChatModel), "[]");
+    }
+
+    public void parseCommand(String cmd) {
+        String[] args = cmd.trim().split(" ");
+
+        if (args[0].equalsIgnoreCase("addcry") && args.length == 2) {
+            if (args[1].isEmpty())
+                return;
+            try {
+                int value = Integer.parseInt(args[1]);
+                net.client.userData.setBalance(net.client.userData.getBalance() + value);
+                net.send(Type.LOBBY, "add_crystall", String.valueOf(net.client.userData.getBalance()));
+                UserDAO.updateUser(net.client.userData);
+            } catch (Exception ignored) {}
+        }
+        else if (args[0].equalsIgnoreCase("addscore") && args.length == 2) {
+            if (args[1].isEmpty())
+                return;
+            try {
+                int value = Integer.parseInt(args[1]);
+                int rank = RankUtils.getRankFromScore(net.client.userData.getScore());
+                net.client.userData.setScore(net.client.userData.getScore() + value);
+                int newRank = RankUtils.getRankFromScore(net.client.userData.getScore());
+                net.send(Type.LOBBY, "add_score", String.valueOf(net.client.userData.getScore()));
+
+                int prevNextScore = RankUtils.getScoreFromRank(newRank - 1);
+                int nextScore = RankUtils.getScoreFromRank(newRank);
+
+                if (newRank != rank)
+                    net.send(Type.LOBBY, "update_rang", String.valueOf(newRank), String.valueOf(nextScore));
+                net.send(Type.LOBBY, "update_rang_progress", String.valueOf(RankUtils.getRankProgress(net.client.userData.getScore(), nextScore, prevNextScore)));
+                UserDAO.updateUser(net.client.userData);
+            } catch (Exception ignored) {}
+        }
     }
 }

@@ -13,10 +13,7 @@ import org.codehaus.jackson.map.ObjectMapper;
 
 import java.io.IOException;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Global {
     public static Map<String, Client> clients = new HashMap<>();
@@ -73,7 +70,7 @@ public class Global {
             if (!battles.containsKey(battleId)) {
                 battle.id = battleId;
                 battles.put(battle.id, battle);
-                //battle.start();
+                battle.start();
                 return;
             }
         }

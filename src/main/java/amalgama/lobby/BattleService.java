@@ -14,7 +14,7 @@ public class BattleService implements Destroyable {
     public static final String QUARTZ_GROUP = BattleService.class.getName();
     public final String QUARTZ_NAME;
     public final String QUARTZ_RESTART_NAME;
-    private TankKillService killService = new TankKillService(this);
+    private TankKillService killService;
     private long endTimePoint;
     private HashMap<String, TransferProtocol> players = new HashMap<>();
     public final Battle battle;
@@ -25,6 +25,7 @@ public class BattleService implements Destroyable {
         this.battle = battle;
         QUARTZ_NAME = "BattleTimer/" + hashCode() + "/" + battle.id;
         QUARTZ_RESTART_NAME = "BattleRestarter/" + hashCode() + "/" + battle.id;
+        killService = new TankKillService(this);
         if (battle.timeLength > 0)
             startTimer(((Long) battle.timeLength).intValue());
     }

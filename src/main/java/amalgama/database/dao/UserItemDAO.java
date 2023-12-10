@@ -41,6 +41,20 @@ public class UserItemDAO {
         return ids;
     }
 
+    public static UserItem getUserItem(User user, String id) {
+        try (Session session = HibernateUtil.getFactory().openSession()) {
+            Query q = session.createQuery("from UserItem where itemId = ?1 AND user = ?2")
+                    .setParameter(1, id)
+                    .setParameter(2, user);
+            var list = q.list();
+            if (!list.isEmpty())
+                return (UserItem) list.get(0);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public static void addItem(UserItem item) {
         try (Session session = HibernateUtil.getFactory().openSession()) {
             session.beginTransaction();

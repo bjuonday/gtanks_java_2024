@@ -30,6 +30,11 @@ public class LobbyChatHandler extends Handler {
 
                 boolean addressed = !target.equalsIgnoreCase("NULL");
 
+                if (text.startsWith("/")) {
+                    lobbyManager.parseCommand(text.substring(1));
+                    return;
+                }
+
                 if (addressed) {
                     var user = Global.clients.get(target);
                     if (user != null) {

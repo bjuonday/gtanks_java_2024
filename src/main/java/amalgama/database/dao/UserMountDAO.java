@@ -1,13 +1,28 @@
 package amalgama.database.dao;
 
 import amalgama.database.HibernateUtil;
+import amalgama.database.User;
 import amalgama.database.UserMount;
 import org.hibernate.Session;
+import org.hibernate.query.Query;
 
 public class UserMountDAO {
     public static UserMount getMount(Long id) {
         try (Session session = HibernateUtil.getFactory().openSession()) {
             return session.get(UserMount.class, id);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static UserMount getMount(User user) {
+        try (Session session = HibernateUtil.getFactory().openSession()) {
+            Query q = session.createQuery("from UserMount where user = ?1")
+                    .setParameter(1, user);
+            var list = q.list();
+            if (!list.isEmpty())
+                return (UserMount) list.get(0);
         } catch (Exception e) {
             e.printStackTrace();
         }
