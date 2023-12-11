@@ -17,9 +17,18 @@ import java.util.*;
 
 public class LobbyManager {
     private TransferProtocol net;
+    private static BattleTypeModel[] battleTypeModel;
 
     public LobbyManager(TransferProtocol net) {
         this.net = net;
+    }
+
+    static {
+        try {
+            battleTypeModel = new ObjectMapper().readValue(FileUtils.readFile("files/battles.json"), BattleTypeModel[].class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void initPanel() throws IOException {
@@ -72,7 +81,7 @@ public class LobbyManager {
         InitBattlesModel battlesModel = new InitBattlesModel();
         battlesModel.haveSubscribe = false;
 
-        battlesModel.items = mapper.readValue(FileUtils.readFile("files/battles.json"), BattleTypeModel[].class);
+        battlesModel.items = battleTypeModel;//mapper.readValue(FileUtils.readFile("files/battles.json"), BattleTypeModel[].class);
 
         battlesModel.battles = new ArrayList<>();
 

@@ -13,5 +13,6 @@ public class ConfigLoader {
         for (Battle battle : XmlUtils.getBattles())
             Global.createBattle(battle, "user");
         Global.init();
+        MapLoader.loadMaps();
     }
 }

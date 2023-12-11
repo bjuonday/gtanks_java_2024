@@ -4,10 +4,12 @@ import amalgama.Global;
 import amalgama.json.garage.SendGarageModel;
 import amalgama.json.lobby.CreateBattleModel;
 import amalgama.json.lobby.ShowBattleInfoModel;
+import amalgama.lobby.Battle;
 import amalgama.network.managers.GarageManager;
 import amalgama.network.netty.TransferProtocol;
 import amalgama.network.secure.Grade;
 import amalgama.network.secure.Limits;
+import amalgama.utils.RankUtils;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -177,6 +179,30 @@ public class LobbyHandler extends Handler {
                 String market = mapper.writeValueAsString(sendGarageModel.market);
                 net.send(Type.GARAGE, "init_garage_items", "{\"items\":" + garage + "}");
                 net.send(Type.GARAGE, "init_market", "{\"items\":" + market + "}");
+            }
+            else if (command.args[1].equals("get_data_init_battle_select")) {
+                lobbyManager.initBattles();
+            }
+            else if (command.args[1].equals("show_profile")) {
+                JSONObject json = new JSONObject();
+                json.put("emailNotice", false);
+                json.put("isComfirmEmail", false);
+                net.send(Type.LOBBY, "show_profile", json.toJSONString());
+            }
+            else if (command.args[1].equals("enter_battle") && command.args.length > 2) {
+                String battleId = command.args[2];
+                Battle battle = Global.battles.get(battleId);
+                if (battle == null) {
+                    net.vrs.registerAct("attempt_enter_unknown_battle", Grade.DETRIMENTAL);
+                    return;
+                }
+                int rank = RankUtils.getRankFromScore(net.client.userData.getScore());
+                if (battle.minRank > rank || rank > battle.maxRank || battle.users.size() >= battle.maxPeople) {
+                    net.vrs.registerAct("attempt_enter_unavailable_battle", Grade.SUSPICIOUS);
+                    return;
+                }
+                if (net.client.currentBattleId != null) return;
+                battle.service.addPlayer(net, "NONE");
             }
         } catch (Exception e) {
             e.printStackTrace();

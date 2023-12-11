@@ -17,7 +17,7 @@ public class ConnectionHandler extends SimpleChannelUpstreamHandler {
         Channel channel = ctx.getChannel();
         if (channel.isOpen())
             channel.close();
-        System.out.println("[Netty] Exception: " + e.getCause().getMessage());
+        System.out.println("[Netty] Exception: " + e.getCause().toString());
     }
 
     @Override

@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.ArrayList;
 
 public class Battle {
-    private BattleService service;
+    public BattleService service;
     public Map<String, BattleUser> users = new HashMap<>();
     public List<MineModel> mines = new ArrayList<>();
     public String id;

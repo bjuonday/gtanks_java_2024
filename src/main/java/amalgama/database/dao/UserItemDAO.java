@@ -55,6 +55,22 @@ public class UserItemDAO {
         return null;
     }
 
+    public static List<UserItem> getUserDrugs(User user) {
+        try (Session session = HibernateUtil.getFactory().openSession()) {
+            Query q = session.createQuery("from UserItem where user = ?1 AND (itemId = ?2 OR itemId = ?3 OR itemId = ?4 OR itemId = ?5 OR itemId = ?6)")
+                    .setParameter(1, user)
+                    .setParameter(2, "n2o_m0")
+                    .setParameter(3, "armor_m0")
+                    .setParameter(4, "double_damage_m0")
+                    .setParameter(5, "health_m0")
+                    .setParameter(6, "mine_m0");
+            return (List<UserItem>) q.list();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public static void addItem(UserItem item) {
         try (Session session = HibernateUtil.getFactory().openSession()) {
             session.beginTransaction();
