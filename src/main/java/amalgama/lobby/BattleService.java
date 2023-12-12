@@ -4,6 +4,7 @@ import amalgama.Global;
 import amalgama.MapLoader;
 import amalgama.battle.BattlePlayerController;
 import amalgama.battle.Bonus;
+import amalgama.battle.SpawnState;
 import amalgama.battle.TankKillService;
 import amalgama.database.UserItem;
 import amalgama.database.UserMount;
@@ -15,6 +16,7 @@ import amalgama.models.SpawnPositionModel;
 import amalgama.models.TurretModificationModel;
 import amalgama.network.Type;
 import amalgama.network.netty.TransferProtocol;
+import amalgama.network.secure.Grade;
 import amalgama.system.quartz.IQuartzService;
 import amalgama.system.quartz.QuartzService;
 import amalgama.system.quartz.TimeUnit;
@@ -25,12 +27,11 @@ import amalgama.xml.map.MapModel;
 import amalgama.xml.map.Vector3d;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 import javax.security.auth.Destroyable;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Random;
+import java.util.*;
 
 public class BattleService implements Destroyable {
     public static final String QUARTZ_GROUP = BattleService.class.getName();
@@ -80,10 +81,8 @@ public class BattleService implements Destroyable {
     }
 
     //todo remove user
-    //todo move
     //todo spawn bonus
     //todo take bonus
-    //todo fire
 
     @Override
     public void destroy() {
@@ -92,6 +91,10 @@ public class BattleService implements Destroyable {
     }
 
     public void activateTank(TransferProtocol net) {
+        BattlePlayerController ply = players.get(net.client.userData.getLogin());
+        if (ply == null)
+            return;
+        ply.tank.spawnState = SpawnState.STATE_ACTIVE;
         broadcast(Type.BATTLE, "activate_tank", net.client.userData.getLogin());
     }
 
@@ -124,7 +127,7 @@ public class BattleService implements Destroyable {
             startTimer();
     }
 
-    private void respawn(BattlePlayerController ply) {
+    public void respawn(BattlePlayerController ply) {
         TankRespawner.start(ply, false);
     }
 
@@ -143,7 +146,7 @@ public class BattleService implements Destroyable {
         user.battleScore = 0;
     }
 
-    public synchronized void addPlayer(TransferProtocol net, String team) {
+    public void addPlayer(TransferProtocol net, String team) {
         BattleUser battleUser = new BattleUser();
         battleUser.nickname = net.client.userData.getLogin();
         battleUser.battleScore = 0;
@@ -193,7 +196,7 @@ public class BattleService implements Destroyable {
         TransferProtocol.broadcast("lobby", Type.LOBBY, "add_player_to_battle", o.toJSONString());
     }
 
-    public synchronized void initTank(TransferProtocol net) throws CloneNotSupportedException {
+    public void initTank(TransferProtocol net) throws CloneNotSupportedException {
         List<UserItem> userItemList = UserItemDAO.getUserDrugs(net.client.userData);
         String gui = makeGuiModel();
         String inventoryJson = makeGuiInventory(userItemList);
@@ -260,7 +263,7 @@ public class BattleService implements Destroyable {
         return point;
     }
 
-    private String makeStatisticJson(TransferProtocol net) {
+    public String makeStatisticJson(TransferProtocol net) {
         BattleUser user = battle.users.get(net.client.userData.getLogin());
         assert user != null : "user not found";
 
@@ -340,6 +343,7 @@ public class BattleService implements Destroyable {
             spawn.turret_rotation_speed = turretModel.turretRotationSpeed;
             BattlePlayerController ply = players.get(user.nickname);
             ply.lastSpawnModel = spawn;
+            ply.setupTank(spawn.tank_id, turretModel, hullModel, mount);
         }
         return json.toJSONString();
     }
@@ -424,5 +428,69 @@ public class BattleService implements Destroyable {
         }
         json.put("items", items);
         return json.toJSONString();
+    }
+
+    public void move(TransferProtocol net, List<Double> params, int ctrlBits, double aDouble) {
+        if (params.size() != 12){
+            net.vrs.registerAct("invalid_move", Grade.DETRIMENTAL);
+            return;
+        }
+
+        JSONObject json = new JSONObject();
+        JSONObject orient = new JSONObject();
+        orient.put("x", params.get(3));
+        orient.put("y", params.get(4));
+        orient.put("z", params.get(5));
+        JSONObject position = new JSONObject();
+        position.put("x", params.get(0));
+        position.put("y", params.get(1));
+        position.put("z", params.get(2));
+        JSONObject line = new JSONObject();
+        line.put("x", params.get(6));
+        line.put("y", params.get(7));
+        line.put("z", params.get(8));
+        JSONObject angle = new JSONObject();
+        angle.put("x", params.get(9));
+        angle.put("y", params.get(10));
+        angle.put("z", params.get(11));
+
+        json.put("position", position);
+        json.put("orient", orient);
+        json.put("line", line);
+        json.put("angle", angle);
+        json.put("turretDir", aDouble);
+        json.put("ctrlBits", ctrlBits);
+        json.put("tank_id", net.client.userData.getLogin());
+
+        broadcast(Type.BATTLE, "move", json.toJSONString());
+    }
+
+    public void fire(TransferProtocol net, String fireJson) throws ParseException {
+        BattlePlayerController ply = players.get(net.client.userData.getLogin());
+        if (ply == null || ply.tank == null || ply.tank.weapon == null)
+            return;
+
+        JSONObject fireData = (JSONObject) new JSONParser().parse(fireJson);
+        broadcast(Type.BATTLE, "fire", ply.tank.nickname, fireJson);
+
+        String targetId = (String) fireData.get("victimId");
+        if (targetId == null || targetId.equalsIgnoreCase("null"))
+            return;
+        if (!players.containsKey(targetId))
+            return;
+
+        BattlePlayerController target = players.get(targetId);
+        if (ply.tank.spawnState != SpawnState.STATE_ACTIVE) {
+            net.vrs.registerAct("shooting_inactive_state", Grade.DANGEROUS);
+            return;
+        }
+        if (target.tank.spawnState != SpawnState.STATE_ACTIVE)
+            return;
+
+        killService.hitTank(ply, target);
+    }
+
+    public void updateFund() {
+        broadcast(Type.BATTLE, "change_fund", String.valueOf(battle.fund));
     }
 }

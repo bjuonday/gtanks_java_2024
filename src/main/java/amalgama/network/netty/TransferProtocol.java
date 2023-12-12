@@ -52,7 +52,7 @@ public class TransferProtocol {
 
     private void submit(String data) {
         Command cmd = new Command(data);
-        System.out.println("[Netty] Receive: " + cmd.args.length + ", " + cmd.src);
+        //System.out.println("[Netty] Receive: " + cmd.args.length + ", " + cmd.src);
         if (cmd.args.length <= 1)
             return;
 

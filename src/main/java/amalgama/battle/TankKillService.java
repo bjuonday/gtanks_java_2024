@@ -1,10 +1,13 @@
 package amalgama.battle;
 
 import amalgama.lobby.BattleService;
+import amalgama.lobby.BattleUser;
 import amalgama.network.Type;
+import amalgama.network.managers.LobbyManager;
 import amalgama.system.quartz.IQuartzService;
 import amalgama.system.quartz.QuartzService;
 import amalgama.system.quartz.TimeUnit;
+import amalgama.utils.RankUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
@@ -37,6 +40,7 @@ public class TankKillService implements Destroyable {
         JSONObject json = new JSONObject();
         JSONArray users = new JSONArray();
         for (var ply : bfService.battle.users.values()) {
+            int prize = ply.battleScore / 10;
             JSONObject user = new JSONObject();
             user.put("id", ply.nickname);
             user.put("team_type", ply.team);
@@ -44,7 +48,8 @@ public class TankKillService implements Destroyable {
             user.put("kills", ply.kills);
             user.put("deaths", ply.deaths);
             user.put("score", ply.battleScore);
-            user.put("prize", (int) (ply.battleScore / 10));
+            user.put("prize", prize);
+            LobbyManager.addCry(bfService.players.get(ply.nickname).net, prize);
             users.add(user);
         }
         json.put("users", users);
@@ -52,18 +57,59 @@ public class TankKillService implements Destroyable {
         bfService.broadcast(Type.BATTLE, "battle_finish", json.toJSONString());
     }
 
-    //todo synch kill tank
-    //todo change hp
-    //todo heal hp
-    //todo synch damage tank
-
-
     @Override
-    public void destroy() throws DestroyFailedException {
+    public void destroy() {
         quartzService.deleteJob(this.QUARTZ_NAME, QUARTZ_GROUP);
     }
 
     public void changeHealth(BattlePlayerController ply, int hp) {
+        ply.tank.health = hp;
         bfService.broadcast(Type.BATTLE, "change_health", ply.net.client.userData.getLogin(), String.valueOf(hp));
+    }
+
+    private synchronized void killTank(BattlePlayerController ply, BattlePlayerController killer) {
+        BattleUser uTarget = bfService.battle.users.get(ply.tank.nickname);
+        assert uTarget != null : "target not found in battle";
+
+        if (ply == killer) {
+            uTarget.deaths++;
+            uTarget.battleScore -= 10;
+            bfService.broadcast(Type.BATTLE, "kill_tank", uTarget.nickname, "suicide", uTarget.nickname);
+            ply.updateStats();
+            bfService.respawn(ply);
+        }
+        else {
+            BattleUser uAttacker = bfService.battle.users.get(killer.tank.nickname);
+            assert uAttacker != null : "attacker not found in battle";
+
+            uAttacker.kills++;
+            uAttacker.battleScore += 10;
+            uAttacker.rank = RankUtils.getRankFromScore(ply.net.client.userData.getScore());
+            uTarget.deaths++;
+            ply.updateStats();
+            killer.updateStats();
+            bfService.battle.fund++;
+            bfService.updateFund();
+            bfService.broadcast(Type.BATTLE, "kill_tank", uTarget.nickname, "killed", uAttacker.nickname);
+            ply.tank.spawnState = SpawnState.STATE_DEAD;
+            bfService.respawn(ply);
+            LobbyManager.addScore(killer.net, (int) (10 * killer.net.client.scoreBonusPercent));
+
+            if (bfService.battle.type.equalsIgnoreCase("dm"))
+                if (uAttacker.kills >= bfService.battle.maxScore && bfService.battle.timeLength == 0)
+                    restartBattle(false);
+        }
+    }
+
+    public synchronized void hitTank(BattlePlayerController attacker, BattlePlayerController target) {
+        int damage = attacker.tank.weapon.calculateDamage(target.tank);
+        giveDamage(target, damage);
+        if (target.tank.health <= 0)
+            killTank(target, attacker);
+    }
+
+    private synchronized void giveDamage(BattlePlayerController target, int damage) {
+        target.tank.health -= damage;
+        changeHealth(target, target.tank.health);
     }
 }

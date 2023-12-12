@@ -1,6 +1,7 @@
 package amalgama.system.timers;
 
 import amalgama.battle.BattlePlayerController;
+import amalgama.battle.SpawnState;
 import amalgama.network.Type;
 import org.codehaus.jackson.map.ObjectMapper;
 
@@ -21,6 +22,7 @@ public class TankSpawnTask extends TimerTask {
             ObjectMapper mapper = new ObjectMapper();
             ply.currentBattle.service.killService.changeHealth(ply, 10000);
             ply.currentBattle.service.broadcast(Type.BATTLE, "spawn", mapper.writeValueAsString(ply.lastSpawnModel));
+            ply.tank.spawnState = SpawnState.STATE_GHOST;
         } catch (Exception e) { e.printStackTrace(); }
         TankRespawner.tasks.remove(ply);
     }

@@ -1,6 +1,7 @@
 package amalgama.network.managers;
 
 import amalgama.Global;
+import amalgama.battle.BattlePlayerController;
 import amalgama.database.dao.UserDAO;
 import amalgama.json.lobby.*;
 import amalgama.lobby.Battle;
@@ -29,6 +30,12 @@ public class LobbyManager {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void addCry(TransferProtocol net, int prize) {
+        net.client.userData.setBalance(net.client.userData.getBalance() + prize);
+        net.send(Type.LOBBY, "add_crystall", String.valueOf(net.client.userData.getBalance()));
+        UserDAO.updateUser(net.client.userData);
     }
 
     public void initPanel() throws IOException {
@@ -153,19 +160,21 @@ public class LobbyManager {
                 return;
             try {
                 int value = Integer.parseInt(args[1]);
-                int rank = RankUtils.getRankFromScore(net.client.userData.getScore());
-                net.client.userData.setScore(net.client.userData.getScore() + value);
-                int newRank = RankUtils.getRankFromScore(net.client.userData.getScore());
-                net.send(Type.LOBBY, "add_score", String.valueOf(net.client.userData.getScore()));
-
-                int prevNextScore = RankUtils.getScoreFromRank(newRank - 1);
-                int nextScore = RankUtils.getScoreFromRank(newRank);
-
-                if (newRank != rank)
-                    net.send(Type.LOBBY, "update_rang", String.valueOf(newRank), String.valueOf(nextScore));
-                net.send(Type.LOBBY, "update_rang_progress", String.valueOf(RankUtils.getRankProgress(net.client.userData.getScore(), nextScore, prevNextScore)));
-                UserDAO.updateUser(net.client.userData);
+                addScore(net, value);
             } catch (Exception ignored) {}
         }
+    }
+
+    public static void addScore(TransferProtocol net, int score) {
+        int lastRank = RankUtils.getRankFromScore(net.client.userData.getScore());
+        net.client.userData.setScore(net.client.userData.getScore() + score);
+        int newRank = RankUtils.getRankFromScore(net.client.userData.getScore());
+        net.send(Type.LOBBY, "add_score", String.valueOf(net.client.userData.getScore()));
+        int prevNextScore = RankUtils.getScoreFromRank(newRank - 1);
+        int nextScore = RankUtils.getScoreFromRank(newRank);
+        if (newRank != lastRank)
+            net.send(Type.LOBBY, "update_rang", String.valueOf(newRank), String.valueOf(nextScore));
+        net.send(Type.LOBBY, "update_rang_progress", String.valueOf(RankUtils.getRankProgress(net.client.userData.getScore(), nextScore, prevNextScore)));
+        UserDAO.updateUser(net.client.userData);
     }
 }
