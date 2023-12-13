@@ -142,4 +142,9 @@ public class BonusAllocator implements Runnable {
             lastFund = fund;
         }
     }
+
+    public void allocBonus(int count, BonusType type) {
+        for (int i = 0; i < count; i++)
+            spawnBonus(type);
+    }
 }

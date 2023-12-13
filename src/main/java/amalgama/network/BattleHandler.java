@@ -68,5 +68,8 @@ public class BattleHandler extends Handler {
                 lobbyManager.initChat();
             } catch (Exception ignored) {}
         }
+        else if (command.args[1].equals("chat") && command.args.length == 4) {
+            battle.service.chat(net, command.args[2], command.args[3].equals("true"));
+        }
     }
 }

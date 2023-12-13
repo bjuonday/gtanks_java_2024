@@ -636,4 +636,43 @@ public class BattleService implements Destroyable {
 
         broadcast(Type.BATTLE, "spawn_bonus", json.toJSONString());
     }
+
+    public void chat(TransferProtocol net, String message, boolean team) {
+        if (message.isEmpty())
+            return;
+
+        BattlePlayerController ply = players.get(net.client.userData.getLogin());
+        if (ply == null) return;
+        BattleUser user = battle.users.get(ply.tank.nickname);
+        if (user == null) return;
+
+        if (message.startsWith("/") && message.length() > 1) {
+            executeCommand(message.substring(1));
+            return;
+        }
+
+        JSONObject json = new JSONObject();
+        json.put("message", message);
+        json.put("team_type", user.team);
+        json.put("team", battle.isTeam);
+        json.put("nickname", user.nickname);
+        json.put("rank", user.rank);
+        json.put("system", false);
+
+        broadcast(Type.BATTLE, "chat", json.toJSONString());
+    }
+
+    private void executeCommand(String command) {
+        String[] args = command.trim().split(" ");
+
+        if (args[0].equals("drop") && args.length == 3) {
+            try {
+                int count = Integer.parseInt(args[2]);
+                BonusType type = BonusType.fromString(args[1]);
+                if (type == null)
+                    return;
+                bonusAllocator.allocBonus(count, type);
+            } catch (NumberFormatException ignored) {}
+        }
+    }
 }

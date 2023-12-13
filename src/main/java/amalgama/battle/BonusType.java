@@ -25,4 +25,21 @@ public enum BonusType {
     public String toCSString() {
         return csid;
     }
+
+    public static BonusType fromString(String id) {
+        if (id.equalsIgnoreCase("crystal"))
+            return CRYSTAL;
+        else if (id.equalsIgnoreCase("health"))
+            return HEALTH;
+        else if (id.equalsIgnoreCase("armor"))
+            return ARMOR;
+        else if (id.equalsIgnoreCase("damage"))
+            return DAMAGE;
+        else if (id.equalsIgnoreCase("nitro"))
+            return NITRO;
+        else if (id.equalsIgnoreCase("gold"))
+            return GOLD_100;
+        else
+            return null;
+    }
 }
