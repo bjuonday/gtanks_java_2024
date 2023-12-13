@@ -7,5 +7,5 @@ public class Client {
     public boolean authorized = false;
     public boolean encrypted = false;
     public String currentBattleId = null;
-    public float scoreBonusPercent = 1.0f;  // 1.5 = +50%, 1.3 = +30%, 0.7 = -30%
+    public float scoreBonusPercent = 2.0f;  // 1.5 = +50%, 1.3 = +30%, 0.7 = -30%
 }

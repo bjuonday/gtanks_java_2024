@@ -13,7 +13,7 @@ public class BonusRegionModel {
     private Vector3d min;
 
 
-    private ArrayList<BonusTypeModel> type = new ArrayList<>();
+    private String type;
 
     public Vector3d getMax() {
         return max;
@@ -33,12 +33,12 @@ public class BonusRegionModel {
         this.min = min;
     }
 
-    public ArrayList<BonusTypeModel> getType() {
+    public String getType() {
         return type;
     }
 
     @XmlElement(name = "bonus-type")
-    public void setType(ArrayList<BonusTypeModel> type) {
+    public void setType(String type) {
         this.type = type;
     }
 }

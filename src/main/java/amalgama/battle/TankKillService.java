@@ -11,11 +11,11 @@ import amalgama.utils.RankUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import javax.security.auth.DestroyFailedException;
 import javax.security.auth.Destroyable;
 
 public class TankKillService implements Destroyable {
     private static final String QUARTZ_GROUP = TankKillService.class.getName();
+    private static final int fundIncrement = 2;
     private final String QUARTZ_NAME;
     private static final long DELAY_BEFORE_RESTART = 10000L;
     private final BattleService bfService;
@@ -86,7 +86,8 @@ public class TankKillService implements Destroyable {
 
             uAttacker.kills++;
             uAttacker.battleScore += 10;
-            uAttacker.rank = RankUtils.getRankFromScore(ply.net.client.userData.getScore());
+            LobbyManager.addScore(killer.net, (int) (10 * killer.net.client.scoreBonusPercent));
+            uAttacker.rank = RankUtils.getRankFromScore(killer.net.client.userData.getScore());
             if (bfService.battle.isTeam) {
                 if (bfService.battle.type.equalsIgnoreCase("tdm")) {
                     if (uAttacker.team.equals("RED")) {
@@ -102,12 +103,11 @@ public class TankKillService implements Destroyable {
             uTarget.deaths++;
             ply.updateStats();
             killer.updateStats();
-            bfService.battle.fund++;
+            bfService.battle.fund += fundIncrement;
             bfService.updateFund();
             bfService.broadcast(Type.BATTLE, "kill_tank", uTarget.nickname, "killed", uAttacker.nickname);
             ply.tank.spawnState = SpawnState.STATE_DEAD;
             bfService.respawn(ply);
-            LobbyManager.addScore(killer.net, (int) (10 * killer.net.client.scoreBonusPercent));
 
             if (bfService.battle.type.equalsIgnoreCase("dm"))
                 if (uAttacker.kills >= bfService.battle.maxScore && bfService.battle.maxScore > 0)

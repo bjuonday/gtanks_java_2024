@@ -2,10 +2,7 @@ package amalgama.lobby;
 
 import amalgama.Global;
 import amalgama.MapLoader;
-import amalgama.battle.BattlePlayerController;
-import amalgama.battle.Bonus;
-import amalgama.battle.SpawnState;
-import amalgama.battle.TankKillService;
+import amalgama.battle.*;
 import amalgama.database.UserItem;
 import amalgama.database.UserMount;
 import amalgama.database.dao.UserItemDAO;
@@ -20,11 +17,13 @@ import amalgama.network.secure.Grade;
 import amalgama.system.quartz.IQuartzService;
 import amalgama.system.quartz.QuartzService;
 import amalgama.system.quartz.TimeUnit;
+import amalgama.system.timers.BonusSpawner;
 import amalgama.system.timers.TankRespawner;
 import amalgama.utils.RandomUtils;
 import amalgama.utils.RankUtils;
 import amalgama.xml.map.MapModel;
 import amalgama.xml.map.Vector3d;
+import amalgama.xml.map.bonus.BonusRegionModel;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -42,16 +41,75 @@ public class BattleService implements Destroyable {
     public final HashMap<String, BattlePlayerController> players = new HashMap<>();
     public HashMap<String, Bonus> activeBonuses = new HashMap<>();
     public final Battle battle;
-
+    public BonusAllocator bonusAllocator;
+    public StructMap map;
     private IQuartzService quartzService = QuartzService.getInstance();
 
     public BattleService(Battle battle) {
         this.battle = battle;
         QUARTZ_NAME = "BattleTimer/" + hashCode() + "/" + battle.id;
         QUARTZ_RESTART_NAME = "BattleRestarter/" + hashCode() + "/" + battle.id;
+        initStructMap();
         killService = new TankKillService(this);
+        bonusAllocator = new BonusAllocator(this);
         if (battle.timeLength > 0)
             startTimer();
+        new Thread(bonusAllocator).start();
+    }
+
+    private void initStructMap() {
+        var map = MapLoader.maps.get(battle.mapId);
+        if (map == null) {
+            System.out.println("[MAP] Map is null: " + battle.mapId);
+            return;
+        }
+        var dm = map.getSpawnPositionsForTeam("dm");
+        var red = map.getSpawnPositionsForTeam("red");
+        var blue = map.getSpawnPositionsForTeam("blue");
+        var bonuses = map.getBonusesRegion();
+
+        var listDM = getMapPointList(dm);
+        var listBLUE = getMapPointList(blue);
+        var listRED = getMapPointList(red);
+
+        var listCrystals = getBonusRegions(bonuses, BonusType.CRYSTAL);
+        var listGolds = getBonusRegions(bonuses, BonusType.GOLD_100);
+        var listHP = getBonusRegions(bonuses, BonusType.HEALTH);
+        var listDD = getBonusRegions(bonuses, BonusType.DAMAGE);
+        var listDA = getBonusRegions(bonuses, BonusType.ARMOR);
+        var listNitro = getBonusRegions(bonuses, BonusType.NITRO);
+
+        this.map = new StructMap(map, listDM, listRED, listBLUE, listGolds, listCrystals, listHP, listDA, listDD, listNitro);
+        System.out.println("[BATTLE] StructMap loaded.");
+    }
+
+    private static ArrayList<BonusRegion> getBonusRegions(List<BonusRegionModel> bonuses, BonusType bType) {
+        ArrayList<BonusRegion> regions = new ArrayList<>();
+        for (var i : bonuses) {
+            String type = i.getType();
+            if (!type.equals(bType.toString()))
+                continue;
+            Vector3d max = i.getMax();
+            Vector3d min = i.getMin();
+            BonusRegion region = new BonusRegion(max.toMapPoint(), min.toMapPoint(), type);
+            regions.add(region);
+        }
+        return regions;
+    }
+
+    private static ArrayList<MapPointModel> getMapPointList(List<amalgama.xml.map.spawn.SpawnPositionModel> dm) {
+        ArrayList<MapPointModel> list = new ArrayList<>();
+        for (var i : dm) {
+            Vector3d pos = i.getPosition();
+            Vector3d rot = i.getRotation();
+            MapPointModel point = new MapPointModel();
+            point.x = pos.getX();
+            point.y = pos.getY();
+            point.z = pos.getZ();
+            point.a = rot.getZ();
+            list.add(point);
+        }
+        return list;
     }
 
     private void startTimer() {
@@ -80,7 +138,6 @@ public class BattleService implements Destroyable {
         ply.close();
     }
 
-    //todo spawn bonus
     //todo take bonus
 
     @Override
@@ -99,7 +156,7 @@ public class BattleService implements Destroyable {
 
     public void battleFinish() {
         activeBonuses.clear();
-        //todo bonuses spawn stop
+        bonusAllocator.battleFinished();
         battle.fund = 0;
         battle.redScore = 0;
         battle.blueScore = 0;
@@ -517,6 +574,7 @@ public class BattleService implements Destroyable {
     }
 
     public void updateFund() {
+        bonusAllocator.updateFund();
         broadcast(Type.BATTLE, "change_fund", String.valueOf(battle.fund));
     }
 
@@ -556,5 +614,26 @@ public class BattleService implements Destroyable {
         obj.put("battleId", battle.id);
         obj.put("id", ply.tank.nickname);
         TransferProtocol.broadcast("lobby", Type.LOBBY, "remove_player_from_battle", obj.toJSONString());
+    }
+
+    public void spawnBonus(Bonus bonus, int inc, int time) {
+        if (bonus.position.x == 0.0F && bonus.position.y == 0.0F && bonus.position.z == 0.0F)
+            return;
+        StringBuilder sb = new StringBuilder();
+        sb.append(bonus.type.toCSString());
+        sb.append("_");
+        sb.append(inc);
+        String id = sb.toString();
+        activeBonuses.put(id, bonus);
+        BonusSpawner.bonusRemove(this, id, time);
+
+        JSONObject json = new JSONObject();
+        json.put("id", id);
+        json.put("x", bonus.position.x);
+        json.put("y", bonus.position.y);
+        json.put("z", bonus.position.z);
+        json.put("disappearing_time", time);
+
+        broadcast(Type.BATTLE, "spawn_bonus", json.toJSONString());
     }
 }

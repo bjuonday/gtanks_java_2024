@@ -1,5 +1,7 @@
 package amalgama.xml.map;
 
+import amalgama.models.MapPointModel;
+
 public class Vector3d {
     private float x;
     private float y;
@@ -40,5 +42,14 @@ public class Vector3d {
 
     public String toString() {
         return "x = " + this.x + " y = " + this.y + " z = " + this.z;
+    }
+
+    public MapPointModel toMapPoint() {
+        MapPointModel point = new MapPointModel();
+        point.x = x;
+        point.y = y;
+        point.z = z;
+        point.a = 0;
+        return point;
     }
 }

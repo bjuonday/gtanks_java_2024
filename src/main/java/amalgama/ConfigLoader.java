@@ -10,9 +10,9 @@ public class ConfigLoader {
     }
 
     public static void loadStartup() {
+        MapLoader.loadMaps();
         for (Battle battle : XmlUtils.getBattles())
             Global.createBattle(battle, "user");
         Global.init();
-        MapLoader.loadMaps();
     }
 }
