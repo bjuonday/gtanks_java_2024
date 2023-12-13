@@ -57,5 +57,16 @@ public class BattleHandler extends Handler {
                 battle.service.fire(net, command.args[2]);
             } catch (Exception e) { e.printStackTrace(); }
         }
+        else if (command.args[1].equals("suicide")) {
+            battle.service.suicide(net);
+        }
+        else if (command.args[1].equals("i_exit_from_battle")) {
+            try {
+                battle.service.removeUser(net);
+                lobbyManager.initEffectModel();
+                lobbyManager.initBattles();
+                lobbyManager.initChat();
+            } catch (Exception ignored) {}
+        }
     }
 }

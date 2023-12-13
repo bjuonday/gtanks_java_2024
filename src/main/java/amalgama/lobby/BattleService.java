@@ -80,7 +80,6 @@ public class BattleService implements Destroyable {
         ply.close();
     }
 
-    //todo remove user
     //todo spawn bonus
     //todo take bonus
 
@@ -111,7 +110,8 @@ public class BattleService implements Destroyable {
 
     public void restart() {
         if (battle.isTeam) {
-            //todo
+            broadcast(Type.BATTLE, "change_team_scores", "RED", String.valueOf(battle.redScore));
+            broadcast(Type.BATTLE, "change_team_scores", "BLUE", String.valueOf(battle.blueScore));
         }
         for (var ply : players.values()) {
             if (ply != null) {
@@ -156,6 +156,9 @@ public class BattleService implements Destroyable {
         battleUser.team = team;
         this.players.put(battleUser.nickname, new BattlePlayerController(net, battle));
         battle.users.put(battleUser.nickname, battleUser);
+        if (battle.isTeam)
+            if (team.equals("RED")) battle.redPeople++;
+            else battle.bluePeople++;
         net.client.currentBattleId = battle.id;
 
         JSONObject json = new JSONObject();
@@ -181,9 +184,24 @@ public class BattleService implements Destroyable {
         net.send(Type.BATTLE, "init_shots_data", Global.initShotsData);
         net.send(Type.BATTLE, "init_battle_model", json.toJSONString());
 
+        updateCountUsersInBattle();
+        addPlayerToBattle(team, battleUser);
+    }
+
+    private void updateCountUsersInBattle() {
         if (!battle.isTeam)
             TransferProtocol.broadcast("lobby", Type.LOBBY, "update_count_users_in_dm_battle", battle.id, String.valueOf(battle.users.size()));
+        else {
+            JSONObject obj = new JSONObject();
+            obj.put("battleId", battle.id);
+            obj.put("redPeople", battle.redPeople);
+            obj.put("bluePeople", battle.bluePeople);
 
+            TransferProtocol.broadcast("lobby", Type.LOBBY, "update_count_users_in_team_battle", obj.toJSONString());
+        }
+    }
+
+    private void addPlayerToBattle(String team, BattleUser battleUser) {
         JSONObject o = new JSONObject();
         o.put("id", battleUser.nickname);
         o.put("battleId", battle.id);
@@ -398,6 +416,7 @@ public class BattleService implements Destroyable {
         json.put("score_blue", battle.blueScore);
         json.put("score_red", battle.redScore);
         json.put("scoreLimit", battle.maxScore);
+        json.put("team", battle.isTeam);
         json.put("users", users);
 
         return json.toJSONString();
@@ -486,11 +505,56 @@ public class BattleService implements Destroyable {
         }
         if (target.tank.spawnState != SpawnState.STATE_ACTIVE)
             return;
+        if (battle.isTeam && !battle.ff) {
+            BattleUser uTarget = battle.users.get(target.tank.nickname);
+            BattleUser uAttacker = battle.users.get(ply.tank.nickname);
+            assert uTarget != null && uAttacker != null : "Users not found in team";
+            if (uTarget.team.equals(uAttacker.team))
+                return;
+        }
 
         killService.hitTank(ply, target);
     }
 
     public void updateFund() {
         broadcast(Type.BATTLE, "change_fund", String.valueOf(battle.fund));
+    }
+
+    public void suicide(TransferProtocol net) {
+        BattlePlayerController ply = players.get(net.client.userData.getLogin());
+        if (ply == null || ply.tank == null || ply.tank.spawnState != SpawnState.STATE_ACTIVE)
+            return;
+
+        killService.killTank(ply, ply);
+    }
+
+    public void removeUser(TransferProtocol net) throws RuntimeException {
+        BattlePlayerController ply = players.remove(net.client.userData.getLogin());
+        if (ply == null)
+            throw new RuntimeException("user not found");
+
+        //todo clear mines
+        BattleUser user =  battle.users.remove(ply.tank.nickname);
+        if (battle.isTeam) {
+            if (user.team.equalsIgnoreCase("RED"))
+                battle.redPeople--;
+            else
+                battle.bluePeople--;
+            //todo drop flag
+        }
+        broadcast(Type.BATTLE, "remove_user", ply.tank.nickname);
+
+        removePlayerFromBattle(ply);
+        updateCountUsersInBattle();
+
+        ply.net.client.currentBattleId = null;
+        ply.tank = null;
+    }
+
+    private void removePlayerFromBattle(BattlePlayerController ply) {
+        JSONObject obj = new JSONObject();
+        obj.put("battleId", battle.id);
+        obj.put("id", ply.tank.nickname);
+        TransferProtocol.broadcast("lobby", Type.LOBBY, "remove_player_from_battle", obj.toJSONString());
     }
 }

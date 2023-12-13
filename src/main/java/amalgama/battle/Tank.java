@@ -13,6 +13,7 @@ public class Tank {
     public SpawnState spawnState;
     public int health;
     public UserMount mount;
+    public boolean fireStarted = false;
 
     public Tank(String nickname, TurretModificationModel turret, HullModificationModel hull, UserMount mount) {
         this.nickname = nickname;

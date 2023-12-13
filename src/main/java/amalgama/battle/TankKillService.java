@@ -67,15 +67,17 @@ public class TankKillService implements Destroyable {
         bfService.broadcast(Type.BATTLE, "change_health", ply.net.client.userData.getLogin(), String.valueOf(hp));
     }
 
-    private synchronized void killTank(BattlePlayerController ply, BattlePlayerController killer) {
+    public synchronized void killTank(BattlePlayerController ply, BattlePlayerController killer) {
         BattleUser uTarget = bfService.battle.users.get(ply.tank.nickname);
         assert uTarget != null : "target not found in battle";
 
         if (ply == killer) {
             uTarget.deaths++;
-            uTarget.battleScore -= 10;
+            if (uTarget.battleScore >= 10)
+                uTarget.battleScore -= 10;
             bfService.broadcast(Type.BATTLE, "kill_tank", uTarget.nickname, "suicide", uTarget.nickname);
             ply.updateStats();
+            ply.tank.spawnState = SpawnState.STATE_DEAD;
             bfService.respawn(ply);
         }
         else {
@@ -85,6 +87,18 @@ public class TankKillService implements Destroyable {
             uAttacker.kills++;
             uAttacker.battleScore += 10;
             uAttacker.rank = RankUtils.getRankFromScore(ply.net.client.userData.getScore());
+            if (bfService.battle.isTeam) {
+                if (bfService.battle.type.equalsIgnoreCase("tdm")) {
+                    if (uAttacker.team.equals("RED")) {
+                        bfService.battle.redScore++;
+                        bfService.broadcast(Type.BATTLE, "change_team_scores", "RED", String.valueOf(bfService.battle.redScore));
+                    }
+                    else {
+                        bfService.battle.blueScore++;
+                        bfService.broadcast(Type.BATTLE, "change_team_scores", "BLUE", String.valueOf(bfService.battle.blueScore));
+                    }
+                }
+            }
             uTarget.deaths++;
             ply.updateStats();
             killer.updateStats();
@@ -96,7 +110,10 @@ public class TankKillService implements Destroyable {
             LobbyManager.addScore(killer.net, (int) (10 * killer.net.client.scoreBonusPercent));
 
             if (bfService.battle.type.equalsIgnoreCase("dm"))
-                if (uAttacker.kills >= bfService.battle.maxScore && bfService.battle.timeLength == 0)
+                if (uAttacker.kills >= bfService.battle.maxScore && bfService.battle.maxScore > 0)
+                    restartBattle(false);
+            if (bfService.battle.type.equalsIgnoreCase("tdm"))
+                if ((bfService.battle.redScore >= bfService.battle.maxScore || bfService.battle.blueScore >= bfService.battle.maxScore) && bfService.battle.maxScore > 0)
                     restartBattle(false);
         }
     }

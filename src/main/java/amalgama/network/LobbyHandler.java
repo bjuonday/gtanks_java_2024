@@ -204,6 +204,30 @@ public class LobbyHandler extends Handler {
                 if (net.client.currentBattleId != null) return;
                 battle.service.addPlayer(net, "NONE");
             }
+            else if (command.args[1].equals("enter_battle_team") && command.args.length == 4) {
+                String battleId = command.args[2];
+                Battle battle = Global.battles.get(battleId);
+                String team = command.args[3].equals("true") ? "RED" : "BLUE";
+                if (battle == null) {
+                    net.vrs.registerAct("attempt_enter_unknown_battle", Grade.DETRIMENTAL);
+                    return;
+                }
+                int rank = RankUtils.getRankFromScore(net.client.userData.getScore());
+                if (battle.minRank > rank || rank > battle.maxRank || battle.users.size() >= battle.maxPeople) {
+                    net.vrs.registerAct("attempt_enter_unavailable_battle", Grade.SUSPICIOUS);
+                    return;
+                }
+                if (battle.autoBalance) {
+                    if (team.equals("RED") && battle.redPeople > battle.bluePeople)
+                        return;
+                    if (team.equals("BLUE") && battle.redPeople < battle.bluePeople)
+                        return;
+                }
+                if (battle.redPeople >= battle.maxPeople || battle.bluePeople >= battle.maxPeople)
+                    return;
+                if (net.client.currentBattleId != null) return;
+                battle.service.addPlayer(net, team);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
