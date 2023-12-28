@@ -32,8 +32,8 @@ import org.json.simple.parser.ParseException;
 import javax.security.auth.Destroyable;
 import java.util.*;
 
-public class BattleService implements Destroyable {
-    public static final String QUARTZ_GROUP = BattleService.class.getName();
+public class BattleController implements Destroyable {
+    public static final String QUARTZ_GROUP = BattleController.class.getName();
     public final String QUARTZ_NAME;
     public final String QUARTZ_RESTART_NAME;
     public TankKillService killService;
@@ -45,7 +45,7 @@ public class BattleService implements Destroyable {
     public StructMap map;
     private IQuartzService quartzService = QuartzService.getInstance();
 
-    public BattleService(Battle battle) {
+    public BattleController(Battle battle) {
         this.battle = battle;
         QUARTZ_NAME = "BattleTimer/" + hashCode() + "/" + battle.id;
         QUARTZ_RESTART_NAME = "BattleRestarter/" + hashCode() + "/" + battle.id;

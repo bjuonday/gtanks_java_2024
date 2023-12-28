@@ -1,6 +1,6 @@
 package amalgama.battle;
 
-import amalgama.lobby.BattleService;
+import amalgama.lobby.BattleController;
 import amalgama.lobby.BattleUser;
 import amalgama.network.Type;
 import amalgama.network.managers.LobbyManager;
@@ -18,17 +18,17 @@ public class TankKillService implements Destroyable {
     private static final int fundIncrement = 2;
     private final String QUARTZ_NAME;
     private static final long DELAY_BEFORE_RESTART = 10000L;
-    private final BattleService bfService;
+    private final BattleController bfService;
     private IQuartzService quartzService = QuartzService.getInstance();
 
-    public TankKillService(BattleService bfService) {
+    public TankKillService(BattleController bfService) {
         this.bfService = bfService;
         QUARTZ_NAME = "TankKillService/" + hashCode() + "/" + this.bfService.battle.id;
     }
 
     public void restartBattle(boolean byTimeout) {
         if (!byTimeout && bfService.battle.timeLength > 0)
-            this.quartzService.deleteJob(bfService.QUARTZ_NAME, BattleService.QUARTZ_GROUP);
+            this.quartzService.deleteJob(bfService.QUARTZ_NAME, BattleController.QUARTZ_GROUP);
         finishAndPrizes();
         bfService.battleFinish();
         quartzService.addJob(this.QUARTZ_NAME, QUARTZ_GROUP, e -> this.bfService.restart(), TimeUnit.MILLISECONDS, DELAY_BEFORE_RESTART);

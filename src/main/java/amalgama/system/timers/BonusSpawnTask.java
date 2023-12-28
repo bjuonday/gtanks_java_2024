@@ -1,13 +1,13 @@
 package amalgama.system.timers;
 
-import amalgama.lobby.BattleService;
+import amalgama.lobby.BattleController;
 import amalgama.network.Type;
 
 import java.util.TimerTask;
 
 public class BonusSpawnTask extends TimerTask {
     public String bonusId;
-    public BattleService bfService;
+    public BattleController bfService;
     @Override
     public void run() {
         if (bfService == null)

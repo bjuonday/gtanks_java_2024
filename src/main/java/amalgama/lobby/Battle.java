@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.ArrayList;
 
 public class Battle {
-    public BattleService service;
+    public BattleController service;
     public Map<String, BattleUser> users = new HashMap<>();
     public List<MineModel> mines = new ArrayList<>();
     public String id;
@@ -34,6 +34,6 @@ public class Battle {
     public boolean noBonus;
 
     public void start() {
-        this.service = new BattleService(this);
+        this.service = new BattleController(this);
     }
 }

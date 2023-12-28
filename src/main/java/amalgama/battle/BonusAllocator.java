@@ -1,6 +1,6 @@
 package amalgama.battle;
 
-import amalgama.lobby.BattleService;
+import amalgama.lobby.BattleController;
 import amalgama.models.MapPointModel;
 import amalgama.utils.RandomUtils;
 
@@ -8,13 +8,13 @@ import java.util.Random;
 
 public class BonusAllocator implements Runnable {
     private static final long DELAY = 10000L;
-    private final BattleService bfService;
+    private final BattleController bfService;
     private int nextGoldFund;
     private int lastFund;
     private boolean isNull;
     private int inc;
 
-    public BonusAllocator(BattleService battleService) {
+    public BonusAllocator(BattleController battleService) {
         bfService = battleService;
         nextGoldFund = getNextGoldFund();
         isNull = bfService == null;
