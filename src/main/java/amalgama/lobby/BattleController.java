@@ -654,7 +654,7 @@ public class BattleController implements Destroyable {
         JSONObject json = new JSONObject();
         json.put("message", message);
         json.put("team_type", user.team);
-        json.put("team", battle.isTeam);
+        json.put("team", team);
         json.put("nickname", user.nickname);
         json.put("rank", user.rank);
         json.put("system", false);
