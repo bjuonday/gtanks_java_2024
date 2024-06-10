@@ -9,7 +9,7 @@
   --
   XAMPP            | <a href="https://www.apachefriends.org/">https://www.apachefriends.org/</a>
   --
-  Database file    | link
+  Database file    | <a href="https://github.com/bjuonday/gtanks_server_remake/blob/master/db_gtanks.sql">https://github.com/bjuonday/gtanks_server_remake/blob/master/db_gtanks.sql</a>
   -----)
 
 <b>0. Gradle (apart of JDK 17)</b>
@@ -40,7 +40,7 @@
  <b>   RUNNING THE CLIENT</b>
   -----(
   Prerequirements:
-  The client itself      | link
+  The client itself      | <a href="https://github.com/bjuonday/gtanks_server_remake/tree/master/client">https://github.com/bjuonday/gtanks_server_remake/tree/master/client</a>
   Fixed battles.swf file | had lost it
   -----)
 
