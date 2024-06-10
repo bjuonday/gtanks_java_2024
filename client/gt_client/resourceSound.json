@@ -1,0 +1,237 @@
+{
+    "id": "SOUNDS",
+    "items": [
+        {
+            "name": "turret",
+            "src": "sounds/turret.mp3"
+        },
+        {
+            "name": "flagDropSound",
+            "src": "ctf/flag-lost.mp3?v=2"
+        },
+        {
+            "name": "flagReturnSound",
+            "src": "ctf/flag-return.mp3?v=2"
+        },
+        {
+            "name": "flagTakeSound",
+            "src": "ctf/flag-slole.mp3?v=2"
+        },
+        {
+            "name": "winSound",
+            "src": "ctf/flag-win.mp3?v=2"
+        },
+        {
+            "name": "default_ambient_sound",
+            "src": "fon.mp3"
+        },
+        {
+            "name": "halloween_sound_id",
+            "src": "halloween.mp3"
+        },
+        {
+            "name": "new_year_sound_id",
+            "src": "new_year.wav"
+        },		
+        {
+            "name": "bonusTakenSound",
+            "src": "bonus.mp3"
+        },
+        {
+            "name": "battleFinishSound",
+            "src": "stopgame.mp3"
+        },
+        {
+            "name": "killSound",
+            "src": "explosion-tnk.mp3"
+        },
+        {
+            "name": "smoky_shot",
+            "src": "turret/smoky/smoky_shot.mp3"
+        },
+        {
+            "name": "smoky_exp",
+            "src": "turret/smoky/smoky_exp.mp3"
+        },
+        {
+            "name": "flamethrower_sound",
+            "src": "turret/flamethrower/flamethrower.mp3"
+        },
+        {
+            "name": "twins_explosionSound",
+            "src": "turret/twins/plazma_shot.mp3"
+        },
+        {
+            "name": "twins_shotSound",
+            "src": "turret/twins/plazma_shot.mp3"
+        },
+        {
+            "name": "damagingSoundId",
+            "src": "turret/isida/damage.mp3"
+        },
+        {
+            "name": "healingSoundId",
+            "src": "turret/isida/healing.mp3"
+        },
+        {
+            "name": "idleSoundId",
+            "src": "turret/isida/idle.mp3"
+        },
+        {
+            "name": "thunder_explosionSoundResourceId",
+            "src": "turret/thunder/thunder_fire.mp3"
+        },
+        {
+            "name": "thunder_shotSoundResourceId",
+            "src": "turret/thunder/thunder_shot.mp3"
+        },
+        {
+            "name": "frezee_sound",
+            "src": "turret/frezee/freeze.mp3"
+        },
+        {
+            "name": "ricochet_explosionSoundId",
+            "src": "turret/ricochet/ricochet_explosion.mp3"
+        },
+        {
+            "name": "ricochetSoundId",
+            "src": "turret/ricochet/ricochet_ricochet.mp3"
+        },
+        {
+            "name": "ricochet_shotSoundId",
+            "src": "turret/ricochet/ricochet_shot.mp3"
+        },
+        {
+            "name": "activationSound_mine",
+            "src": "mines/mine_activation.mp3"
+        },
+        {
+            "name": "deactivationSound_mine",
+            "src": "mines/mine_deactivation.mp3"
+        },
+        {
+            "name": "explosionSound_mine",
+            "src": "mines/mine_explosion.mp3"
+        },
+        {
+            "name": "shaft_shot",
+            "src": "turret/shaft/shot.wav"
+        },
+        {
+            "name": "snowman_shotSound",
+            "src": "turret/snowman/shot.mp3"
+        },
+        {
+            "name": "snowman_shotExplosion",
+            "src": "turret/snowman/expl.mp3"
+        },
+        {
+            "name": "shaft_zoomModeSound",
+            "src": "turret/shaft/zoomMode.wav"
+        },
+        {
+            "name": "shaft_targetingSound",
+            "src": "turret/shaft/targetingSound.wav"
+        },
+		{
+            "name": "shaft_explosion_sound",
+            "src": "turret/shaft/hit.wav"
+        },
+        {
+            "name": "space_ambient_sound",
+            "src": "sounds/space.mp3"
+        },
+        {
+            "name": "engineidle_sound",
+            "src": "engineidle.mp3"
+        },
+        {
+            "name": "startmoving_sound",
+            "src": "startmoving.mp3"
+        },
+        {
+            "name": "move_sound",
+            "src": "move.mp3"
+        },
+        {
+            "name": "turret_sound",
+            "src": "turret.mp3"
+        },
+        {
+            "name": "railgun_shot",
+            "src": "turret/railgun/railgun.mp3"
+        },
+        {
+            "name": "hwthunder_explosionSoundResourceId",
+            "src": "turret/hwthunder/hwthunder_fire.mp3"
+        },
+        {
+            "name": "hwthunder_shotSoundResourceId",
+            "src": "turret/hwthunder/hwthunder_shot.mp3"
+        },
+		{
+            "name": "bfg_explosionSoundResourceId",
+            "src": "turret/bfg/bfg_fire.mp3"
+        },
+        {
+            "name": "bfg_shotSoundResourceId",
+            "src": "turret/bfg/bfg_shot.mp3"
+        },
+        {
+            "name": "pumpkingun_explosionSoundId",
+            "src": "turret/pumpkingun/pumpkingun_explosion.mp3"
+        },
+        {
+            "name": "pumpkingunSoundId",
+            "src": "turret/pumpkingun/pumpkingun_ricochet.mp3"
+        },
+        {
+            "name": "pumpkingun_shotSoundId",
+            "src": "turret/pumpkingun/pumpkingun_shot.mp3"
+        },
+        {
+            "name": "startCapturingSound",
+            "src": "dom/sounds/ally-arrived.wav"
+        },
+        {
+            "name": "stopCapturingSound",
+            "src": "dom/sounds/stop-capture.wav"
+        },
+        {
+            "name": "pointCapturedSound",
+            "src": "dom/sounds/point-captured.wav"
+        },
+        {
+            "name": "enemy_PointCapturedSound",
+            "src": "dom/sounds/enemies-captured-point.wav"
+        },
+        {
+            "name": "enemy_LostPointSound",
+            "src": "dom/sounds/enemies-lost-point.wav"
+        },
+        {
+            "name": "lostPointSound",
+            "src": "dom/sounds/lost-point.wav"
+        },
+        {
+            "name": "capture_sound",
+            "src": "dom/sounds/capture.wav"
+        },
+        {
+            "name": "enemy_capture_sound",
+            "src": "dom/sounds/enemy-arrived.wav"
+        },
+        {
+            "name": "return_sound",
+            "src": "dom/sounds/return.wav"
+        },
+        {
+            "name": "pause_capture_sound",
+            "src": "dom/sounds/pause-capture.wav"
+        },
+        {
+            "name": "gold",
+            "src": "bonus/gold.mp3?v=2"
+        }
+    ]
+}

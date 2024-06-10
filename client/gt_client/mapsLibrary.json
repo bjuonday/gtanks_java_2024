@@ -1,0 +1,2970 @@
+{
+	"items": [{
+			
+			"name": "map_halloween.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara",
+				"resources/library/Stuffs.tara",
+				"resources/library/Roadblock.tara",
+				"resources/library/Halloween.tara",
+				"resources/library/LandTiles.tara",
+				"resources/library/Billboard.tara",
+				"resources/library/LandRocks.tara",
+				"resources/library/OuterWalls.tara",
+				"resources/library/ConcreteTiles.tara"
+			]
+			
+		},
+		{
+			"name": "map_ny_2021.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/NY.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_2042.xml",
+			"libs": [
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/LandRise.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Hangars.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/Trees.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_2042_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/TreesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/LandRiseWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/HangarsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_abyss.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu5.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_abyss_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/NuBu5Winter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_arena.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_arena_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_atra.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_atra_2.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_atra_2_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_atra_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_barda.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/NuBu2.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu4.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/NuBu8.tara?v=2021",
+				"resources/library/NuBu14.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_barda_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/NuBu14Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu4Winter.tara?v=2021",
+				"resources/library/NuBu2Winter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021",
+				"resources/library/NuBu8Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_bastion.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Exterior.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/Defense.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/Passage.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_berlin.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/NuBu2.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/NuBu1.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu4.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu8.tara?v=2021",
+				"resources/library/NuBu5.tara?v=2021",
+				"resources/library/NuBu14.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_berlin_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu14Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu5Winter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/NuBu1Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu4Winter.tara?v=2021",
+				"resources/library/NuBu2Winter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021",
+				"resources/library/NuBu8Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_bobruisk.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_bobruisk_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_boombox.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_boombox_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_brest.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_brest_2.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_brest_2_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_brest_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_bridges.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_bridges_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_camp.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_camp_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_canyon.xml",
+			"libs": [
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Hangars.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/Trees.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_canyon_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/TreesWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/BrokenWallsWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/HangarsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_chornobyl.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu4.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/NuBu8.tara?v=2021",
+				"resources/library/NuBu14.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_chornobyl_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/NuBu14Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu4Winter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021",
+				"resources/library/NuBu8Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_combe.xml",
+			"libs": [
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_combe_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_courage.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Hangars.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/Trees.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_courage_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/TreesWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/HangarsWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_cross.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_cross_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_deathtrack.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/NuBu2.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_deathtrack_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu2Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_deck9.xml",
+			"libs": [
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu5.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_deck9_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/BrokenWallsWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/NuBu5Winter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_depo.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/Defense.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_desert.xml",
+			"libs": [
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/Trees.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_desert_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/TreesWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_dualiti.xml",
+			"libs": [
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_dualiti_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_duel.xml",
+			"libs": [
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_duel_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_dusseldorf.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/NuBu2.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/NuBu1.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu4.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu8.tara?v=2021",
+				"resources/library/NuBu5.tara?v=2021",
+				"resources/library/NuBu14.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_dusseldorf_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/NuBu14Winter.tara?v=2021",
+				"resources/library/NuBu5Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/NuBu1Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu4Winter.tara?v=2021",
+				"resources/library/NuBu2Winter.tara?v=2021",
+				"resources/library/NuBu8Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_esplanade.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/BrokenRoof.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_esplanade_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BrokenRoofWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/BrokenWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_factory.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Exterior.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/Defense.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/ComBuild.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_farm.xml",
+			"libs": [
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/Trees.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_farm_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/TreesWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_forest.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_forest_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_fortknox.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/Fort.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/NuBu8.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_fortknox_2.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/Fort.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu4.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_fortknox_2_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/FortWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu4Winter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_fortknox_3.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/FachwerkHouse2.tara?v=2021",
+				"resources/library/Fort.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_fortknox_3_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/FortWinter.tara?v=2021",
+				"resources/library/FachwerkHouse2Winter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_fortknox_II.xml",
+			"libs": [
+				"resources/library/Castle.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu4.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/Landscape.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_fortknox_III.xml",
+			"libs": [
+				"resources/library/Castle.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/Landscape.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_fortknox_III_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/LandscapeWinter.tara?v=2021",
+				"resources/library/CastleWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_fortknox_II_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/LandscapeWinter.tara?v=2021",
+				"resources/library/CastleWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/NuBu4Winter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_fortknox_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/FortWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021",
+				"resources/library/NuBu8Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_garder.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_garder_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_gravity.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_gravity_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_gubakha.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_gubakha_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_halloween_2020.xml",
+			"libs": [
+				"resources/library/Elementsv1.tara?v=2021",
+				"resources/library/Buildingsv1.tara?v=2021",
+				"resources/library/Halloween.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/Landv1.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_highland.xml",
+			"libs": [
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_highland_2.xml",
+			"libs": [
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_highland_2_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/BrokenWallsWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_highland_II.xml",
+			"libs": [
+				"resources/library/Elementsv1.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Buildingsv1.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/ComplexBuildv1.tara?v=2021",
+				"resources/library/Landv1.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_highland_II_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/Landv1Winter.tara?v=2021",
+				"resources/library/Buildingsv1Winter.tara?v=2021",
+				"resources/library/Elementsv1Winter.tara?v=2021",
+				"resources/library/ComplexBuildv1Winter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_highland_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/BrokenWallsWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_highway.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/NuBu2.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_highway_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/NuBu2Winter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_hill.xml",
+			"libs": [
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_hill_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_industrial_zone.xml",
+			"libs": [
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/BrokenRoof.tara?v=2021",
+				"resources/library/Hangars.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/Trees.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_industrial_zone_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BrokenRoofWinter.tara?v=2021",
+				"resources/library/TreesWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/BrokenWallsWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/HangarsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_iran.xml",
+			"libs": [
+				"resources/library/yonje.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/kahgel.tara?v=2021",
+				"resources/library/zamin.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/kariz.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_island.xml",
+			"libs": [
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_island_winter.xml",
+			"libs": [
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_kolhoz.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/NuBu2.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_kolhoz_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/NuBu2Winter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_kungur.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/NuBu2.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu4.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu8.tara?v=2021",
+				"resources/library/NuBu5.tara?v=2021",
+				"resources/library/NuBu14.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_kungur_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/NuBu14Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu5Winter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu4Winter.tara?v=2021",
+				"resources/library/NuBu2Winter.tara?v=2021",
+				"resources/library/NuBu8Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_legacy.xml",
+			"libs": [
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/Passage.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Exterior.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/Defense.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/ComBuild.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_losttemple.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/NuBu2.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu4.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/NuBu8.tara?v=2021",
+				"resources/library/NuBu5.tara?v=2021",
+				"resources/library/NuBu14.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_losttemple_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/NuBu14Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu5Winter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu4Winter.tara?v=2021",
+				"resources/library/NuBu2Winter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021",
+				"resources/library/NuBu8Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_madness.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_madness_space.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_madness_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_magadan.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_magadan_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_magistral.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu4.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_magistral_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu4Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_massacre.xml",
+			"libs": [
+				"resources/library/LandHills.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/LandRise.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_massacre_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/LandRiseWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/LandHillsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_molotov.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/NuBu2.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu4.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/NuBu5.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_molotov_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu5Winter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu4Winter.tara?v=2021",
+				"resources/library/NuBu2Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_montecarlo.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_montecarlo_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_noise.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Hangars.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_noise_space.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Hangars.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_noise_space_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Hangars.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_noise_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/BrokenWallsWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/HangarsWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_novel.xml",
+			"libs": [
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/LandRise.tara?v=2021",
+				"resources/library/BrokenBottom.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/LandHills.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/BrokenRoof.tara?v=2021",
+				"resources/library/Hangars.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/NuBu8.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/Trees.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_novel_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BrokenRoofWinter.tara?v=2021",
+				"resources/library/BrokenBottomWinter.tara?v=2021",
+				"resources/library/TreesWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/LandRiseWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/BrokenWallsWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/HangarsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/LandHillsWinter.tara?v=2021",
+				"resources/library/NuBu8Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_ny_2021.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/NY.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_opposition.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/BrokenRoof.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/Trees.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_opposition_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BrokenRoofWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/TreesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_osa.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/NuBu2.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu8.tara?v=2021",
+				"resources/library/NuBu14.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_osa_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/NuBu14Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu2Winter.tara?v=2021",
+				"resources/library/NuBu8Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_parma.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_parma_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_pass.xml",
+			"libs": [
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_pass_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_pingpong.xml",
+			"libs": [
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_pingpong_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_polygon.xml",
+			"libs": [
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_polygon_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/BrokenWallsWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_redalert.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu8.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_redalert_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021",
+				"resources/library/NuBu8Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_rift.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/LandRise.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/Trees.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_rift_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/TreesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/LandRiseWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_ring.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Roadblock.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_ring_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/RoadblockWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_rio.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Exterior.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/zamin.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/Defense.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/ComBuild.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_rio_night.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Exterior.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/zamin.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/Defense.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/ComBuild.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_rio_space.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Exterior.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/zamin.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/Defense.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/ComBuild.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_rio_night_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Exterior.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/zamin.tara?v=2021",
+				"resources/library/Defense.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/ComBuild.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_sandal.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_sandal_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_sandbox.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_sandbox_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_scope.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/LandHills.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/LandRise.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/Trees.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_scope_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/TreesWinter.tara?v=2021",
+				"resources/library/LandRiseWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/LandHillsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_serpuhov.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/NuBu2.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/NuBu1.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu4.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/NuBu8.tara?v=2021",
+				"resources/library/NuBu5.tara?v=2021",
+				"resources/library/NuBu14.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_serpuhov_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/NuBu14Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu5Winter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/NuBu1Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu4Winter.tara?v=2021",
+				"resources/library/NuBu2Winter.tara?v=2021",
+				"resources/library/NuBu8Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_shortbridge.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_shortbridge_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_siege.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_siege_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_silence.xml",
+			"libs": [
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_silence_2.xml",
+			"libs": [
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_silence_2_evening.xml",
+			"libs": [
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_silence_2_evening_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/BrokenWallsWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_silence_2_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/BrokenWallsWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_silence_space.xml",
+			"libs": [
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_silence_space_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_silence_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/BrokenWallsWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_skylark.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/NuBu2.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_skylark_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu2Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_solikamsk.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu4.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_solikamsk_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu4Winter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_stadium.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_stadium_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_station.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/Trees.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_station_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/TreesWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_subway.xml",
+			"libs": [
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/CityBuildings.tara?v=2021",
+				"resources/library/BrokenBottom.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/BrokenRoof.tara?v=2021",
+				"resources/library/Hangars.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/BrokenWalls.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021",
+				"resources/library/DesertHouses.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_subway_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BrokenRoofWinter.tara?v=2021",
+				"resources/library/BrokenBottomWinter.tara?v=2021",
+				"resources/library/DesertHousesWinter.tara?v=2021",
+				"resources/library/CityBuildingsWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/BrokenWallsWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021",
+				"resources/library/HangarsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_tribute.xml",
+			"libs": [
+				"resources/library/BridgeParts.tara?v=2021",
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/NuBu2.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/NuBu6.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/NuBu1.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/NuBu4.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021",
+				"resources/library/NuBu8.tara?v=2021",
+				"resources/library/NuBu5.tara?v=2021",
+				"resources/library/NuBu14.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_tribute_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/BridgePartsWinter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/NuBu14Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu5Winter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/NuBu6Winter.tara?v=2021",
+				"resources/library/NuBu1Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/NuBu4Winter.tara?v=2021",
+				"resources/library/NuBu2Winter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021",
+				"resources/library/NuBu8Winter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_valley.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/OuterWalls.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_valley_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/OuterWallsWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_wave.xml",
+			"libs": [
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/Trees.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_wave_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/TreesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_wolfenstein.xml",
+			"libs": [
+				"resources/library/GrassTiles.tara?v=2021",
+				"resources/library/VillageHouses.tara?v=2021",
+				"resources/library/FachwerkHouse2.tara?v=2021",
+				"resources/library/Fort.tara?v=2021",
+				"resources/library/NuBu3.tara?v=2021",
+				"resources/library/Cliffs.tara?v=2021",
+				"resources/library/SlopesRises.tara?v=2021",
+				"resources/library/SmallBridge.tara?v=2021",
+				"resources/library/NuBu9.tara?v=2021",
+				"resources/library/NuBu10.tara?v=2021",
+				"resources/library/CityTowers.tara?v=2021",
+				"resources/library/ConcreteTiles.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/FachwerkHouse1.tara?v=2021",
+				"resources/library/CityWalls.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/NuBu12.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_wolfenstein_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/FortWinter.tara?v=2021",
+				"resources/library/VillageHousesWinter.tara?v=2021",
+				"resources/library/FachwerkHouse1Winter.tara?v=2021",
+				"resources/library/CityWallsWinter.tara?v=2021",
+				"resources/library/CliffsWinter.tara?v=2021",
+				"resources/library/CityTowersWinter.tara?v=2021",
+				"resources/library/NuBu3Winter.tara?v=2021",
+				"resources/library/GrassTilesWinter.tara?v=2021",
+				"resources/library/NuBu10Winter.tara?v=2021",
+				"resources/library/NuBu9Winter.tara?v=2021",
+				"resources/library/NuBu12Winter.tara?v=2021",
+				"resources/library/SlopesRisesWinter.tara?v=2021",
+				"resources/library/FachwerkHouse2Winter.tara?v=2021",
+				"resources/library/ConcreteTilesWinter.tara?v=2021",
+				"resources/library/SmallBridgeWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_zone.xml",
+			"libs": [
+				"resources/library/IndustrialBridge.tara?v=2021",
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/WaffleFence.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/Trees.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021",
+				"resources/library/IndustrialElements.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_zone_winter.xml",
+			"libs": [
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/TreesWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/IndustrialBridgeWinter.tara?v=2021",
+				"resources/library/IndustrialElementsWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021",
+				"resources/library/WaffleFenceWinter.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_cdr_2021.xml",
+			"libs": [
+				"resources/library/Stuffs.tara?v=2021",
+				"resources/library/Sprites.tara?v=2021",
+				"resources/library/Roadblock.tara?v=2021",
+				"resources/library/LandTiles.tara?v=2021",
+				"resources/library/Billboard.tara?v=2021",
+				"resources/library/LandRocks.tara?v=2021"
+			]
+		},
+		{
+			"name": "map_cdr_2021_winter.xml",
+			"libs": [
+				"resources/library/SpritesWinter.tara?v=2021",
+				"resources/library/BillboardWinter.tara?v=2021",
+				"resources/library/LandRocksWinter.tara?v=2021",
+				"resources/library/LandTilesWinter.tara?v=2021",
+				"resources/library/RoadblockWinter.tara?v=2021",
+				"resources/library/StuffsWinter.tara?v=2021"
+			]
+		}
+	]
+}
