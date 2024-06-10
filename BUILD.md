@@ -1,6 +1,6 @@
 <pre>
   <b>   BUILDING THE SERVER</b>
-  <b>// THIS FILE IS UNDONE. YET!!!</b>
+  <b>// THIS FILE IS NOT DONE. YET!!!</b>
   
   -----(
   Prerequirements:
@@ -10,5 +10,11 @@
   JDK 17           | <a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html">https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html</a>
   --
   XAMPP            | <a href="https://www.apachefriends.org/">https://www.apachefriends.org/</a>
+  --
+  and its database | which i didn't made it up myself yet
   -----)
+
+<b>1. XAMPP</b>
+  1.1. Start Apache service
+  1.2. Start MySQL service
 </pre>
