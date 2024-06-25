@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jun 10, 2024 at 12:00 PM
+-- Host: localhost
+-- Generation Time: Jun 25, 2024 at 04:09 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -100,7 +100,7 @@ CREATE TABLE `gt_users_mount` (
 -- Indexes for table `gt_users`
 --
 ALTER TABLE `gt_users`
-  ADD UNIQUE KEY `login` (`user_login`) USING HASH;
+  ADD UNIQUE KEY `user_login` (`user_login`) USING HASH;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
