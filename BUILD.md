@@ -45,7 +45,6 @@
   -----(
   Prerequirements:
   The client itself      | <a href="https://github.com/bjuonday/gtanks_java_2024/tree/master/client">https://github.com/bjuonday/gtanks_java_2024/tree/master/client</a>
-  Fixed battles.swf file | had lost it
   -----)
 
   1. In (( gtanks_2024 > client )) folder, drag 'gt_client' folder into %appdata%.
@@ -54,10 +53,4 @@
      \Roaming\gt_client' (without columns; incase '%appdata%\gt_client' doesn't work)
   3. When your server is still running, you can drag the 'GTloader.swf' file into
      'flashplayer_32.exe' executable.
-  
---
-<i>About the file that fixes only one issue (which is fixed battles.swf file), I cannot
-find it because I can't seemingly find myself asthe main operating system and going to
-lose some files each install. So, yeah...
-</i>
 </pre>
