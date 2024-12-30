@@ -18,9 +18,6 @@
 
 <b>0. Gradle (apart of JDK 17)</b>
   0.1. Run start.bat and wait for it to install correctly
-       If it doesn't install or did not do it correctly, please make an issue and grab an log file
-       (or copy and paste the log, i'm unsure that i haven't even checked for that) TO THE ORIGINAL
-       REPOSITORY, not the fork!
 
 <b>1. XAMPP</b>
   1.1. Start Apache service
@@ -33,8 +30,8 @@
 
 <b>3. IntelliJ IDEA</b>
   3.1. Open > (( [path/to/where/you/have/placed/it/from] > gtanks_server_remake > server ))
-       The square brackets ( [, ] ) isn't for what you have to go to
-       the exact directory, this is clearly an explanation!
+       <i>The square brackets ( [, ] ) isn't for what you have to go to
+       the exact directory, this is clearly an explanation!</i>
   3.2. In (( gtanks_server_remake > server )) folder, go to src > main > java > amalgama
        and find the 'Main.java' file
   3.3. Run this file and hope for the best it'll work when in terminal displays:
