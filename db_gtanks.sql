@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Jun 25, 2024 at 04:09 PM
+-- Host: 127.0.0.1
+-- Generation Time: Jun 14, 2025 at 05:19 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -40,14 +40,21 @@ CREATE TABLE `gt_groups` (
 --
 
 CREATE TABLE `gt_users` (
-  `user_id` longtext NOT NULL,
+  `user_id` int(11) NOT NULL,
   `user_login` text NOT NULL,
   `user_password` text NOT NULL,
   `user_email` text DEFAULT NULL,
   `user_score` int(11) NOT NULL,
   `user_balance` int(11) NOT NULL,
-  `user_group_id` longtext NOT NULL
+  `user_group_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `gt_users`
+--
+
+INSERT INTO `gt_users` (`user_id`, `user_login`, `user_password`, `user_email`, `user_score`, `user_balance`, `user_group_id`) VALUES
+(2, 'test', 'f5bb0c8de146c67b44babbf4e6584cc0', NULL, 0, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -56,7 +63,7 @@ CREATE TABLE `gt_users` (
 --
 
 CREATE TABLE `gt_users_bans` (
-  `ban_id` longtext NOT NULL,
+  `ban_id` int(11) NOT NULL,
   `ban_user` text NOT NULL,
   `ban_reason` text NOT NULL,
   `ban_admin` text NOT NULL,
@@ -72,8 +79,8 @@ CREATE TABLE `gt_users_bans` (
 --
 
 CREATE TABLE `gt_users_items` (
-  `garage_id` longtext NOT NULL,
-  `item_user` longtext NOT NULL,
+  `garage_id` int(11) NOT NULL,
+  `item_user` longtext DEFAULT NULL,
   `item_id` text NOT NULL,
   `item_count` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
@@ -85,8 +92,8 @@ CREATE TABLE `gt_users_items` (
 --
 
 CREATE TABLE `gt_users_mount` (
-  `mount_id` longtext NOT NULL,
-  `mount_user` longtext NOT NULL,
+  `mount_id` int(11) NOT NULL,
+  `mount_user` longtext DEFAULT NULL,
   `mount_weapon` text NOT NULL,
   `mount_armor` text NOT NULL,
   `mount_color` text NOT NULL
@@ -100,7 +107,54 @@ CREATE TABLE `gt_users_mount` (
 -- Indexes for table `gt_users`
 --
 ALTER TABLE `gt_users`
+  ADD PRIMARY KEY (`user_id`),
   ADD UNIQUE KEY `user_login` (`user_login`) USING HASH;
+
+--
+-- Indexes for table `gt_users_bans`
+--
+ALTER TABLE `gt_users_bans`
+  ADD PRIMARY KEY (`ban_id`);
+
+--
+-- Indexes for table `gt_users_items`
+--
+ALTER TABLE `gt_users_items`
+  ADD PRIMARY KEY (`garage_id`);
+
+--
+-- Indexes for table `gt_users_mount`
+--
+ALTER TABLE `gt_users_mount`
+  ADD PRIMARY KEY (`mount_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `gt_users`
+--
+ALTER TABLE `gt_users`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `gt_users_bans`
+--
+ALTER TABLE `gt_users_bans`
+  MODIFY `ban_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `gt_users_items`
+--
+ALTER TABLE `gt_users_items`
+  MODIFY `garage_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `gt_users_mount`
+--
+ALTER TABLE `gt_users_mount`
+  MODIFY `mount_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
