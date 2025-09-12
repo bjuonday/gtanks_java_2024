@@ -15,5 +15,6 @@ Instructions | <a href="https://github.com/bjuonday/gtanks_server_remake/blob/ma
 |       Credits        |
 | <a href="https://github.com/intNeo/gt_client_2024">Client</a> by <a href="https://github.com/intNeo/">intNeo</a>     |
 | <a href="https://github.com/4malgama/gtanks_server_remake">Server</a> by <a href="https://github.com/4malgama/">4malgama</a>   |
+|                      |
 ------------------------
 </pre>
